@@ -87,3 +87,7 @@ Temporary Items
 !.vscode/launch.json
 !.vscode/extensions.json
 
+
+resources/_gen/*
+themes/candor-dev
+
