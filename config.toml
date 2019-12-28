@@ -1,8 +1,8 @@
 baseURL = "//udia.ca/"
 languageCode = "en-us"
 title = "Alexander Wong"
-# theme = "candor"
-theme = "candor-dev"
+theme = "candor"
+# theme = "candor-dev"
 pygmentsCodefences = true
 pygmentsStyle = "swapoff"
 enableGitInfo = true

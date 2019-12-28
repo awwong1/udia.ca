@@ -1,6 +1,8 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-draft: true
+draft: false
+abstract: One to two sentences summarizing the post.
+status: in-progress
 ---
 
