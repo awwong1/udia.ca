@@ -1,11 +1,20 @@
+title = "UDIA"
+description = "Experimenter, scientist, software developer. Collection of content pertaining to UDIA."
 baseURL = "//udia.ca/"
 languageCode = "en-us"
-title = "Alexander Wong"
+copyright = "Creative Rights 4.0"
+
 theme = "candor"
-# theme = "candor-dev"
+#theme = "candor-dev"
 pygmentsCodefences = true
-pygmentsStyle = "swapoff"
+pygmentsStyle = "colorful"
 enableGitInfo = true
+enableRobotsTXT = true
+
+[params]
+  author = "Alexander Wong"
+  license = "Creative Commons Attribution-NonCommercial 4.0 International License"
+  licenseLink = "https://creativecommons.org/licenses/by-nc/4.0/"
 
 [taxonomies]
   category = "categories"
