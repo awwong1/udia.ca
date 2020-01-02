@@ -34,5 +34,9 @@ enableRobotsTXT = true
   weight=100
 [[menu.main]]
   name="about"
-  url="/posts/about/"
+  url="/posts/2019/12/about/"
   weight=110
+[[menu.main]]
+  name="posts"
+  url="/posts/"
+  weight=120
