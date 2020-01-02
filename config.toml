@@ -11,6 +11,8 @@ pygmentsStyle = "colorful"
 enableGitInfo = true
 enableRobotsTXT = true
 
+googleAnalytics = "UA-81872410-1"
+
 [params]
   author = "Alexander Wong"
   license = "Creative Commons Attribution-NonCommercial 4.0 International License"
