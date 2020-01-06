@@ -65,4 +65,7 @@ I will update this post every week until the end of 2020.
 
 ## January
 
-Todo.
+### Wed, Jan 1 - Sun Jan 5
+
+- Fast-5 accomplished each day, climbed on Thursday, Jan 2nd. Skipped one day of Fitness Blender on Sunday Jan 5.
+Most difficult part of this journey is the fast, especially when in social situations where other people are eating.
