@@ -17,8 +17,8 @@ Roughly: the lemon glaze was removed; the number of tea bags used was increased;
 |-------------------|------------------------:|
 | Preparation Time  | 30 minutes              |
 | Infusing Time     | 2 hours                 |
-| Cooking Time      | 15 minutes              |
-| Total Time        | 2 hours 45 minutes      |
+| Cooking Time      | 20 minutes              |
+| Total Time        | 2 hours 50 minutes      |
 | Servings          | 120 cookies             |
 | Cookie Dimensions | Width 1cm; Diameter 4cm |
 
