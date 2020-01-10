@@ -12,6 +12,70 @@ tags:
 
 Pull all of the PhysioNet WaveForm DataBase collections related to ECG, according to their [ECG Archive](https://archive.physionet.org/physiobank/database/#ecg)
 
+```bash
+#!/bin/bash
+
+ecg_database_keys=(
+    "aami-ec13"
+    "edb"
+    "ltstdb"
+    "mitdb"
+    "nstdb"
+    "staffiii"
+    "chfdb"
+    "ecgcipa"
+    "ecgdmmld"
+    "ecgrdvq"
+    "ecgiddb"
+    "szdb"
+    "qtdb"
+    "shareedb"
+    "nifeadb"
+    "adfecgdb"
+    "aftdb"
+    "cudb"
+    "iafdb"
+    "ltafdb"
+    "macecgdb"
+    "afdb"
+    "cdb"
+    "ltdb"
+    "vfdb"
+    "nsrdb"
+    "stdb"
+    "svdb"
+    "nifecgdb"
+    "afpdb"
+    "ptbdb"
+    "incartdb"
+    "sddb"
+    "vfdb"
+)
+
+for db_key in "${ecg_database_keys[@]}"
+do
+        echo $db_key;
+        if [ -d "$db_key/physionet.org/1.0.0" ]; then
+                echo "\t$db_key/physionet.org/1.0.0 exists...";
+        else
+                wget -r -N -c -np -P $db_key --cut-dirs=2 https://physionet.org/files/$db_key/1.0.0/;
+        fi
+done
+
+curdir=$(pwd)
+for db_key in "${ecg_database_keys[@]}"
+do
+        echo $db_key;
+        cd $db_key;
+        mv "physionet.org/1.0.0/"* .;
+        sha256sum -c SHA256SUMS.txt --quiet;
+        cd $curdir;
+        echo "";
+        #mv $db_key wfdb;
+done
+```
+
+## Quick dataset information
 
 ```python
 %matplotlib inline
