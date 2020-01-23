@@ -78,3 +78,10 @@ Fast-5 failed on Sunday due to dinner with girlfriend's family
 I ate outside of the eating window, roughly ~830pm dinner finished.
 Climbed on Monday and on Friday.
 Weighed self, roughly 69kg (152lb).
+
+### Week 3: Mon, Jan 13 - Sun, Jan 19
+
+I've been run down with a terrible cold this week.
+What had begun on Friday, January 17th as an unusually pervasive sore throat had turned into a weekend of progressively becoming weaker.
+A full blown hallucinogenic nightmare of chills, cold sweats, and phlegm occurred by Monday.
+That being said, given the time period specified in the header, I was able to climb twice, I never broke the fast, and I skipped two days of Fitness Blender (within my 5 days per week criteria).
