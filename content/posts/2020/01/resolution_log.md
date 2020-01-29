@@ -54,7 +54,7 @@ While completing my MSc. thesis, **I will attend the climbing wall two times per
 
 Scores are calculated every Sunday. Skipping one full week of fasting, fitness blender, and climbing would incur a penalty of:
 
-$$ 
+$$
 7_\text{Fast} + 5_\text{Fitness} + 2_\text{Climb} = 14_\text{Penalty Points}$$
 
 Although inexcusable absences itself is subjective, the intention is to distinguish days where I did not perform a health and wellness activity due to laziness.
