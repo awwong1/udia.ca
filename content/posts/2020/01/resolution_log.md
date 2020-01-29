@@ -85,3 +85,11 @@ I've been run down with a terrible cold this week.
 What had begun on Friday, January 17th as an unusually pervasive sore throat had turned into a weekend of progressively becoming weaker.
 A full blown hallucinogenic nightmare of chills, cold sweats, and phlegm occurred by Monday.
 That being said, given the time period specified in the header, I was able to climb twice, I never broke the fast, and I skipped two days of Fitness Blender (within my 5 days per week criteria).
+
+### Week 4: Mon, Jan 20 - Sun, Jan 26
+
+Most of this week was spent in cold/sickness recovery.
+Tuesday, I had a meeting at the CN tower to discuss the ECG research.
+Friday, the only day I went to the lab, I was able to reverse engineer the ECG traces from a SQL database dump.
+I broke my fasting window Friday the 24th due to Chinese New Year evening dinners at my grandmother's.
+Also no wall climbing was done this week due to illness.
