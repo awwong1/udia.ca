@@ -122,3 +122,8 @@ Within Firefox, go to `Preferences > Network Settings`. Under the category `Conf
 
 Now, when browsing the internet in Firefox, you are proxied through your remote server through SOCKS.
 The port number 8123 is arbitrary and can be any available, free port.
+
+## Unresponsive SSH Session
+
+Occasionally, the SSH session will become unresponsive while you are connected remotely.
+You can use the ssh escape sequence `~.` to close the SSH session without closing the terminal window.
