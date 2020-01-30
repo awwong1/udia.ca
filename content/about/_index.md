@@ -4,6 +4,8 @@ date: 2019-12-25T12:50:12-07:00
 draft: false
 tags:
   - personal
+aliases:
+  - /posts/2019/12/about/
 description: A brief overview of some of the things that I've done, as well as my online presence.
 status: in-progress
 ---

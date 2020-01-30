@@ -6,7 +6,7 @@ description: Home and meta page describing udia.ca philosophy and technology.
 status: in-progress
 ---
 
-This page is about `udia.ca`; for information about the author, see [about]({{% ref "posts/2019/12/about.md" %}}).
+This page is about `udia.ca`; for information about the author, see [about]({{% ref "about/_index.md" %}}).
 
 # Overview
 

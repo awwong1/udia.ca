@@ -42,7 +42,7 @@ enableRobotsTXT = true
       unsafe = false
       xHTML = false
   [markup.tableOfContents]
-    endLevel = 4
+    endLevel = 6
     ordered = false
     startLevel = 1
 
@@ -53,7 +53,7 @@ enableRobotsTXT = true
   weight=100
 [[menu.main]]
   name="about"
-  url="/posts/2019/12/about/"
+  url="/about/"
   weight=110
 [[menu.main]]
   name="posts"
