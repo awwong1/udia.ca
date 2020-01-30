@@ -10,7 +10,7 @@ This page is about `udia.ca`; for information about the author, see [about]({{% 
 
 # Overview
 
-UDIA came into existence in February 2016, largely as a result of being one of the few domain names available in the ['.ca' TLD](https://cira.ca/) satisfying a four character length limit.
+UDIA came into existence in February 2016, largely as a result of being one of the few domain names available in the [`.ca` TLD](https://cira.ca/) satisfying a four character length limit.
 It is also my preferred online pseudonym.
 
 ## Content
@@ -31,12 +31,13 @@ You are **free** to copy and reuse any of my content (non-commercially) as long 
 
 ## Technology & Hosting
 
-- The site is built with the [Hugo](https://gohugo.io/) static site generator using a custom theme written by the author.
-- Source files are written in [CommonMark 0.29](https://spec.commonmark.org/0.29/) compliant markdown, parsed by [goldmark](https://github.com/yuin/goldmark/).
-- We are hosted on an Ubuntu 18.04, 4GB RAM, 2 VCPU instance provided by [Cybera Rapid Access Cloud](https://www.cybera.ca/services/rapid-access-cloud/).
-- Domain Name Servers are managed and proxied using [Cloudflare](https://www.cloudflare.com/).
-- Content is served using the [nginx web server](https://nginx.org/en/).
-- Secure Sockets Layer certificates are issued by [Let's Encrypt](https://letsencrypt.org/).
+- The site is built with the [Hugo](https://gohugo.io/) static site generator using a custom theme ([Candor](https://git.udia.ca/alex/candor), built from scratch)
+  - Math is rendered in browser using the [KaTeX](https://katex.org/) library (TODO: server side rendering)
+- Source files are written in [CommonMark 0.29](https://spec.commonmark.org/0.29/) compliant markdown, parsed by [goldmark](https://github.com/yuin/goldmark/)
+- We are hosted on an Ubuntu 18.04, 4GB RAM, 2 VCPU instance provided by [Cybera Rapid Access Cloud](https://www.cybera.ca/services/rapid-access-cloud/)
+- Domain Name Servers are managed and proxied using [Cloudflare](https://www.cloudflare.com/)
+- Content is served using the [nginx web server](https://nginx.org/en/)
+- Secure Sockets Layer certificates are issued by [Let's Encrypt](https://letsencrypt.org/)
 
 ### NGINX Configuration
 
