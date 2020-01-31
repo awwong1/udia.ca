@@ -69,4 +69,4 @@ server {
 
 I borrow heavily from [gwern.net](https://www.gwern.net), which I discovered while browsing a Hacker News post of [well-designed personal sites](https://news.ycombinator.com/item?id=21737529).
 
-UDIA is not affiliated with the [Urban Development Institute of Australia](http://udia.com.au) in any way, shape, or form.
+I am not affiliated with the [Urban Development Institute of Australia](http://udia.com.au).

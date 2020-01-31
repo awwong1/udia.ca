@@ -27,8 +27,12 @@ Prior to being a full-time graduate research assistant, I've developed software 
 Additionally, I served as a teaching assistant for [CMPUT 404 - Web Applications and Architecture](https://www.ualberta.ca/computing-science/undergraduate-studies/course-directory/courses/web-applications-and-architecture) and as a course developer for [CMPUT 497 - Introduction to Combinatorial Game Theory](https://www.ualberta.ca/computing-science/undergraduate-studies/course-directory/courses/introduction-to-combinatorial-game-theory).
 Before my training, I worked in the service industry as a waiter/bartender/banquet server; summered as a [Green Shack Coordinator](https://www.edmonton.ca/activities_parks_recreation/green-shacks.aspx); data-entry clerked for various offices; and served as customer facing IT support for [CARNA](https://nurses.ab.ca/).
 
+## Links
+
+* Personal GitHub page: [github.com/awwong1](https://github.com/awwong1/)
+
 ## Contact
 
-* Email: [alex@udia.ca](mailto:alex@udia.ca)
-* GPG Key: [alex.asc](//media.udia.ca/alex.asc) ([Mirror](https://pgp.key-server.io/0x0F8D1FA50FC4B4EE))
-  - `$ gpg --export --armor 48797A6E15706026C51E9CF50F8D1FA50FC4B4EE > alex.asc`
+* Email: [alex@udia.ca](mailto:alex@udia.ca), [GPG Key](//media.udia.ca/alex.asc)
+
+`$ gpg --export --armor 48797A6E15706026C51E9CF50F8D1FA50FC4B4EE > alex.asc`
