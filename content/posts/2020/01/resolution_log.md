@@ -44,13 +44,11 @@ While completing my MSc. thesis, **I will attend the climbing wall two times per
 
 # Rubric
 
-{{< table >}}
 | Resolution        | Unsatisfactory | Satisfactory | Good | Excellent |
 |-----------------|----------------|--------------|------|-----------|
 | Master's Degree   | Thesis largely _incomplete_. Significant effort required (>3 months) for written dissertation. | Thesis requires _major revision_. Between 1-3 months of effort is necessary for dissertation pass and oral examination. | Thesis requires _minor revision_. Less than one month of effort is necessary for degree completion. | Thesis _complete_. Defense scheduled or completed. Convocation scheduled. |
 | Mobile App        | No mobile application is published on any distribution platform. | One application is published onto the major distribution platforms. No other criteria satisfied. | One or more applications have been published. Applications have generally positive user feedback, and reviews. | More than one application has been published. Applications have positive user feedback, reviews, and monetary income. |
 | Health & Wellness | Over 90 inexcusable skips or absences to the Fast-5, FitnessBlender, and Climbing Centre activities. | Between 60 and 90 inexcusable combined skips or absences. | Between 30 and 60 inexcusable combined skips or absences . | Less than 30 inexcusable skips or absences. |
-{{< /table >}}
 
 ## Health and Wellness Penalty Calculation
 
