@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/udia
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://udia.ca
+  * I am udia (https://keybase.io/udia) on keybase.
+  * I have a public key ASDT8RiWK_QmuzmD6p8WEbaxzmeTxGICgwdldhJKrEy0gAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120d8613bd454a3c761a861b5c4a16e983927ed7f29b0aeb8ac06ec78d952a7813f0a",
+      "host": "keybase.io",
+      "kid": "0120d3f118962bf426bb3983ea9f1611b6b1ce6793c4620283076576124aac4cb4800a",
+      "uid": "ecdf2e7c9bfe7a254e815180daddbc19",
+      "username": "udia"
+    },
+    "merkle_root": {
+      "ctime": 1580576713,
+      "hash": "d1e3df1ce0423a035be31b233ec45e9054528bf494c26840915fe2452f57a4fd07bba2dbb0ef78d3b6accc921b6894ee117f5b74072c225320fb593e9fc12168",
+      "hash_meta": "eeb7e3cb6d11d908550ebc57ad7f631764142b643b060662bfce93be235d6095",
+      "seqno": 14449761
+    },
+    "service": {
+      "entropy": "ZRUg17zBBEOeE+nrs3mtDO2V",
+      "hostname": "udia.ca",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.1.1"
+  },
+  "ctime": 1580576723,
+  "expire_in": 504576000,
+  "prev": "fb6182d82b03fd0e670bb481864c1c514e807c3d88a25ae92d03ed38795ec7fa",
+  "seqno": 41,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg0/EYliv0Jrs5g+qfFhG2sc5nk8RiAoMHZXYSSqxMtIAKp3BheWxvYWTESpcCKcQg+2GC2CsD/Q5nC7SBhkwcUU6AfD2IolrpLQPtOHlex/rEICy8bwe2eHMvDs9Xq9IEdijPSV+BGdeXPOPTOy0BxKaqAgHCo3NpZ8RAvzQeZ5bBo3Dft33xryLpOZ936WelGtO7SSbt+lEh4sXwHk8XT1BuJ8MnVdURfJB1nrlOnS0VsrJ7zeh/lkEiAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIOFMHAELNXY2cg8N0UBekaOfO3nIFg1qqMYNKuURSHQmo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/udia
+
+==================================================================

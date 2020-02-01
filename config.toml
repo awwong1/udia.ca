@@ -33,6 +33,7 @@ enableRobotsTXT = true
       table = true
       taskList = true
       typographer = true
+      katex = true
     [markup.goldmark.parser]
       attribute = true
       autoHeadingID = true
