@@ -32,7 +32,8 @@ You are **free** to copy and reuse any of my content (non-commercially) as long 
 ## Technology & Hosting
 
 - The site is built with the [Hugo](https://gohugo.io/) static site generator using a custom theme ([Candor](https://git.udia.ca/alex/candor), built from scratch)
-  - Math is rendered in browser using the [KaTeX](https://katex.org/) library (TODO: server side rendering)
+  - Math is rendered server side using the [github.com/graemephi/goldmark-qjs-katex](https://github.com/graemephi/goldmark-qjs-katex) and [KaTeX](https://katex.org/) libraries
+  - Custom hugo runtime is built using `--tags extended`, [commit diff available here](https://github.com/gohugoio/hugo/compare/master...awwong1:master)
 - Source files are written in [CommonMark 0.29](https://spec.commonmark.org/0.29/) compliant markdown, parsed by [goldmark](https://github.com/yuin/goldmark/)
 - We are hosted on an Ubuntu 18.04, 4GB RAM, 2 VCPU instance provided by [Cybera Rapid Access Cloud](https://www.cybera.ca/services/rapid-access-cloud/)
 - Domain Name Servers are managed and proxied using [Cloudflare](https://www.cloudflare.com/)
@@ -57,11 +58,12 @@ server {
   }
 
   location / {
-    location ~* .*\.(js|css|png|jpg|jpeg|gif|ico|svg|woff2)$ {
+    location ~* .*\.(js|css|png|jpg|jpeg|gif|ico|svg|woff2|json)$ {
       add_header Cache-Control "public, max-age=31536000";
     }
     try_files $uri $uri/ =404;
   }
+  # ... certbot
 }
 ```
 
