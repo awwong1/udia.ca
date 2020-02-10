@@ -104,3 +104,12 @@ Also no wall climbing was done this week due to illness.
 I did not adhere to my fast on Saturday February 1st.
 I also did not climb at all this week with no valid excuse other than laziness and poor time management.
 I performed fitness blender activities at least five times this week.
+
+## February
+
+### Week 6: Mon, Feb 3 - Sun, Feb 9
+
+I had a moment of weakness this Saturday morning and indulged in two hotdogs during a grocery run to Costco.
+Additionally, this Sunday was my Grandmother's birthday dinner. I continued eating until well after the 7pm window close.
+I missed three days of Fitness blender.
+I climbed twice this week.
