@@ -104,6 +104,25 @@ ssh destinationuser@localhost -p 36446
 The sample port of 36446 is arbitrary.
 Any open and available port can be used instead.
 
+### Persistent Reverse SSH Tunnel
+
+This is a quick shell script for running a reverse tunnel. It can be used in combination with `cron` and `run-one`.
+
+```sh
+#!/bin/sh
+# rtun.sh
+
+OUTPUT="/path/to/log/file.log"
+TUN_PORT=8022
+
+ssh -E ${OUTPUT} -o ExitOnForwardFailure=yes -R ${TUN_PORT}:127.0.0.1:22 -N remote_server >> $OUTPUT 2>&1
+```
+
+```cron
+# m h  dom mon dow   command
+* * * * * run-one rtun.sh
+```
+
 ## Firefox SOCKS Proxy Tunnel
 
 If you want to browse the internet as if you are another machine, one method is to use a [SOCKS proxy](https://en.wikipedia.org/wiki/SOCKS) tunnel.
