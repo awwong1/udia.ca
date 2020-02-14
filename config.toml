@@ -16,6 +16,7 @@ enableRobotsTXT = true
   author = "Alexander Wong"
   license = "Creative Commons Attribution-NonCommercial 4.0 International License"
   licenseLink = "https://creativecommons.org/licenses/by-nc/4.0/"
+  disableKatexJS = true
 
 [taxonomies]
   category = "categories"
