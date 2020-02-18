@@ -113,3 +113,12 @@ I had a moment of weakness this Saturday morning and indulged in two hotdogs dur
 Additionally, this Sunday was my Grandmother's birthday dinner. I continued eating until well after the 7pm window close.
 I missed three days of Fitness blender.
 I climbed twice this week.
+
+### Week 7: Mon, Feb 10 - Sun, Feb 16
+
+Many lapses in the fasting window occurred this week. Friday, Valentines Day Dinner; Saturday, Post V-Day Dinner Hot Pot with friends, Sunday, Dinner with Bonnie's family.
+I was able to climb twice this week and I performed Fitness Blender every day.
+
+Speaking to a friend about my fasting window and the strictness which I apply my rubric, I was offered a suggestion to begin recording deviation of time from the window, rather than just marking failure cases.
+One behavior I see is if I break the window, I no longer have incentive to continue the fast for the remainder of the day.
+By having more fine grained logging of my eating habits, it may provide more insight into the effectiveness of the fast.
