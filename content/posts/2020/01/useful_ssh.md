@@ -76,6 +76,16 @@ Now, put the contents of the `*.pub` file into the remote server's `~/.ssh/autho
 ssh-copy-id -i ~/.ssh/id_ed25519.pub udia@tilde.town
 # alternatively manually copy and paste the contents
 cat ~/.ssh/id_ed25519.pub
+# paste into ~/.ssh/authorized_keys
+```
+
+To ensure that the key files are kept permanently, they can be added in the `~/.ssh/config` file. It is a good idea to make the keys specific to the host, otherwise all keys will be tried against the server each time an ssh connection is attempted.
+
+```text
+host tilde
+    HostName tilde.town
+    User udia
+    IdentityFile ~/.ssh/id_ed25519
 ```
 
 ## Reverse SSH Tunnel

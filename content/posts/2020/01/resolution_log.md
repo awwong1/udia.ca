@@ -123,9 +123,19 @@ Speaking to a friend about my fasting window and the strictness which I apply my
 One behavior I see is if I break the window, I no longer have incentive to continue the fast for the remainder of the day.
 By having more fine grained logging of my eating habits, it may provide more insight into the effectiveness of the fast.
 
-### Week 8: Mon, Feb 17 - Sun Feb 23
+### Week 8: Mon, Feb 17 - Sun, Feb 23
 
 The climbing wall is closed from Feb 15 to Feb 26 due to Adaptability wall construction.
 I did not track my eating windows this week, but noted three days in which I had not followed my fasting window schedule of 2-7pm.
 I fitness blended daily, with the exception of Thursday.
- 
+
+### Week 9: Mon, Feb 24 - Sun, Mar 1
+
+Climbed twice this week. Performed daily fitness blender exercises. 
+Maintained consistent fasting window, eating only between 2-7pm.
+
+Starting to allow myself to be less strict about fasting as results are very apparent (target weight achieved, have abs again).
+Social eating (late dinners in particular) are very problematic for the fasting window.
+Most of times my breakfast meal is delayed until 3pm to compensate.
+May stop tracking fasting schedule and just delay meals as habit?
+Problematic for year-long rubric/schedule.
