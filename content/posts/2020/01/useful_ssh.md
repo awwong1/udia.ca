@@ -5,7 +5,7 @@ draft: false
 description: A collection of some secure shell commands, tips, and tricks.
 status: in-progress
 tags:
-  - ssh
+  - linux
 ---
 
 # Introduction
