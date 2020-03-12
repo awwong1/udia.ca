@@ -15,6 +15,8 @@ Tmux is a rewrite of [GNU Screen](https://en.wikipedia.org/wiki/GNU_Screen).
 
 # Cheat Sheet
 
+A printable version of this cheat sheet is available [here](https://gist.github.com/awwong1/628757b0306e3beb811062340039f4f3).
+
 ## Session Control
 
 | Session Control (from the command line) | Description |
