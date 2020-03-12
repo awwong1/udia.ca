@@ -139,3 +139,7 @@ Social eating (late dinners in particular) are very problematic for the fasting 
 Most of times my breakfast meal is delayed until 3pm to compensate.
 May stop tracking fasting schedule and just delay meals as habit?
 Problematic for year-long rubric/schedule.
+
+### Week 10: Mon, Mar 2 - Sun, Mar 8
+
+Ate past 7pm on Sunday, March 8th. Otherwise nominal.

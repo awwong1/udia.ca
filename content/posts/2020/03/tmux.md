@@ -1,5 +1,5 @@
 ---
-title: "tmux"
+title: "Cheat Sheet for tmux"
 date: 2020-03-05T14:50:35-07:00
 draft: false
 description: A brief overview and cheat sheet for the tmux terminal multiplexer program.
