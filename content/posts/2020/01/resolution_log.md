@@ -140,6 +140,30 @@ Most of times my breakfast meal is delayed until 3pm to compensate.
 May stop tracking fasting schedule and just delay meals as habit?
 Problematic for year-long rubric/schedule.
 
+## March
+
 ### Week 10: Mon, Mar 2 - Sun, Mar 8
 
 Ate past 7pm on Sunday, March 8th. Otherwise nominal.
+
+### Week 11: Mon, Mar 9 - Sun Mar 15
+
+[Deferred to Week 12]({{< relref "#week-12-mon-mar-16---sun-mar-22" >}})
+
+### Week 12: Mon, Mar 16 - Sun Mar 22
+
+Last two weeks have been quite a blur. The COVID-19 pandemic seemed to arrive quite suddenly.
+On Week 11, I had climbed on the Monday, but was too worried to go climb since.
+
+I had a difficult Friday, Mar 20th. My trusted Dell XPS 13 laptop popped a capacitor and I no longer had a ready to go research laptop. The next day, after taking the day to self reflect and reprioritize I recalled the importance of being mindful, of having stillness and being focused.
+
+At the beginning of the year, I wrote down a rubric outlining grading criteria with respect to my Master's Degree, the Climbing/Fasting/Health and wellness, and the Mobile app.
+I began to feel very discouraged and very nit-picky about tracking my dietary fasting windows and climbing.
+However, I remain satisfied with the long term habits that I have developed with respective to my eating and with exercise.
+Every morning, with tolerance of 1 day per week, I do fitness blender morning exercises with my girlfriend.
+I also remain mindful most days that I do not eat until well into the afternoon. Admittedly, it is not always between 2-7pm, I have limited my evening snacking and pushed my breakfast meal out considerably past my previous limits. I believe that this is the right step for longevity, and the original rigour for keeping to the strict 2-7pm window is no longer appropriate.
+
+I would like to try lists again. I have begun using a task/list application to track necessary todo items. I will try to check off as many of them as I can. Every week, rather than a passive recap of eating windows, I would like to self-reflect on how the lists approach is working.
+One thing that was surprising to me was how quickly I was able to get my Linux setup up and running again, and how approachable it was when using the list as a guideline. I will work on how best to phrase the todo items mindfully.
+
+As for the rubric, I am no longer very serious about it, but I intend to reflect back and estimate on good faith how I fared. The metrics for MSc. Thesis and the mobile app are still very applicable, as a deliverable is generated (whereas fitness & health is more a routine)
