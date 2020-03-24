@@ -31,6 +31,7 @@ Aside: I have had a relatively positive experience with the Dell XPS13 9360. Unf
 ## Default Applications
 
 * Browser: [Firefox](https://www.mozilla.org/en-US/firefox/new/)
+    * `about:config` > `ui.systemUsesDarkTheme`: 1
 * Mail: [Thunderbird](https://www.thunderbird.net/en-US/)
     * [Enigmail](https://addons.thunderbird.net/en-US/thunderbird/addon/enigmail/)
 * Text Editor: [vim](https://www.vim.org/)
