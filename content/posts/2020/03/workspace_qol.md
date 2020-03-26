@@ -28,12 +28,18 @@ Aside: I have had a relatively positive experience with the Dell XPS13 9360. Unf
         * Window One Desktop to the Left: `Meta+Alt+Shift+Left`
         * Window One Desktop to the Right: `Meta+Alt+Shift+Right`
 
+* System Settings > Custom Shortcuts > Screenshots
+    * Take Full Screen Screenshot: `Meta+Shift+3`
+    * Take Rectangular Region Screenshot `Meta+Shift+4`
+    * Take Active Window Screenshot: `Meta+Shift+Space`
+
 ## Default Applications
 
 * Browser: [Firefox](https://www.mozilla.org/en-US/firefox/new/)
     * `about:config` > `ui.systemUsesDarkTheme`: 1
 * Mail: [Thunderbird](https://www.thunderbird.net/en-US/)
     * [Enigmail](https://addons.thunderbird.net/en-US/thunderbird/addon/enigmail/)
+    * Optional: Remove KMail `sudo apt remove kmail`
 * Text Editor: [vim](https://www.vim.org/)
 * Code Editor: [Visual Studio Code](https://code.visualstudio.com/) 
 
