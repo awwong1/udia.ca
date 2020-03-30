@@ -146,11 +146,11 @@ Problematic for year-long rubric/schedule.
 
 Ate past 7pm on Sunday, March 8th. Otherwise nominal.
 
-### Week 11: Mon, Mar 9 - Sun Mar 15
+### Week 11: Mon, Mar 9 - Sun, Mar 15
 
 [Deferred to Week 12]({{< relref "#week-12-mon-mar-16---sun-mar-22" >}})
 
-### Week 12: Mon, Mar 16 - Sun Mar 22
+### Week 12: Mon, Mar 16 - Sun, Mar 22
 
 Last two weeks have been quite a blur. The COVID-19 pandemic seemed to arrive quite suddenly.
 On Week 11, I had climbed on the Monday, but was too worried to go climb since.
@@ -167,3 +167,14 @@ I would like to try lists again. I have begun using a task/list application to t
 One thing that was surprising to me was how quickly I was able to get my Linux setup up and running again, and how approachable it was when using the list as a guideline. I will work on how best to phrase the todo items mindfully.
 
 As for the rubric, I am no longer very serious about it, but I intend to reflect back and estimate on good faith how I fared. The metrics for MSc. Thesis and the mobile app are still very applicable, as a deliverable is generated (whereas fitness & health is more a routine)
+
+### Week 13: Mon, Mar 23 - Sun Mar 29
+
+I've found that keeping a todo list that I can check off has been very useful in keeping me accountable for my work.
+Keeping each task roughly equal to 1 hour's worth of work appears to be the secret. If the task takes more than an hour to complete, it should be broken down further.
+Occasionally, I allow myself to write down tasks that I accomplished but have not recorded ahead of time just to have the satisfaction of marking it off of the list.
+
+As a result of the todo task list, I've made progress in the ECG classification problem posed by the Physionet 2020 challenge organizers.
+I will submit my new model this week, as well as update the research log in the wiki.
+
+In terms of eating, I am satisfied with my current schedule, which has naturally shifted from a 'Fast-5' to a 'Lean-8', where my allowed eating time starts around 11am and ends around 7pm. I have not been keeping track of it diligently.
