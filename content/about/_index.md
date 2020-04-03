@@ -30,8 +30,9 @@ Before my training, I worked in the service industry as a waiter/bartender/banqu
 ## Links
 
 * Personal GitHub page: [github.com/awwong1](https://github.com/awwong1/)
-* Self-Hosted Gitea: [git.udia.ca](https://git.udia.ca)
-* LinkedIn Profile [linkedin.com/in/awwong1](https://www.linkedin.com/in/awwong1/)
+* Self-Hosted Gitea: [git.udia.ca/alex](https://git.udia.ca/alex/)
+* LinkedIn Profile: [linkedin.com/in/awwong1](https://www.linkedin.com/in/awwong1/)
+* Keybase: [keybase.io/udia/chat](https://keybase.io/udia/chat)
 
 ## Contact
 
