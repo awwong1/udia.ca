@@ -168,7 +168,7 @@ One thing that was surprising to me was how quickly I was able to get my Linux s
 
 As for the rubric, I am no longer very serious about it, but I intend to reflect back and estimate on good faith how I fared. The metrics for MSc. Thesis and the mobile app are still very applicable, as a deliverable is generated (whereas fitness & health is more a routine)
 
-### Week 13: Mon, Mar 23 - Sun Mar 29
+### Week 13: Mon, Mar 23 - Sun, Mar 29
 
 I've found that keeping a todo list that I can check off has been very useful in keeping me accountable for my work.
 Keeping each task roughly equal to 1 hour's worth of work appears to be the secret. If the task takes more than an hour to complete, it should be broken down further.
@@ -178,3 +178,14 @@ As a result of the todo task list, I've made progress in the ECG classification 
 I will submit my new model this week, as well as update the research log in the wiki.
 
 In terms of eating, I am satisfied with my current schedule, which has naturally shifted from a 'Fast-5' to a 'Lean-8', where my allowed eating time starts around 11am and ends around 7pm. I have not been keeping track of it diligently.
+
+### Week 14: Mon, Mar 30 - Sun, Apr 5
+
+This week has been less productive than I would have liked.
+I experimented with not taking my morning daily ADHD medication just to see the impact on my day to day activities.
+I found that I was less able prioritize and focus on my tasks.
+It was difficult for me to plan detailed, itemized tasks for the next days.
+I felt like I had greater difficulty in getting out of bed, that I was sleeping in considerably more, and it was more difficult for me to get into the flow of productive work.
+
+That being said, I was still able to make progress in the ECG research. I submitted one successful attempt at the PhysioNet challenge using the newer feature extraction methods.
+Will update again next week.
