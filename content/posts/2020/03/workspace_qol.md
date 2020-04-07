@@ -2,7 +2,7 @@
 title: "Workspace Quality of Life"
 date: 2020-03-23T10:02:22-07:00
 draft: false
-description: Notes and configuration for developer laptop settings. Keeping track of some of preferences (when setting up a new laptop from scratch)
+description: Notes and configuration for developer laptop settings. Keeping track of some of preferences (when setting up a new laptop from scratch).
 status: in-progress
 tags:
   - personal
@@ -32,6 +32,9 @@ Aside: I have had a relatively positive experience with the Dell XPS13 9360. Unf
     * Take Full Screen Screenshot: `Meta+Shift+3`
     * Take Rectangular Region Screenshot `Meta+Shift+4`
     * Take Active Window Screenshot: `Meta+Shift+Space`
+
+* System Settings > Global Shortcuts > KWin
+    * Maximize Window: `Meta+Shift+Up`
 
 ## Default Applications
 
@@ -132,6 +135,7 @@ ssb  rsa4096/833AEEDFD24FC81E
 gpg> key 1      # selects the key that does not have expiry date
 gpg> delkey     # delete the key
 gpg> trust      # set own key to ultimate trust
+gpg> passwd     # modify the password from cold-storage password to something more friendly
 gpg> save
 ```
 
