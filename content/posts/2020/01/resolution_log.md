@@ -189,3 +189,16 @@ I felt like I had greater difficulty in getting out of bed, that I was sleeping 
 
 That being said, I was still able to make progress in the ECG research. I submitted one successful attempt at the PhysioNet challenge using the newer feature extraction methods.
 Will update again next week.
+
+### Week 15: Mon, Apr 6 - Sun, Apr 12
+
+Perhaps the most important thing to getting things done is not a framework, like lists, spreadsheets, tracking software, but rather the people that you surround yourself with that push and motivate you to become a better individual.
+I've seem to hit a little bit of a plateau, using the todo lists to dictate my daily tasks.
+It has become difficult to adequately plan the next day's activities, other than setting a general "Do 1 hour of research", and then actually accomplishing 4 hours.
+One of the challenges with specific, deliverable based tasks is it is hard to know what needs doing before the discovery of what the problem is. Most of research is simply churn, hyperparameter tuning, and waiting.
+
+On an aside, I've shaven my head bald. I figured that since COVID-19 related restrictions are not going to ease up within the next week, I would take hair matters into my own hands and clip all of it off.
+It was beginning to get difficult to manage.
+I am amazed at how people with long hair don't drive themselves crazy with the itching and shedding.
+
+My daily fitness blender habits and lean-8 meal times are still going strong. The lean-8 is easier to enforce than the fitness blender, but for that I am grateful to have a motivating partner who starts the exercise each morning.
