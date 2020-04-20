@@ -190,6 +190,8 @@ I felt like I had greater difficulty in getting out of bed, that I was sleeping 
 That being said, I was still able to make progress in the ECG research. I submitted one successful attempt at the PhysioNet challenge using the newer feature extraction methods.
 Will update again next week.
 
+## April
+
 ### Week 15: Mon, Apr 6 - Sun, Apr 12
 
 Perhaps the most important thing to getting things done is not a framework, like lists, spreadsheets, tracking software, but rather the people that you surround yourself with that push and motivate you to become a better individual.
@@ -202,3 +204,15 @@ It was beginning to get difficult to manage.
 I am amazed at how people with long hair don't drive themselves crazy with the itching and shedding.
 
 My daily fitness blender habits and lean-8 meal times are still going strong. The lean-8 is easier to enforce than the fitness blender, but for that I am grateful to have a motivating partner who starts the exercise each morning.
+
+### Week 16: Mon, Apr 13 - Sun, Apr 19
+
+This list/todo approach to task completion has been underutilized this week.
+Instead, three solid days were dedicated towards ECG classification research with promising results and figures.
+Lots of additional experimentation was done given new label-wise plots of F1-scores.
+
+One blocker: my MacBookPro battery has begun to swell.
+Before, where my four laptop feet once rested against the table, now the bottom of the laptop bulges out.
+I've ordered a new battery, but Amazon's reduced capacity means that it would arrive in early May (est. May 12th).
+So much of my productivity depends on reliable access to technology.
+Having these laptop issues is a major source of recent anxiety.
