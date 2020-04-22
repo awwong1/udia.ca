@@ -2,7 +2,7 @@ title = "UDIA"
 description = "Experimenter, scientist, software developer. Collection of content pertaining to UDIA."
 baseURL = "//udia.ca/"
 languageCode = "en-us"
-copyright = "Creative Rights 4.0"
+copyright = "Creative Commons Attribution-NonCommercial 4.0 International License"
 
 theme = "candor"
 #theme = "candor-dev"
@@ -11,17 +11,24 @@ pygmentsStyle = "colorful"
 enableGitInfo = true
 enableRobotsTXT = true
 
-
 [params]
   author = "Alexander Wong"
   license = "Creative Commons Attribution-NonCommercial 4.0 International License"
   licenseLink = "https://creativecommons.org/licenses/by-nc/4.0/"
-  disableKatexJS = true
+  disableKatexJS = false
+  # disableKatexJS = true # broken in latest stable Hugo version
 
 [taxonomies]
   category = "categories"
   status = "status"
   tag = "tags"
+
+[outputs]
+  page = ["HTML"]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
 
 [markup]
   defaultMarkdownHandler = "goldmark"
@@ -34,7 +41,7 @@ enableRobotsTXT = true
       table = true
       taskList = true
       typographer = true
-      katex = true
+      # katex = true # broken in latest stable Hugo version
     [markup.goldmark.parser]
       attribute = true
       autoHeadingID = true

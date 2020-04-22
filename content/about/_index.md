@@ -19,7 +19,7 @@ My first computer was the [Tandy 1000](https://en.wikipedia.org/wiki/Tandy_1000)
 I am currently a graduate student at the [University of Alberta](https://www.ualberta.ca/), [Department of Computing Science](https://www.ualberta.ca/computing-science), living in [Alberta, Canada](https://www.alberta.ca/index.aspx).
 I began pursuing my Master's degree in September 2018 due to a stubborn curiosity regarding the mechanisms of deep neural networks and their impressive results in image classification and segmentation tasks.
 
-My curriculum vitae (CV) can be found [here](//media.udia.ca/cv.pdf) ([source](https://git.udia.ca/alex/cv/src/branch/master/main.tex)).
+My [curriculum vitae (CV) can be found here](//media.udia.ca/cv.pdf) ([latex source code](https://git.udia.ca/alex/cv/src/branch/master/main.tex)).
 
 ## Work
 
