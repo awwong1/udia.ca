@@ -106,3 +106,7 @@ When running `cpufreq-info`, the current policy should now indicate the new uppe
 ```
 
 These settings are valid for the current session and will revert back to defaults on reboot.
+
+## Use Airplane Mode
+
+Whenever possible, avoid using wireless communication methods (WiFi, Bluetooth) and opt for the wired connection alternative.

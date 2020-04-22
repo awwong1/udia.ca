@@ -19,7 +19,7 @@ My first computer was the [Tandy 1000](https://en.wikipedia.org/wiki/Tandy_1000)
 I am currently a graduate student at the [University of Alberta](https://www.ualberta.ca/), [Department of Computing Science](https://www.ualberta.ca/computing-science), living in [Alberta, Canada](https://www.alberta.ca/index.aspx).
 I began pursuing my Master's degree in September 2018 due to a stubborn curiosity regarding the mechanisms of deep neural networks and their impressive results in image classification and segmentation tasks.
 
-My curriculum vitae can be found [here](//media.udia.ca/cv.pdf) ([source](https://git.udia.ca/alex/cv/src/branch/master/main.tex)).
+My curriculum vitae (CV) can be found [here](//media.udia.ca/cv.pdf) ([source](https://git.udia.ca/alex/cv/src/branch/master/main.tex)).
 
 ## Work
 
@@ -32,10 +32,11 @@ Before my training, I worked in the service industry as a waiter/bartender/banqu
 * Personal GitHub page: [github.com/awwong1](https://github.com/awwong1/)
 * Self-Hosted Gitea: [git.udia.ca/alex](https://git.udia.ca/alex/)
 * LinkedIn Profile: [linkedin.com/in/awwong1](https://www.linkedin.com/in/awwong1/)
-* Keybase: [keybase.io/udia/chat](https://keybase.io/udia/chat)
+* Keybase: [keybase.io/udia](https://keybase.io/udia)
 
 ## Contact
 
 * Email: [alex@udia.ca](mailto:alex@udia.ca), [GPG Key](//media.udia.ca/alex.asc)
-
-`$ gpg --export --armor 48797A6E15706026C51E9CF50F8D1FA50FC4B4EE > alex.asc`
+  ```bash
+  gpg --export --armor 48797A6E15706026C51E9CF50F8D1FA50FC4B4EE > alex.asc
+```
