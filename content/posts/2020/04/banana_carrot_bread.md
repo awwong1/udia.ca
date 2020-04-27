@@ -3,7 +3,7 @@ title: "Instant Pot Banana Carrot Bread"
 date: 2020-04-07T07:53:52-06:00
 draft: false
 description: A moist and rich banana bread cooked entirely using the Instant Pot pressure cooker.
-status: in-progress
+status: complete
 tags:
   - recipes
 ---
@@ -43,7 +43,7 @@ Optional equipment: a potato masher for mashing the bananas; a fine sieve for si
 ## Instructions
 
 1. **Prepare Dry Ingredients**
-: In a large mixing bowl, mix 2 cups of all purpose flour, 1 teaspoon of baking soda, 1 teaspoon of baking powder, 1/4 teaspoon Chinese five-spice powder, and 1 teaspoon of ground cinnamon.
+: In a large mixing bowl, mix 2 cups of all purpose flour, 1/3 teaspoon of salt, 1 teaspoon of baking soda, 1 teaspoon of baking powder, 1/4 teaspoon Chinese five-spice powder, and 1 teaspoon of ground cinnamon.
     * *Optional*: sift the dry ingredients through a mesh strainer for easier mixing.
 2. **Prepare Banana Carrot Mixture**
 : In a small mixing bowl, mash the overripe bananas. Coarsely grate the carrot into strips and add it to the bananas. Mix in 2 beaten eggs and 2 tsp of maple syrup.
@@ -57,7 +57,7 @@ Optional equipment: a potato masher for mashing the bananas; a fine sieve for si
 5. **Pressure Cook Banana Carrot Cake**
 : Pour the banana carrot batter into the lined springform pan. Tap the pan against the counter to relieve some trapped air pockets. Cover the top of the pan with aluminum foil.
     * Add 1 cup of cold water into the Instant Pot. Place the pan on top of the trivet and place them in the Instant Pot.
-    * Close the lid, turn the knob to the sealing position. Pressure cook at high pressure for 60 minutes with a 15 minute natural release. Turn the knob to the venting position and open the lid. Carefully remove the aluminum foil from the pan and close the lid, pressure cooking on high pressure for an additional 10 minutes. Vent and remove the pan from the Instant Pot.
+    * Close the lid, turn the knob to the sealing position. Pressure cook at high pressure for 60 minutes. Once the 60 minute cook time is finished, Quick release the Instant Pot. Carefully remove the aluminum foil from the pan and close the lid, pressure cooking on high pressure for an additional 10 minutes. Allow the instant pot to naturally release this time before removing the pan from the Instant Pot.
 6: **Chill Banana Bread**
 : Allow the banana bread to cool down to lukewarm/room temperature (approximately 1 hour) before removing from the springform pan. Release this delicious, moist banana carrot bread. Cut into 12-16 slices and enjoy!
 

@@ -217,3 +217,18 @@ Before, where my four laptop feet once rested against the table, now the bottom 
 I've ordered a new battery, but Amazon's reduced capacity means that it would arrive in early May (est. May 12th).
 So much of my productivity depends on reliable access to technology.
 Having these laptop issues is a major source of recent anxiety.
+
+### Week 17: Mon, Apr 20 - Sun, Apr 26
+
+I really enjoy having the todo-list as a fallback, even if I don't use it with careful intention.
+When there are long running tasks (that recur weekly, for instance) it imposes a much needed sense of routine and order that I find missing in my life, especially since the 'norm' of post self-isolation has not fully settled in yet.
+I am thankful that I have kombucha that I need to make every two weeks.
+I am grateful that I have structured finances and some assets that I need to manage each Monday.
+I appreciate that  the PhysioNet 2020 CinC abstract deadline is Friday, May 1st.
+
+As an aside, this week I've rediscovered Factorio- which has consumed far too much of my life.
+I need to show a little bit more restraint when playing that game, perhaps setting more strict timers (limiting myself to 2 hours per day at most, pending the task list).
+Additionally, I found myself stuck in this mental loop.
+> To choose to do nothing is also a choice, which means you cannot truly do nothing
+
+I will complete the abstract, send it off for revision, and work on the `opt` web application this week.
