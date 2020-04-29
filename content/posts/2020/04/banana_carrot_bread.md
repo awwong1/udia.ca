@@ -31,7 +31,7 @@ Optional equipment: a potato masher for mashing the bananas; a fine sieve for si
 - **2 cups (280g) all purpose flour**
 - **1/3 teaspoon (1.8g) salt**, [Windsor iodized table salt](http://windsorsalt.com/products/table-salt-and-household-salt/)
 - **1 teaspoon (6g) baking soda**
-- **1 teaspooon (4g) baking powder**
+- **1 teaspoon (4g) baking powder**
 - **1/4 teaspoon (0.8g) Chinese five-spice powder**, sub ground nutmeg
 - **1 teaspoon (3g) ground cinnamon**
 - **1/4 cup (60g) unsalted butter**, room temperature
@@ -58,7 +58,7 @@ Optional equipment: a potato masher for mashing the bananas; a fine sieve for si
 : Pour the banana carrot batter into the lined springform pan. Tap the pan against the counter to relieve some trapped air pockets. Cover the top of the pan with aluminum foil.
     * Add 1 cup of cold water into the Instant Pot. Place the pan on top of the trivet and place them in the Instant Pot.
     * Close the lid, turn the knob to the sealing position. Pressure cook at high pressure for 60 minutes. Once the 60 minute cook time is finished, Quick release the Instant Pot. Carefully remove the aluminum foil from the pan and close the lid, pressure cooking on high pressure for an additional 10 minutes. Allow the instant pot to naturally release this time before removing the pan from the Instant Pot.
-6: **Chill Banana Bread**
+6. **Chill Banana Bread**
 : Allow the banana bread to cool down to lukewarm/room temperature (approximately 1 hour) before removing from the springform pan. Release this delicious, moist banana carrot bread. Cut into 12-16 slices and enjoy!
 
 ## Notes
