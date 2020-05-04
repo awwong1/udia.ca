@@ -232,3 +232,23 @@ Additionally, I found myself stuck in this mental loop.
 > To choose to do nothing is also a choice, which means you cannot truly do nothing
 
 I will complete the abstract, send it off for revision, and work on the `opt` web application this week.
+
+### Week 18: Mon, Apr 27 - Sun, May 3
+
+Despite making progress in the ECG classification research problem, I've come to realize a few disappointing facets of my research journey.
+I am hitting this wall now of seeing marginal improvements with my classification model, despite adding in various new manual feature extraction techniques.
+I am using traditional signal feature extraction approaches and appear to be hitting a bottleneck of sorts- my supervisor and my PhD colleague have different opinions on the usefulness of hyperparameter search.
+My supervisor believes it to be a promising next step, while the PhD colleague insists that we are missing some silver bullet of feature extraction/signal representation that will improve performance.
+Myself- I see value in both, and it is a toss-up, I do think that setting up some AutoML/hyperparameter tuning experiment using random/genetic search would yield more long-term potential.
+
+This Sunday (May 4th), I've hit a bit of a mental and emotional pain point.
+I watched the DeepMind documentary on AlphaGo, the reinforcement learning program that defeated the top Go player in the world 4 games to 1.
+I was once again reminded that the start of my research journey was not fueled by maximizing an score on some classification challenge, but to explore the fundamental inner workings of deep neural networks and how a self-learning agent can be used to improve itself over time.
+Although I think it is too late for me to switch my research gears again, I feel as if I need to make some more space for this learning- that it is inexcusable for me not to pursue this given the time and space gifted to me from the COVID-19 pandemic.
+
+I have made [small improvements to `opt`](https://github.com/awwong1/opt), namely adding in some stubs for live view user authentication and Create/Read/Update/Delete.
+One blocker is that Gigalixir's free plan, which I graciously use to deploy a prototype version of my application, does not support postgresql `citext` extension for case insensitive text datatypes.
+
+This week, I aim to have an AutoML experiment running for ECG hyperparameter selection per classification label.
+I also aim to add in the [Topological Data Analysis Arrhythmia Detection](https://arxiv.org/abs/1906.05795) features, even though I am not using deep neural networks in my approach.
+I strongly want to resume my Reinforcement Learning journey by continuing where I left off in the [Coursera lectures](https://www.coursera.org/learn/fundamentals-of-reinforcement-learning/).
