@@ -3,7 +3,7 @@ title: "Bruce Lee, Daily Success Creed"
 date: 2020-04-13T19:51:03-06:00
 draft: false
 description: Potent excerpts from Bruce Lee's 1968 pocketbook.
-status: finished
+status: complete
 tags:
   - personal
 ---
