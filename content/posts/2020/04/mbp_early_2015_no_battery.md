@@ -110,3 +110,8 @@ These settings are valid for the current session and will revert back to default
 ## Use Airplane Mode
 
 Whenever possible, avoid using wireless communication methods (WiFi, Bluetooth) and opt for the wired connection alternative.
+
+## Minimize Ambient Temperature
+
+Even if the cpu clock speed is limited, if the surrounding temperature is high, there is a higher probability that the laptop will sporadically shut off.
+My hypothesis is that there is not enough available power to run the fans at high speed. The MacBook Pro relies heavily on passive cooling through the metal case underbody, so using an externally powered laptop cooling fan may be prudent.

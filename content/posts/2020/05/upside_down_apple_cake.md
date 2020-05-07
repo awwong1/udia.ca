@@ -12,6 +12,14 @@ tags:
 
 This recipe was modified from ["The Instant Pot Bible", by Bruce Weinstein and Mark Scarabrough](https://recipes.instantpot.com/author/theinstantpotbible/). I reduced the sugar content and replaced the vanilla extract with maple syrup.
 
+{{< figure 
+  src="https://swift-yeg.cloud.cybera.ca:8080/v1/AUTH_e3b719b87453492086f32f5a66c427cf/media/2020/05/04/upside_down_apple_maple_cake.jpg"
+  alt="Upside-Down Apple Maple Cake, finished product."
+  link="//media.udia.ca/2020/05/04/upside_down_apple_maple_cake.jpg"
+  title="Upside-Down Apple Maple Cake, finished product."
+  caption="This picture was taken while cooling, after removing the cake from the souffle dish."
+>}}
+
 | Metric             | Value             |
 |--------------------|-------------------|
 | Preparation Time   | 30 minutes        |
