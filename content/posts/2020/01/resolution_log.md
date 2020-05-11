@@ -251,4 +251,20 @@ One blocker is that Gigalixir's free plan, which I graciously use to deploy a pr
 
 This week, I aim to have an AutoML experiment running for ECG hyperparameter selection per classification label.
 I also aim to add in the [Topological Data Analysis Arrhythmia Detection](https://arxiv.org/abs/1906.05795) features, even though I am not using deep neural networks in my approach.
-I strongly want to resume my Reinforcement Learning journey by continuing where I left off in the [Coursera lectures](https://www.coursera.org/learn/fundamentals-of-reinforcement-learning/).
+I strongly want to resume my Reinforcement Learning (RL) journey by continuing where I left off in the [Coursera lectures](https://www.coursera.org/learn/fundamentals-of-reinforcement-learning/).
+
+## May
+
+### Week 19: Mon, May 4 - Sun, May 10
+
+I've setup all the necessary feature extraction and parameter passing meta to enable a full AutoML experiment using [microsoft/nni](https://github.com/microsoft/nni).
+Unfortunately, despite searching for three full days (3 days of non-stop experiment running), the hyperparameter search seems to give only a minor improvement to what I already had prior to the search.
+The only thing that's concrete is that [XGBoost's](https://xgboost.ai/) `dart` booster seems to give better results than `gbtree`.
+Other tree parameters, like `max_depth`, `learning_rate`, and `gamma`, still vary a lot with no statistically significant findings.
+The amount of effort required to port over prior work's feature extraction instructions was non-negligible and consumed the majority of my productive time this week.
+
+I watched a few lecture videos of RL but did not finish a week's worth of material like I had originally anticipated.
+I also did not work on my Phoenix framework web application.
+The tasks list has been kept to a minor flow of maintenance tasks.
+
+Because the official phase of the Physionet classification challenge begins this week, I will be continue working on improvements for ECG feature extraction and classification.
