@@ -3,7 +3,7 @@ title: "No Battery Adventures using a MacBook Pro 13 (Early 2015)"
 date: 2020-04-21T08:03:46-06:00
 draft: false
 description: Subtlties in using a MacBook Pro with a removed battery. 
-status: in-progress
+status: complete
 tags:
   - personal
   - linux
@@ -115,3 +115,74 @@ Whenever possible, avoid using wireless communication methods (WiFi, Bluetooth) 
 
 Even if the cpu clock speed is limited, if the surrounding temperature is high, there is a higher probability that the laptop will sporadically shut off.
 My hypothesis is that there is not enough available power to run the fans at high speed. The MacBook Pro relies heavily on passive cooling through the metal case underbody, so using an externally powered laptop cooling fan may be prudent.
+
+# Reinstalling the Battery
+
+Although the physical process of installing the battery hardware was straight forward, there were additional issues trying to get the laptop battery detected by my operating system.
+The following steps were performed to get my laptop back into a usable state, beginning with the laptop powered off and the battery freshly installed.
+
+1. Connect the charger/power adapter to the MacBook. Wait until the adapter's amber light becomes green, indicating that the battery is fully charged.
+2. Reset the system management controller (SMC) by pressing and holding `Shift` + `Control` + `Option (Alt)` + `Power Button` for at least 10 seconds. The SMC will indicate that it has been reset if the light on the magsafe connector blinks. Immediately transition to the next step to avoid having the laptop start, although if it does start simply power it off.
+3. Reset the nonvolatile random-access memory (NVRAM) and parameter ram (PRAM) by pressing and holding `Option (Alt)` + `Command` + `P` + `R` for at least 20 seconds. The startup sound should chime, the keys may be released after the second startup sound.
+
+It was at this point that I tried to boot into my Debian OS, but my battery was not recognized (despite the laptop functioning without the adapter plugged in).
+I repeated the SMC and NVRAM/PRAM reset steps before booting into OSX Recovery Mode by holding down `Command` + `R` during start up.
+After booting into recovery mode, the laptop could detect the battery and I was satisfied that the hardware installation was correct.
+Unfortunately, after another reboot, the laptop was unable to boot into Debian, showing an error indicating no startup disks were present.
+
+## Startup Boot Repair
+
+To repair the laptop without a hard reinstall of the operating system, I created an [Ubuntu 20.04 LTS](https://ubuntu.com/download/desktop) live-usb on a separate device. I used the [`boot-repair`](https://launchpad.net/~yannubuntu/+archive/ubuntu/boot-repair) tool to fix my laptop's boot issues.
+
+1. Plug the Ubuntu bootable USB into the MacBook. Press and hold `Option (Alt)` and select the EFI-Boot option with the external media symbol. When prompted with the Ubuntu installation screen, choose to `Try Ubuntu`.
+2. Once internet connection has been established, install the `boot-repair` tool:
+    ```bash
+    sudo su
+    add-apt-repository ppa:yannubuntu/boot-repair
+    apt-get update
+    apt-get install -y boot-repair 
+    boot-repair
+    ```
+3. If LUKS encrypted partitions are used:
+    1. Ensure that the required packages are available on the live linux image.
+        ```bash
+        sudo apt-get update
+        sudo apt-get install lvm2 cryptsetup
+        ```
+    2. Probe the required module and determine the encrypted drive.
+        ```bash
+        sudo modprobe dm-crypt
+        sudo fdisk -l
+        ```
+    3. Mount the encrypted volume (in my case `/dev/sda3`):
+        ```bash
+        sudo cryptsetup luksOpen /dev/sde3 myvolume
+        ```
+    4. Ensure that the system is aware of the LVM entities.
+        ```bash
+        sudo vgscan
+        sudo vgchange -ay
+        ```
+    5. Mount all remaining partitions.
+        ```bash
+        mkdir boot_efi && mount /dev/sda1 boot_efi
+        mkdir boot && mount /dev/sda2 boot
+        ```
+4. Run `boot-repair`. Without changing any settings, follow the prompted instructions and restart after the tool completes.
+
+You should now have a functional laptop again with the battery being detected by the operating system.
+
+To promote battery health and extend its shelf life, be sure to properly calibrate your laptop battery.
+Battery calibration is defined by charging until 100%, removing the power adapter and using the laptop normally until it powers off, then charging it up to 100% again.
+The manufacturer's pamphlet suggests performing this step every two/three months.
+
+# Remarks
+
+It was disappointing to see how complicated this process became.
+I do not expect the average user to be able to be able to remove a swollen lithium ion battery from the laptop, given the copious amounts of adhesive sticking the battery to the aluminum body frame.
+Additionally, the usage of the crippled laptop while waiting for the new battery to arrive remained a difficult experience.
+Even with manual throttling of CPU clock frequency, ambient temperatures and other energy demanding activities also meant that the laptop was prone to random power off events.
+Installing the battery was not a simple plug-and-play event, requiring additional steps to enable battery recognition and neededing a boot repair step (possibly due to the MacOSX recovery mode step, unclear if boot corruption was caused by NVRAM/PRAM/SMC reset steps).
+
+It is unlikely that I will purchase another MacBook device in the future.
+I do not have solid recommendations for laptop hardware purchases, with only a mediocre experience with the Dell XPS series.

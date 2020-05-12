@@ -91,3 +91,5 @@ Temporary Items
 resources/_gen/*
 themes/candor-dev
 public/*
+media/
+Dockerfile
