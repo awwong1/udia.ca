@@ -183,7 +183,7 @@ It was disappointing to see how complicated this process became.
 I do not expect the average user to be able to be able to remove a swollen lithium ion battery from the laptop, given the copious amounts of adhesive sticking the battery to the aluminum body frame.
 Additionally, the usage of the crippled laptop while waiting for the new battery to arrive remained a difficult experience.
 Even with manual throttling of CPU clock frequency, ambient temperatures and other energy demanding activities also meant that the laptop was prone to random power off events.
-Installing the battery was not a simple plug-and-play event, requiring additional steps to enable battery recognition and neededing a boot repair step (possibly due to the MacOSX recovery mode step, unclear if boot corruption was caused by NVRAM/PRAM/SMC reset steps).
+Installing the battery was not a simple plug-and-play event, requiring additional steps to enable battery recognition and needing a boot repair step (possibly due to the MacOSX recovery mode step, unclear if boot corruption was caused by NVRAM/PRAM/SMC reset steps).
 
 It is unlikely that I will purchase another MacBook device in the future.
 I do not have solid recommendations for laptop hardware purchases, with only a mediocre experience with the Dell XPS series.
