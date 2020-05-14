@@ -156,7 +156,7 @@ To repair the laptop without a hard reinstall of the operating system, I created
         ```
     3. Mount the encrypted volume (in my case `/dev/sda3`):
         ```bash
-        sudo cryptsetup luksOpen /dev/sde3 myvolume
+        sudo cryptsetup luksOpen /dev/sda3 myvolume
         ```
     4. Ensure that the system is aware of the LVM entities.
         ```bash
@@ -169,6 +169,7 @@ To repair the laptop without a hard reinstall of the operating system, I created
         mkdir boot && mount /dev/sda2 boot
         ```
 4. Run `boot-repair`. Without changing any settings, follow the prompted instructions and restart after the tool completes.
+    * Note: If additional problems persist, it may be necessary to repeat the above steps, disabling Secure Boot.
 
 You should now have a functional laptop again with the battery being detected by the operating system.
 
