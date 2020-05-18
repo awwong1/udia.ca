@@ -268,3 +268,12 @@ I also did not work on my Phoenix framework web application.
 The tasks list has been kept to a minor flow of maintenance tasks.
 
 Because the official phase of the Physionet classification challenge begins this week, I will be continue working on improvements for ECG feature extraction and classification.
+
+### Week 20: Mon, May 11 - Sun May 17
+
+I have moved away from XGBoost classification of ECG records back to deep learning approaches using [PyTorch](https://pytorch.org/) and [PyTorch Lightning](https://github.com/PyTorchLightning/pytorch-lightning).
+Otherwise this week has been fairly uneventful in terms of research.
+I've setup a workflow for streaming my desktop environment to various streaming services through [Open Broadcaster Software (OBS)](https://obsproject.com/), in addition to recompiling [nginx](https://nginx.org/) on my home server to support [RTMP](https://en.wikipedia.org/wiki/Real-Time_Messaging_Protocol) video.
+
+This week, I will review the updated dataset released by the Physionet Challenge organizers, as the last week's submission had an error in the data files.
+Additionally, I will continue with the classification/transformers architecture implementation.
