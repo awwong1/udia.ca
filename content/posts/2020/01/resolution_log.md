@@ -269,7 +269,7 @@ The tasks list has been kept to a minor flow of maintenance tasks.
 
 Because the official phase of the Physionet classification challenge begins this week, I will be continue working on improvements for ECG feature extraction and classification.
 
-### Week 20: Mon, May 11 - Sun May 17
+### Week 20: Mon, May 11 - Sun, May 17
 
 I have moved away from XGBoost classification of ECG records back to deep learning approaches using [PyTorch](https://pytorch.org/) and [PyTorch Lightning](https://github.com/PyTorchLightning/pytorch-lightning).
 Otherwise this week has been fairly uneventful in terms of research.
@@ -277,3 +277,16 @@ I've setup a workflow for streaming my desktop environment to various streaming 
 
 This week, I will review the updated dataset released by the Physionet Challenge organizers, as the last week's submission had an error in the data files.
 Additionally, I will continue with the classification/transformers architecture implementation.
+
+### Week 21: Mon, May 18 - Sun, May 24
+
+I have setup a working multi-label classification PyTorch lightning experiment such that the thresholds are searched for optimizing over the F-measure.
+The loss is Binary Cross Entropy with Logits.
+Forward pass during evaluation calculates probabilities using the Sigmoid function.
+Treating the multi-label classification problem as a set of binary classifiers was very unstable, either resulting in all negative classes, or frozen to outputting a single value despite changing inputs.
+This is not resolved by weighting the loss function according to the imbalanced dataset.
+
+I am still investigating the use of the transformer model architecture for deep learning.
+Potential new research direction? Lead classification of signal into 12-lead ecg categories? Forcasting other lead signals given a subset of the 12 leads in ECG?
+
+I played way too much Factorio this week.
