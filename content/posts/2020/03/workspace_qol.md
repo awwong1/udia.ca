@@ -11,10 +11,11 @@ tags:
 
 The following are some quick lessons learned from setting up a Linux developer laptop from scratch. These points are my own personal preferences, intended to be a reference for when I have to do this again.
 
-# Operating System, Desktop Environment, Hardware
+# Personal Computing Operating System, Desktop Environment, Hardware
 
 I really enjoy using [Debian](https://www.debian.org/) with [KDE Plasma](https://kde.org/).
-Currently, I am using an MacBook Pro (13-inch, Early 2015).
+My personal computing devices use the Testing/Unstable distributions.
+Currently, I am using a MacBook Pro (13-inch, Early 2015) as my hardware.
 
 Aside: I have had a relatively positive experience with the Dell XPS13 9360. Unfortunately a capacitor popped rendering the screen unusable. That laptop served me for roughly two years (May 2018 - Mar 2020), so I am slightly disappointed with its durability/longevity.
 

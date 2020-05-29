@@ -79,6 +79,15 @@ cat ~/.ssh/id_ed25519.pub
 # paste into ~/.ssh/authorized_keys
 ```
 
+The `authorized_keys` file should belong to the user, with user read and write permissions only.
+
+```bash
+ls -alh ~/.ssh
+```
+```text
+-rw-------  1 udia udia  202 Mar 23 18:06 authorized_keys
+```
+
 To ensure that the key files are kept permanently, they can be added in the `~/.ssh/config` file. It is a good idea to make the keys specific to the host, otherwise all keys will be tried against the server each time an ssh connection is attempted.
 
 ```text
