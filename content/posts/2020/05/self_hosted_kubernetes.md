@@ -395,3 +395,23 @@ I found two GitHub issues of users experiencing the same issue that I am current
 Both issues are closed by bots due to 30 days of inactivity and no actionable suggestions for the issue opener.
 Despair is starting to kick in, so I think I'll try taking a look at this with a fresh perspective another time.
 
+> Boneheaded mistake! Needed to run `sudo journalctl -xeu kubelet`.
+
+```bash
+sudo journalctl -xeu kubelet | less
+```
+```text
+May 30 06:09:25 helium kubelet[2563]: E0530 06:09:25.316833    2563 kubelet.go:2267] node "helium" not found
+May 30 06:09:25 helium kubelet[2563]: E0530 06:09:25.417082    2563 kubelet.go:2267] node "helium" not found
+May 30 06:09:25 helium kubelet[2563]: I0530 06:09:25.417558    2563 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+May 30 06:09:25 helium kubelet[2563]: I0530 06:09:25.418057    2563 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+May 30 06:09:25 helium kubelet[2563]: E0530 06:09:25.481167    2563 remote_runtime.go:105] RunPodSandbox from runtime service failed: rpc error: code = Unknown desc = cri-o configured with systemd cgroup manager, but did not receive slice as parent: /kubepods/burstable/pod27338bfe3d038f59a91668505aa727cf
+May 30 06:09:25 helium kubelet[2563]: E0530 06:09:25.481312    2563 kuberuntime_sandbox.go:68] CreatePodSandbox for pod "kube-apiserver-helium_kube-system(27338bfe3d038f59a91668505aa727cf)" failed: rpc error: code = Unknown desc = cri-o configured with systemd cgroup manager, but did not receive slice as parent: /kubepods/burstable/pod27338bfe3d038f59a91668505aa727cf
+May 30 06:09:25 helium kubelet[2563]: E0530 06:09:25.481376    2563 kuberuntime_manager.go:727] createPodSandbox for pod "kube-apiserver-helium_kube-system(27338bfe3d038f59a91668505aa727cf)" failed: rpc error: code = Unknown desc = cri-o configured with systemd cgroup manager, but did not receive slice as parent: /kubepods/burstable/pod27338bfe3d038f59a91668505aa727cf
+May 30 06:09:25 helium kubelet[2563]: E0530 06:09:25.481480    2563 pod_workers.go:191] Error syncing pod 27338bfe3d038f59a91668505aa727cf ("kube-apiserver-helium_kube-system(27338bfe3d038f59a91668505aa727cf)"), skipping: failed to "CreatePodSandbox" for "kube-apiserver-helium_kube-system(27338bfe3d038f59a91668505aa727cf)" with CreatePodSandboxError: "CreatePodSandbox for pod \"kube-apiserver-helium_kube-system(27338bfe3d038f59a91668505aa727cf)\" failed: rpc error: code = Unknown desc = cri-o configured with systemd cgroup manager, but did not receive slice as parent: /kubepods/burstable/pod27338bfe3d038f59a91668505aa727cf"
+May 30 06:09:25 helium kubelet[2563]: E0530 06:09:25.490693    2563 remote_runtime.go:105] RunPodSandbox from runtime service failed: rpc error: code = Unknown desc = cri-o configured with systemd cgroup manager, but did not receive slice as parent: /kubepods/burstable/poda8caea92c80c24c844216eb1d68fe417
+May 30 06:09:25 helium kubelet[2563]: E0530 06:09:25.490766    2563 kuberuntime_sandbox.go:68] CreatePodSandbox for pod "kube-scheduler-helium_kube-system(a8caea92c80c24c844216eb1d68fe417)" failed: rpc error: code = Unknown desc = cri-o configured with systemd cgroup manager, but did not receive slice as parent: /kubepods/burstable/poda8caea92c80c24c844216eb1d68fe417
+May 30 06:09:25 helium kubelet[2563]: E0530 06:09:25.490791    2563 kuberuntime_manager.go:727] createPodSandbox for pod "kube-scheduler-helium_kube-system(a8caea92c80c24c844216eb1d68fe417)" failed: rpc error: code = Unknown desc = cri-o configured with systemd cgroup manager, but did not receive slice as parent: /kubepods/burstable/poda8caea92c80c24c844216eb1d68fe417
+May 30 06:09:25 helium kubelet[2563]: E0530 06:09:25.490871    2563 pod_workers.go:191] Error syncing pod a8caea92c80c24c844216eb1d68fe417 ("kube-scheduler-helium_kube-system(a8caea92c80c24c844216eb1d68fe417)"), skipping: failed to "CreatePodSandbox" for "kube-scheduler-helium_kube-system(a8caea92c80c24c844216eb1d68fe417)" with CreatePodSandboxError: "CreatePodSandbox for pod \"kube-scheduler-helium_kube-system(a8caea92c80c24c844216eb1d68fe417)\" failed: rpc error: code = Unknown desc = cri-o configured with systemd cgroup manager, but did not receive slice as parent: /kubepods/burstable/poda8caea92c80c24c844216eb1d68fe417"
+May 30 06:09:25 helium kubelet[2563]: E0530 06:09:25.517320    2563 kubelet.go:2267] node "helium" not found
+```
