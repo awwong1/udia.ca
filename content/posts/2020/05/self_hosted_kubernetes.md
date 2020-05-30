@@ -170,7 +170,7 @@ The heading implies that this only needs to be done for the control plane node, 
 ```bash
 # enable and start the kubelet service
 sudo systemctl enable kubelet
-sudo systemctl enable start
+sudo systemctl start kubelet
 
 # this file does not exist?
 ls /var/lib/kubelet/
