@@ -415,3 +415,47 @@ May 30 06:09:25 helium kubelet[2563]: E0530 06:09:25.490791    2563 kuberuntime_
 May 30 06:09:25 helium kubelet[2563]: E0530 06:09:25.490871    2563 pod_workers.go:191] Error syncing pod a8caea92c80c24c844216eb1d68fe417 ("kube-scheduler-helium_kube-system(a8caea92c80c24c844216eb1d68fe417)"), skipping: failed to "CreatePodSandbox" for "kube-scheduler-helium_kube-system(a8caea92c80c24c844216eb1d68fe417)" with CreatePodSandboxError: "CreatePodSandbox for pod \"kube-scheduler-helium_kube-system(a8caea92c80c24c844216eb1d68fe417)\" failed: rpc error: code = Unknown desc = cri-o configured with systemd cgroup manager, but did not receive slice as parent: /kubepods/burstable/poda8caea92c80c24c844216eb1d68fe417"
 May 30 06:09:25 helium kubelet[2563]: E0530 06:09:25.517320    2563 kubelet.go:2267] node "helium" not found
 ```
+
+According to [crio issue 896](https://github.com/cri-o/cri-o/issues/896), I need to put `--cgroup-driver=systemd` to the `/var/lib/kubelet/kubeadm-flags.env` as `KUBELET_KUBEADM_ARGS` and restart my kubelet service.
+
+```bash
+cat /var/lib/kubelet/kubeadm-flags.env 
+```
+```text
+KUBELET_KUBEADM_ARGS="--container-runtime=remote --container-runtime-endpoint=unix:///var/run/crio/crio.sock --resolv-conf=/run/systemd/resolve/resolv.conf --cgroup-driver=systemd"
+```
+
+Additionally, I should add the line `cgroup-manager: systemd` to `/etc/crictl.yaml`.
+
+```bash
+cat /etc/crictl.yaml
+```
+```text
+runtime-endpoint: unix:///var/run/crio/crio.sock
+cgroup-manager: systemd
+```
+
+## Rerun after setting crictl.yaml and kubeadm-flags
+
+```bash
+sudo kubeadm init \
+  --pod-network-cidr=192.168.0.0/16 \
+  --control-plane-endpoint=2605:fd00:4:1001:f816:3eff:fe63:6e8f \
+  --apiserver-advertise-address=2605:fd00:4:1001:f816:3eff:fe63:6e8f \
+  --cri-socket=unix:///var/run/crio/crio.sock
+```
+
+Still error'd out, same errors when inspecting kubelet output.
+
+```bash
+sudo journalctl -xeu kubelet | less
+```
+```text
+Jun 01 01:31:47 helium kubelet[9371]: I0601 01:31:47.306631    9371 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Jun 01 01:31:47 helium kubelet[9371]: E0601 01:31:47.346049    9371 kubelet.go:2267] node "helium" not found
+Jun 01 01:31:47 helium kubelet[9371]: E0601 01:31:47.356789    9371 remote_runtime.go:105] RunPodSandbox from runtime service failed: rpc error: code = Unknown desc = cri-o configured with systemd cgroup manager, but did not receive slice as parent: /kubepods/besteffort/pod79469814fc6e5900fc5dbff6869492a8
+Jun 01 01:31:47 helium kubelet[9371]: E0601 01:31:47.356905    9371 kuberuntime_sandbox.go:68] CreatePodSandbox for pod "etcd-helium_kube-system(79469814fc6e5900fc5dbff6869492a8)" failed: rpc error: code = Unknown desc = cri-o configured with systemd cgroup manager, but did not receive slice as parent: /kubepods/besteffort/pod79469814fc6e5900fc5dbff6869492a8
+Jun 01 01:31:47 helium kubelet[9371]: E0601 01:31:47.356983    9371 kuberuntime_manager.go:727] createPodSandbox for pod "etcd-helium_kube-system(79469814fc6e5900fc5dbff6869492a8)" failed: rpc error: code = Unknown desc = cri-o configured with systemd cgroup manager, but did not receive slice as parent: /kubepods/besteffort/pod79469814fc6e5900fc5dbff6869492a8
+Jun 01 01:31:47 helium kubelet[9371]: E0601 01:31:47.357084    9371 pod_workers.go:191] Error syncing pod 79469814fc6e5900fc5dbff6869492a8 ("etcd-helium_kube-system(79469814fc6e5900fc5dbff6869492a8)"), skipping: failed to "CreatePodSandbox" for "etcd-helium_kube-system(79469814fc6e5900fc5dbff6869492a8)" with CreatePodSandboxError: "CreatePodSandbox for pod \"etcd-helium_kube-system(79469814fc6e5900fc5dbff6869492a8)\" failed: rpc error: code = Unknown desc = cri-o configured with systemd cgroup manager, but did not receive slice as parent: /kubepods/besteffort/pod79469814fc6e5900fc5dbff6869492a8"
+Jun 01 01:31:47 helium kubelet[9371]: E0601 01:31:47.427571    9371 eviction_manager.go:255] eviction manager: failed to get summary stats: failed to get node info: node "helium" not found
+```
