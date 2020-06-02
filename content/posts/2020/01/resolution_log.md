@@ -290,3 +290,13 @@ I am still investigating the use of the transformer model architecture for deep 
 Potential new research direction? Lead classification of signal into 12-lead ecg categories? Forcasting other lead signals given a subset of the 12 leads in ECG?
 
 I played way too much Factorio this week.
+
+### Week 22: Mon May 25 - Sun, May 31
+
+I updated my ECG classification experiments to support an arbitrary number of labels, due to the new task of mapping to ~76 SNOMEDCT codes.
+A lot of churn, due to the changing challenge requirements, meant that some assumptions I made about the machine learning experimental setup are no longer valid.
+I am rerunning the experiments with a larger number of parameters- the intuition is perhaps the transformers and recurrent neural networks are not learning the distribution of the data due to not enough parameters (the SimpleCNN model has over 650k parameters, now the LSTM>Transformer has roughly 250k).
+
+Additional rework of the caching logic needed to occur due to out of memory issues.
+I spent too much time trying to initialize a Kubernetes cluster.
+Most of my issues were due to the CRI-O runtime not playing nicely with default settings.

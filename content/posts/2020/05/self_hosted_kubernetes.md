@@ -34,6 +34,8 @@ I will document my checks, configurations, and issues as I go about this process
 
 > Note: Confusion will be indicated with this visual blockquote. This indicates a step that required backtracking/revision from the reference documentation.
 
+All listed tokensare no longer active as of the publishing of this blog post.
+
 ## Available Resources
 
 I have three virtual machines that I will be using. I have named them `helium`, `lithium`, and `beryllium`.
@@ -459,3 +461,46 @@ Jun 01 01:31:47 helium kubelet[9371]: E0601 01:31:47.356983    9371 kuberuntime_
 Jun 01 01:31:47 helium kubelet[9371]: E0601 01:31:47.357084    9371 pod_workers.go:191] Error syncing pod 79469814fc6e5900fc5dbff6869492a8 ("etcd-helium_kube-system(79469814fc6e5900fc5dbff6869492a8)"), skipping: failed to "CreatePodSandbox" for "etcd-helium_kube-system(79469814fc6e5900fc5dbff6869492a8)" with CreatePodSandboxError: "CreatePodSandbox for pod \"etcd-helium_kube-system(79469814fc6e5900fc5dbff6869492a8)\" failed: rpc error: code = Unknown desc = cri-o configured with systemd cgroup manager, but did not receive slice as parent: /kubepods/besteffort/pod79469814fc6e5900fc5dbff6869492a8"
 Jun 01 01:31:47 helium kubelet[9371]: E0601 01:31:47.427571    9371 eviction_manager.go:255] eviction manager: failed to get summary stats: failed to get node info: node "helium" not found
 ```
+
+### Remove CRI-O, use container.d instead
+
+1. Run `kubeadm reset`, then remove `CRI-O`. Install `containerd`.
+2. Rename `/etc/sysctl.d/k8s.conf` to `/etc/sysctl.d/60-k8s.conf`
+
+## Rerun with container.d runtime
+
+```bash
+sudo kubeadm init \
+  --pod-network-cidr=192.168.0.0/16 \
+  --control-plane-endpoint=2605:fd00:4:1001:f816:3eff:fe63:6e8f \
+  --apiserver-advertise-address=2605:fd00:4:1001:f816:3eff:fe63:6e8f \
+  --cri-socket=unix:///run/containerd/containerd.sock
+```
+```text
+Your Kubernetes control-plane has initialized successfully!
+
+To start using your cluster, you need to run the following as a regular user:
+
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+You should now deploy a pod network to the cluster.
+Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
+  https://kubernetes.io/docs/concepts/cluster-administration/addons/
+
+You can now join any number of control-plane nodes by copying certificate authorities
+and service account keys on each node and then running the following as root:
+
+  kubeadm join [2605:fd00:4:1001:f816:3eff:fe63:6e8f]:6443 --token q9ablm.5qcd7hzmhtwjgbfk \
+    --discovery-token-ca-cert-hash sha256:b1f2c2cbcf6372c792c64ace336690dbd49c70c91951d64f5fc968501b777b11 \
+    --control-plane
+
+Then you can join any number of worker nodes by running the following on each as root:
+
+kubeadm join [2605:fd00:4:1001:f816:3eff:fe63:6e8f]:6443 --token q9ablm.5qcd7hzmhtwjgbfk \
+    --discovery-token-ca-cert-hash sha256:b1f2c2cbcf6372c792c64ace336690dbd49c70c91951d64f5fc968501b777b11
+```
+
+Finally! I guess most of my headache was a poor choice of container runtime, as containerd worked with no issue.
+
