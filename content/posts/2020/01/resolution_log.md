@@ -300,3 +300,13 @@ I am rerunning the experiments with a larger number of parameters- the intuition
 Additional rework of the caching logic needed to occur due to out of memory issues.
 I spent too much time trying to initialize a Kubernetes cluster.
 Most of my issues were due to the CRI-O runtime not playing nicely with default settings.
+
+## June
+
+### Week 23: Mon, Jun 1 - Sun, Jun 7
+
+None of my ECG classification experiments have good results using the transformer architecture, despite lots of hyperparameter search.
+I gave a [Edmonton Python Meetup talk on hyperparameter search frameworks](https://www.youtube.com/watch?v=fv1_5CNgL3s) on Monday, Jun 8th.
+We received notification that our abstract was accepted into CinC 2020, and now I need to figure out a way to incorporate the traditional machine learning approaches with the transformer architectures (that are not working anyways).
+
+Feeling particularly anxious and frustrated about the research lack of progress and abstract not matching current methodology dilemma.
