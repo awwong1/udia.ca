@@ -255,6 +255,8 @@ kubeadm join kube.udia.ca:6443 --token <private_token> \
     --discovery-token-ca-cert-hash sha256:<private_hash>
 ```
 
+## Install Calico
+
 I ran the above steps for my regular user. As a non-sudo user, I installed the Calico pod network.
 
 ```bash
@@ -286,11 +288,20 @@ deployment.apps/calico-kube-controllers created
 serviceaccount/calico-kube-controllers created
 ```
 
+## Add worker nodes
+
 Afterwards, I logged into my two worker virtual machines and ran the join command (as root).
+
+```bash
+# On Beryllium and Lithium
+kubeadm join kube.udia.ca:6443 --token <private_token> \
+    --discovery-token-ca-cert-hash sha256:<private_hash>
+```
 
 I have verified that my cluster is operational.
 
 ```bash
+# On Helium
 kubectl get nodes
 ```
 ```text
@@ -298,4 +309,81 @@ NAME        STATUS   ROLES    AGE     VERSION
 beryllium   Ready    <none>   51s     v1.18.3
 helium      Ready    master   7m14s   v1.18.3
 lithium     Ready    <none>   65s     v1.18.3
+```
+
+# Deploying a Static Site
+
+I will be using my existing site to deploy to my new cluster.
+
+When running `hugo`, a directory containing the public facing production site is available at `public`.
+
+## Creating a Docker Image
+
+I created a `Dockerfile` at the root directory.
+```Dockerfile
+FROM nginx
+EXPOSE 80
+COPY public/ /usr/share/nginx/html
+```
+
+Afterwards, run `docker build . -t udia/udia.ca:blog` to create a docker image.
+This docker image contains the base nginx web server as well as the compiled public facing website.
+
+Verify that this works by running the image locally.
+```bash
+docker run -p 8080:80 udia/udia.ca:blog
+```
+
+Visiting `localhost:8080` should serve your static site.
+
+## Uploading the Image to a Registry
+
+Now that a docker image has been created, we need to upload this image to a registry.
+I will be using [Dockerhub](https://hub.docker.com/), but any registry would work.
+
+```bash
+# within the project root directory
+docker push udia/udia.ca:blog
+```
+
+Visiting [https://hub.docker.com/repository/docker/udia/udia.ca](https://hub.docker.com/repository/docker/udia/udia.ca), I see that a new image has been uploaded.
+
+## Deploying to Kubernetes
+
+### Defining a Pod
+
+A [Kubernetes pod](https://kubernetes.io/docs/concepts/workloads/pods/pod/) is a group of one or more containers (e.g. Docker), with shared network, storage, and a specification for how to run the containers.
+
+Create a file named `blog-deployment.yml` that will be used to create a pod on the cluster.
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: nginx
+  name: udia-ca-blog
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - env:
+          image: udia/udia.ca:blog
+          imagePullPolicy: Always
+          name: blog
+          ports:
+            - containerPort: 80
+```
+
+A deployment can be created by running the following command.
+
+```bash
+kubectl apply -f blog-deployment.yml
 ```

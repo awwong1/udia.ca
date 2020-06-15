@@ -310,3 +310,12 @@ I gave a [Edmonton Python Meetup talk on hyperparameter search frameworks](https
 We received notification that our abstract was accepted into CinC 2020, and now I need to figure out a way to incorporate the traditional machine learning approaches with the transformer architectures (that are not working anyways).
 
 Feeling particularly anxious and frustrated about the research lack of progress and abstract not matching current methodology dilemma.
+
+### Week 24: Mon, Jun 8 - Sun, Jun 14
+
+I began writing up the four page conference paper, not using the deep learning approaches, but instead using gradient boosting tree ensembles on manually engineered features inspired by signal processing and natural language processing domains.
+Additionally, rather than constructing figures for the paper using a image editing program (such as Inkscape), I opted to try out [PlantUML](https://plantuml.com/) and found their state diagrams more than adequate for my needs.
+For generating the PDF from the tex files, [latexmk](https://mg.readthedocs.io/latexmk.html), a package recommended to me by Eddie, replaced my old setup of [Tectonic](https://tectonic-typesetting.github.io/en-US/index.html) and [texlive](https://tug.org/texlive/).
+
+The Physionet challenge organizers released over 40,000 records that require analysis.
+I will do a quick summarization of the data before proceeding with my classification methods (replicating old traditional ML approaches, then continuing to explore the transformer architectures).
