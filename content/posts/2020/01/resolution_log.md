@@ -319,3 +319,11 @@ For generating the PDF from the tex files, [latexmk](https://mg.readthedocs.io/l
 
 The Physionet challenge organizers released over 40,000 records that require analysis.
 I will do a quick summarization of the data before proceeding with my classification methods (replicating old traditional ML approaches, then continuing to explore the transformer architectures).
+
+### Week 25: Mon, Jun 15 - Sun, Jun 21
+
+I've been having some experimental setup issues, now that the number of files within the dataset files have increased.
+These issues include `RuntimeError: received 0 items of ancdata`, which are referenced briefly in closed [PyTorch issues](https://github.com/pytorch/pytorch/issues/973).
+I took a break from resolving this issue, but I suspect it will be resolved after increasing the number of file descriptors.
+My MBP appears to still have the issue with the sporadic shutdown and restarts, despite the new battery and the multiple NVRAM/SRAM resets.
+I purchased for myself a new Lenovo Yoga C740, which will arrive in the mail by the 26th.
