@@ -10,8 +10,6 @@ tags:
   - linux
 ---
 
-**This document is incomplete. (Still need step by step instructions for deploying a static nginx site)**
-
 # Motivation for Kubernetes
 
 [Kubernetes (K8s)](https://kubernetes.io/) is an open-source system designed to manage, scale, and deploy containerized applications.
@@ -387,3 +385,23 @@ A deployment can be created by running the following command.
 ```bash
 kubectl apply -f blog-deployment.yml
 ```
+
+Expose this deployment as a service by running the following command:
+
+```bash
+kubectl expose deployment udia-ca-blog --type=LoadBalancer --port=80
+```
+
+You now have the a static site hosted using Kubernetes.
+
+# Remarks
+
+It was very involved trying to setup Kubernetes to do such a simple task.
+Choosing the incorrect container runtime or pod network addon will cause additional headaches that require specialized knowledge to fix.
+Minor deviations from the default installation path are punishingly difficult to resolve.
+There is [sparse unofficial documentation](https://docs.bitnami.com/tutorials/secure-kubernetes-services-with-ingress-tls-letsencrypt/) and [outdated blog posts](https://runnable.com/blog/how-to-use-lets-encrypt-on-kubernetes) outlining how to setup Kubernetes to use Let's Encrypt for SSL certificates.
+The approach that I have defined needs multiple virtual machines and the docker registry to deploy, making it a more complicated/over-engineered solution for a simple static site.
+
+For the time being, I will remain with a single VM running nginx to handle my static site needs.
+If horizontal scaling is required, I will likely use a DNS load balancer to multiple VMs all hosting the same content.
+Although I do see value in the promise of Kubernetes, for my use case, it is not a solution I currently feel comfortable depending on.
