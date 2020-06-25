@@ -123,8 +123,10 @@ The following devices were detected on the pci busses (output of `lspci`).
 Marked items indicate no further setup required.
 Items not checked required additional configuration before full functionality was available.
 
-- [X] Audio
-    - Working using Linux Kernel 5.4, does not work in Linux Kernel 5.6.
+- [ ] Audio
+    - Speakers working using Linux Kernel 5.4, does not work in Linux Kernel 5.6.
+    - Microphone appears to have an issue. When attempting to conference call, only "Monitor of Built-in Audio Analog Stereo" was available.
+    - Testing using audacity revealed only static noise when recording. However, the static noise was mutable by the laptop hotkey for the microphone.
 - [x] Battery
     - Battery indicator appears in the bottom right corner and shows the charge when not plugged into AC. When plugged into AC, laptop charges.
 - [x] Web Camera
@@ -133,7 +135,7 @@ Items not checked required additional configuration before full functionality wa
     - No adapters available.
 - [x] Touchpad
     - Multi-touch scrolling, tap emulation worked with no issues.
-- [x] Keyboard Hotkeys (Partial)
+- [ ] Keyboard Hotkeys (Partial)
     - Working:
         - Mute `F1`
         - Volume Down `F2`
@@ -154,7 +156,7 @@ Items not checked required additional configuration before full functionality wa
 - [x] USB/USB-C
     - Appears to work with no issues
 - [ ] Fingerprint Scanner
-    - Not supported by fprintd
+    - Not supported by fprintd. Low priority, will likely not use even if supported.
 - [x] Suspend (Suspend to RAM)
     - Ran "Suspend to RAM", screen shuts off. On keyboard event, screen turns back on, lock screen appears.
 - [x] Hibernate (Suspend to Disk)
@@ -270,7 +272,22 @@ keycode 125 release
 ```
 
 The display brightness hotkeys did not show any output when pressed.
+- It appears to be related to [Ubuntu Bug#1872311](https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1872311).
+- A corresponding [discussion post on the Lenovo forums was linked](https://forums.lenovo.com/t5/Ubuntu/Lenovo-Yoga-S740-14IIL-Brightness-hotkeys-not-working-on-Ubuntu-20-04/m-p/5011698), but no solutions were provided.
 
-# Post Install Setup
+**Workaround**: use software controls for display brightness management.
 
-Refer to the [workspace quality of life specification]({{< ref "/posts/2020/03/workspace_qol.md" >}}) for final configuration steps.
+## Built-in Microphone Not Detected
+
+This appears to be related to [Ubuntu Bug#1845797](https://bugs.launchpad.net/ubuntu/+source/alsa-driver/+bug/1845797).
+
+**Workaround**: use an external USB microphone.
+
+# Post Install Remarks, Setup
+
+The setup was non-trivial and required lots of fine tuning and troubleshooting.
+These issues are relatively minor with acceptable workarounds.
+
+That being said, I would not recommend using linux on this hardware until these issues are patched.
+
+Refer to the [workspace quality of life specification]({{< ref "/posts/2020/03/workspace_qol.md" >}}) for user and system preferences.
