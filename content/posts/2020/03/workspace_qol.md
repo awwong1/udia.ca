@@ -15,27 +15,38 @@ The following are some quick lessons learned from setting up a Linux developer l
 
 I really enjoy using [Debian](https://www.debian.org/) with [KDE Plasma](https://kde.org/).
 My personal computing devices use the Testing/Unstable distributions.
-Currently, I am using a MacBook Pro (13-inch, Early 2015) as my hardware.
+~~Currently, I am using a MacBook Pro (13-inch, Early 2015) as my hardware.~~
+I am in the process of switching my daily driver to a Lenovo C740, running Debian Buster.
 
 Aside: I have had a relatively positive experience with the Dell XPS13 9360. Unfortunately a capacitor popped rendering the screen unusable. That laptop served me for roughly two years (May 2018 - Mar 2020), so I am slightly disappointed with its durability/longevity.
 
-## KDE Additional Setup
+## KDE Additional Setup (System Settings)
 
-* `Virtual Desktops`: Number of desktops: 4.
-    * `Desktop Switching`
+* Desktop Behavior > Virtual Desktops > 
+    * Desktops > Layout > Number of desktops: `4`
+    * Switching > Desktop Switching
         * Switch One Desktop to the Left: `Meta+Shift+Left`
         * Switch One Desktop to the Right: `Meta+Shift+Right`
-    * `Global Shortcuts/System Settings Module`
+        * Desktop Switch On-Screen Display: `True`
+            * Duration: `500 msec`
+            * Show desktop layout indicators: `True`
+
+
+* Hardware > Input Devices
+    * Taps > Mouse Click Emulation: `True`
+    * Scrolling > Reverse scrolling: `True`
+
+* Shortcuts >
+    * Global Shortcuts > System Settings
         * Window One Desktop to the Left: `Meta+Alt+Shift+Left`
         * Window One Desktop to the Right: `Meta+Alt+Shift+Right`
-
-* System Settings > Custom Shortcuts > Screenshots
-    * Take Full Screen Screenshot: `Meta+Shift+3`
-    * Take Rectangular Region Screenshot `Meta+Shift+4`
-    * Take Active Window Screenshot: `Meta+Shift+Space`
-
-* System Settings > Global Shortcuts > KWin
-    * Maximize Window: `Meta+Shift+Up`
+        * Make Window Fullscreen: `Meta+Shift+PgUp`
+        * Maximize Window: `Meta+PgUp`
+        * Minimize Window: `Meta+PgDown`
+    * Custom Shortcuts > Screenshots
+        * Take Full Screen Screenshot: `Meta+#` (`Meta+Shift+3`)
+        * Take Rectangular Region Screenshot `Meta+$` (`Meta+Shift+4`)
+        * Take Active Window Screenshot: `Meta+Shift+Space`
 
 ## Default Applications
 
@@ -49,9 +60,27 @@ Aside: I have had a relatively positive experience with the Dell XPS13 9360. Unf
 
 ### Linking to Binaries
 
-1. Download the tarballs and extract contents into `/opt`.
-2. Symlink the required binaries into `/usr/local/bin/`
-3. Right click the KDE Icon (bottom left corner) and edit applications. Add the newly created symlinks, descriptions, icons.
+Example uses for [the latest stable Firefox binary](https://www.mozilla.org/en-US/firefox/).
+
+1. Decompress the archives into `/opt` for system-wide installation, or `~/opt` for the current user only.
+2. Create a file `firefox-stable.desktop` (replace `stable` with `beta`/`nightly`,) in the:
+    - `/usr/share/applications` directory for system-wide installation
+    - `~/.local/share/applications` directory for current user installation
+
+```text
+[Desktop Entry]
+Name=Firefox Stable
+Comment=Web Browser
+Exec=/opt/firefox/firefox %u
+Terminal=false
+Type=Application
+Icon=/opt/firefox/browser/chrome/icons/default/default128.png
+Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;
+StartupNotify=true
+```
+
+Update the paths accordingly.
 
 ## GNU Privacy Guard
 
