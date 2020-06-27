@@ -97,6 +97,26 @@ host tilde
     IdentityFile ~/.ssh/id_ed25519
 ```
 
+## Proxy Command
+
+Sometimes, you need to SSH into a machine that is only accessable through another machine.
+For instance, a proxy server is accessable from WAN, while the target device is accessable from the proxy server.
+Rather than running the ssh command twice, an alterantive is to setup a proxy command in the ssh configuration.
+
+```text
+host sushi
+    HostName sushi.demo.udia.ca
+    User alex
+
+host bento
+    HostName bento
+    User alex
+    ProxyCommand ssh sushi -W %h:%p
+```
+
+When running `ssh bento`, the connection will be proxied through sushi.
+These proxies can be chained.
+
 ## Reverse SSH Tunnel
 
 If a linux server is behind a NAT and a firewall, a reverse SSH tunnel may be a solution.
