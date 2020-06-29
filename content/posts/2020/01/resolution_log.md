@@ -327,3 +327,10 @@ These issues include `RuntimeError: received 0 items of ancdata`, which are refe
 I took a break from resolving this issue, but I suspect it will be resolved after increasing the number of file descriptors.
 My MBP appears to still have the issue with the sporadic shutdown and restarts, despite the new battery and the multiple NVRAM/SRAM resets.
 I purchased for myself a new Lenovo Yoga C740, which will arrive in the mail by the 26th.
+
+### Week 26: Mon, Jun 22 - Sun, Jun 28
+
+In terms of number of weeks, we are half way through the year.
+I've spent a lot of time [setting up a new Lenovo C740 laptop]({{< ref "/posts/2020/06/lenovo_c740.md" >}}), and running to various issues.
+As an aside, in the blog post I mentioned that the display brightness hotkeys do not work, but they have started working (unsure what update fixed this).
+I have updated my ECG outlier detection approach to be more robust to bad data, utilizing median filtering prior to bandpass filtering to reduce harmonic noise from large peaks.
