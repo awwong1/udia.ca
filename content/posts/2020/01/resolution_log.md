@@ -334,3 +334,14 @@ In terms of number of weeks, we are half way through the year.
 I've spent a lot of time [setting up a new Lenovo C740 laptop]({{< ref "/posts/2020/06/lenovo_c740.md" >}}), and running to various issues.
 As an aside, in the blog post I mentioned that the display brightness hotkeys do not work, but they have started working (unsure what update fixed this).
 I have updated my ECG outlier detection approach to be more robust to bad data, utilizing median filtering prior to bandpass filtering to reduce harmonic noise from large peaks.
+
+## July 2020
+
+### Week 27: Mon, Jun 29 - Sun, Jul 5
+
+I discovered a Python library for neurophysiological signal processing called [NeuroKit2](https://github.com/neuropsychology/NeuroKit).
+There was a minor issue that I caught, and I submitted a pull request that was successfully merged into their development branch.
+It appears to be a promising feature extractor, taking roughly 1 second per record to extract a variety of heart rate variability metrics.
+The default signal cleaning function is superior to my raw bandpass filtering and median filtering approaches.
+
+I will finish up writing my ensemble classifier, using these new extracted features.
