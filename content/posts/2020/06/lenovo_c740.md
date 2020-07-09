@@ -275,7 +275,10 @@ The display brightness hotkeys did not show any output when pressed.
 - It appears to be related to [Ubuntu Bug#1872311](https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1872311).
 - A corresponding [discussion post on the Lenovo forums was linked](https://forums.lenovo.com/t5/Ubuntu/Lenovo-Yoga-S740-14IIL-Brightness-hotkeys-not-working-on-Ubuntu-20-04/m-p/5011698), but no solutions were provided.
 
-**Workaround**: use software controls for display brightness management.
+**Update** *(July 9, 2020)*: It appears that after putting my laptop into hibernation (not suspend to RAM) and waking up, the brightness controls hotkeys work as intended.
+
+**Workaround**: use software controls for display brightness management, or hibernate and wake up.
+
 
 ## Built-in Microphone Not Detected
 
