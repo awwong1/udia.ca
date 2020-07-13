@@ -335,7 +335,7 @@ I've spent a lot of time [setting up a new Lenovo C740 laptop]({{< ref "/posts/2
 As an aside, in the blog post I mentioned that the display brightness hotkeys do not work, but they have started working (unsure what update fixed this).
 I have updated my ECG outlier detection approach to be more robust to bad data, utilizing median filtering prior to bandpass filtering to reduce harmonic noise from large peaks.
 
-## July 2020
+## July
 
 ### Week 27: Mon, Jun 29 - Sun, Jul 5
 
@@ -345,3 +345,11 @@ It appears to be a promising feature extractor, taking roughly 1 second per reco
 The default signal cleaning function is superior to my raw bandpass filtering and median filtering approaches.
 
 I will finish up writing my ensemble classifier, using these new extracted features.
+
+### Week 28: Mon, Jul 6 - Sun, Jul 12
+
+I made a few code quality pull requests to the NeuroKit2 library this week, notably refactoring all of the printed warnings to using the builting warnings module.
+Additionally, I have a set of classifiers trained (100 experiments), with corresponding plots and feature importances for the team to review.
+I will write up a bunch of tests to ensure scoring function quality, as well as write some sample re-weighting logic to make use of the non-zero weights across the different labels.
+Then, I will calculate the overall challenge scores using both approaches (raw labels, including label probabilities).
+I still need to integrate tsfresh features into the 12-lead ECG record in a sane manner.
