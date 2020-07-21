@@ -348,8 +348,16 @@ I will finish up writing my ensemble classifier, using these new extracted featu
 
 ### Week 28: Mon, Jul 6 - Sun, Jul 12
 
-I made a few code quality pull requests to the NeuroKit2 library this week, notably refactoring all of the printed warnings to using the builting warnings module.
+I made a few code quality pull requests to the NeuroKit2 library this week, notably refactoring all of the printed warnings to using the builtin warnings module.
 Additionally, I have a set of classifiers trained (100 experiments), with corresponding plots and feature importances for the team to review.
 I will write up a bunch of tests to ensure scoring function quality, as well as write some sample re-weighting logic to make use of the non-zero weights across the different labels.
 Then, I will calculate the overall challenge scores using both approaches (raw labels, including label probabilities).
 I still need to integrate tsfresh features into the 12-lead ECG record in a sane manner.
+
+### Week 29: Mon, Jul 13 - Sun, Jul 19
+
+I was able to get a large new set of feature extractors working on the 12-lead ECG records, increasing my feature counts from ~400 to ~10000 features per record.
+This has considerably increased the amount of time it takes to train classifiers, additionally there are new challenges with loading and saving the features to memory and disk respectively.
+According to the challenge scoring function, these new classifiers are over twice as good as the prior iteration.
+Currently I am investigating the different feature variance, thresholding, and selection methods to reduce this feature dimensionality prior to classification.
+I took a break on Monday and played a lot of Crying Suns, an FTL and Foundation inspired tactics game with a good mobile port.
