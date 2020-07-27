@@ -361,3 +361,12 @@ This has considerably increased the amount of time it takes to train classifiers
 According to the challenge scoring function, these new classifiers are over twice as good as the prior iteration.
 Currently I am investigating the different feature variance, thresholding, and selection methods to reduce this feature dimensionality prior to classification.
 I took a break on Monday and played a lot of Crying Suns, an FTL and Foundation inspired tactics game with a good mobile port.
+
+### Week 30: Mon, Jul 20 - Sun, Jul 26
+
+In an attempt to further improve my model's classification score, I yet again doubled the engineered feature count to roughly ~19000 features.
+This was done by adding full signal tsfresh features, rather than just an isolated PQRST tsfresh feature (prior week's results).
+Feature extraction time has now doubled again, taking multiple days to process the 43,101 records.
+Dimensionality reduction, although improves the classifier training time, does not cut down on the bottleneck of feature engineering itself.
+
+This week I will resume the paper writing, finish the experiments with these new feature extractors, and hopefully submit an attempt for the challenge.
