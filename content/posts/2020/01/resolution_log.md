@@ -370,3 +370,14 @@ Feature extraction time has now doubled again, taking multiple days to process t
 Dimensionality reduction, although improves the classifier training time, does not cut down on the bottleneck of feature engineering itself.
 
 This week I will resume the paper writing, finish the experiments with these new feature extractors, and hopefully submit an attempt for the challenge.
+
+## August
+
+### Week 31: Mon, Jul 27 - Sun, Aug 2
+
+I needed to refactor my code such that the feature extraction was better handling the larger dataset size.
+The old approach was to use a multiprocessing pool, but the issue is that the pool's map output is not iterable and requires the entire output data to be stored in memory.
+I rewrote the feature extraction to rely on a set of processes and a queue, feeding into a dedicated worker that appends a CSV file on disk.
+Feature extraction still takes on the magnitude of days, and I am still carrying forward with my approaches from the past few weeks.
+
+I feel like I have hit a big pain point in this methodology. It is fairly time consuming to write this feature extraction code, little progress have been made on alternative methods of classification (although I await the papers and challenge winner's submissions eagerly).
