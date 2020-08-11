@@ -381,3 +381,13 @@ I rewrote the feature extraction to rely on a set of processes and a queue, feed
 Feature extraction still takes on the magnitude of days, and I am still carrying forward with my approaches from the past few weeks.
 
 I feel like I have hit a big pain point in this methodology. It is fairly time consuming to write this feature extraction code, little progress have been made on alternative methods of classification (although I await the papers and challenge winner's submissions eagerly).
+
+### Week 32 - Mon, Aug 3 - Sun Aug 9
+
+I have continued running the 100 experiment run of the full feature extraction and classification configuration of my methodology.
+Although I started last week Wednesday, as of now only 62 runs of the experiment have completed (using the med-arc supercomputer).
+It takes roughly 80-90 minutes to train a single set of XGBClassifiers, even with the GPU booster.
+
+That being said, I have enough information to populate the results section of my paper, with figures using the available models that I have trained.
+I have submitted a run to the physionet challenge organizers, and after some minor tweaks a submission should be running.
+It is unclear if the timeout is hard set, as I likely have exceeded the 72 hour training time period.
