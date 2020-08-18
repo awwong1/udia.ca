@@ -382,7 +382,7 @@ Feature extraction still takes on the magnitude of days, and I am still carrying
 
 I feel like I have hit a big pain point in this methodology. It is fairly time consuming to write this feature extraction code, little progress have been made on alternative methods of classification (although I await the papers and challenge winner's submissions eagerly).
 
-### Week 32 - Mon, Aug 3 - Sun Aug 9
+### Week 32: Mon, Aug 3 - Sun Aug 9
 
 I have continued running the 100 experiment run of the full feature extraction and classification configuration of my methodology.
 Although I started last week Wednesday, as of now only 62 runs of the experiment have completed (using the med-arc supercomputer).
@@ -391,3 +391,15 @@ It takes roughly 80-90 minutes to train a single set of XGBClassifiers, even wit
 That being said, I have enough information to populate the results section of my paper, with figures using the available models that I have trained.
 I have submitted a run to the physionet challenge organizers, and after some minor tweaks a submission should be running.
 It is unclear if the timeout is hard set, as I likely have exceeded the 72 hour training time period.
+
+### Week 33: Mon Aug 10 - Sun Aug 16
+
+I received the official phase timeout notification late Sunday evening, which prompted me to eliminate an expensive feature calculation step from the tsfresh feature extraction library. (I swapped the default FC parameters with the efficient FC parameter dictionary).
+Currently resubmitted the code and rerunning the feature extraction again on the super computer.
+
+This week will be setting up the three portions of the thesis experiments; classification, infilling, and encoding/bottleneck representation.
+Classification is mostly complete, as it is the task of disorder detection given an ECG. Infilling would be an unsupervised task that completes ECGs with missing leads or missing segments in the signal.
+Encoding/bottleneck representation is an idea for noise removal and potentially better classification.
+I have not yet flushed out the details of how these three portions will overlap, as the majority of my time has been spent solely on classification alone, given the challenge.
+
+I rooted my phone this week also. I am disappointed that I cannot [record my phone calls](https://gitlab.com/axet/android-call-recorder), due to an open (but unaddressed) [Google issue](https://issuetracker.google.com/issues/37093263#c13).

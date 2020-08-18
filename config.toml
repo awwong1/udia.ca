@@ -1,6 +1,6 @@
 title = "UDIA"
 description = "Experimenter, scientist, software developer. Collection of content pertaining to UDIA."
-baseURL = "//udia.ca/"
+baseURL = "https://udia.ca/"
 languageCode = "en-us"
 copyright = "Creative Commons Attribution-NonCommercial 4.0 International License"
 
