@@ -392,7 +392,7 @@ That being said, I have enough information to populate the results section of my
 I have submitted a run to the physionet challenge organizers, and after some minor tweaks a submission should be running.
 It is unclear if the timeout is hard set, as I likely have exceeded the 72 hour training time period.
 
-### Week 33: Mon Aug 10 - Sun Aug 16
+### Week 33: Mon, Aug 10 - Sun, Aug 16
 
 I received the official phase timeout notification late Sunday evening, which prompted me to eliminate an expensive feature calculation step from the tsfresh feature extraction library. (I swapped the default FC parameters with the efficient FC parameter dictionary).
 Currently resubmitted the code and rerunning the feature extraction again on the super computer.
@@ -403,3 +403,12 @@ Encoding/bottleneck representation is an idea for noise removal and potentially 
 I have not yet flushed out the details of how these three portions will overlap, as the majority of my time has been spent solely on classification alone, given the challenge.
 
 I rooted my phone this week also. I am disappointed that I cannot [record my phone calls](https://gitlab.com/axet/android-call-recorder), due to an open (but unaddressed) [Google issue](https://issuetracker.google.com/issues/37093263#c13).
+
+### Week 34: Mon, Aug 17 - Sun, Aug 23
+
+The Physionet challenge official phase submission deadline is this Sunday, Aug 23rd.
+After discovering a major new time save, I was able to submit three new entries to the competition.
+The time save is from not generating all ~18k features but instead only generating the top 1000 relevant features (using the large pretrained models as the feature importance priors).
+Now that the challenge is wrapping up, I need to flush out the other components of the ECG related research, moving away from record classification towards infilling and autoencoding methods.
+
+I additionally enabled the call recording functionality on my phone by loading the application as a system app (using [di72nn/callrecorder-axet](https://github.com/di72nn/callrecorder-axet)).
