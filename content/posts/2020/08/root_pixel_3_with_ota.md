@@ -3,7 +3,7 @@ title: "Rooting a Pixel 3 with OTA"
 date: 2020-08-26T15:49:30-06:00
 draft: false
 description: How do you root a Google Pixel 3 phone consistently, while maintaining support for over the air (OTA) security updates?
-status: in-progress
+status: complete
 tags:
   - personal
   - linux
@@ -159,3 +159,5 @@ These tutorials have not worked for me.
 TWRP is not supported on Android 10 so therefore does not need to be installed on the device.
 
 Enable the Magisk Manager **Systemless hosts**, **Magisk Hide** functions in the settings.
+
+Do not change the bootloader settings (lock/unlock), as this will wipe your device user data again.
