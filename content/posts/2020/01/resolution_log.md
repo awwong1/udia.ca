@@ -412,3 +412,13 @@ The time save is from not generating all ~18k features but instead only generati
 Now that the challenge is wrapping up, I need to flush out the other components of the ECG related research, moving away from record classification towards infilling and autoencoding methods.
 
 I additionally enabled the call recording functionality on my phone by loading the application as a system app (using [di72nn/callrecorder-axet](https://github.com/di72nn/callrecorder-axet)).
+
+### Week 35: Mon, Aug 24 - Sun, Aug 30
+
+I've submitted the PhysioNet paper early to make it eligible for the preprint.
+I've focused my time back to neural network approaches for ECG record analysis.
+Currently, I've reproduced some LSTM auto encoder examples (originally intended for audio, single channel waveforms).
+The tutorials for FastAI2 were decent for a beginner machine learning practitioner, but the API redefines multiple low level concepts from PyTorch, making it less attractive to me than other existing solutions, like [PyTorch Lightning](https://github.com/PyTorchLightning/pytorch-lightning).
+
+Additionally, I've setup a local [Matrix/Synapse server](https://matrix.org/docs/projects/server/synapse) using the apt package manager on my cybera instance.
+I have configured a [local Telegram bridge](https://github.com/tulir/mautrix-telegram) such that my Telegram chat is puppeted to my matrix account, allowing me to do all of my Telegram communications on a single app (Element).
