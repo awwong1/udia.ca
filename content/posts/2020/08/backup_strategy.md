@@ -91,7 +91,7 @@ restic -r b2:udia-personal-backup:/priority_files --verbose backup ~/Documents/b
 To restore, simply use the restic restore command, passing in the appropriate repository.
 
 ```bash
-restic -r restic -r sftp:pi:/media/slim/restic_repos/priority_files restore latest --target /tmp/restore-art
+restic -r sftp:pi:/media/slim/restic_repos/priority_files restore latest --target /tmp/restore-art
 ```
 
 ## Future Improvements
