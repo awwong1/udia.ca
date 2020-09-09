@@ -422,3 +422,17 @@ The tutorials for FastAI2 were decent for a beginner machine learning practition
 
 Additionally, I've setup a local [Matrix/Synapse server](https://matrix.org/docs/projects/server/synapse) using the apt package manager on my cybera instance.
 I have configured a [local Telegram bridge](https://github.com/tulir/mautrix-telegram) such that my Telegram chat is puppeted to my matrix account, allowing me to do all of my Telegram communications on a single app (Element).
+
+## September
+
+### Week 36: Mon, Aug 31 - Sun, Sep 6
+
+A lot of last minute changes needed to be made for the four page challenge paper.
+The long weekend (Labor Day Monday) was spend revising the paper according to some last minute comments.
+The biggest concern was the lack of an internal hold out test set for our metrics- I report my experiments using only the validation set split.
+[I filmed a video presentation for this paper and submitted it to the conference as well](https://drive.google.com/file/d/1dRDR7N3i9nh2HEodUerqOZjHETJY6u8t/view?usp=sharing), satisfying the remote presentation component of this conference.
+
+The autoencoders that I have created for 12-lead electrocardiogram signal compression don't seem to capture the signal representation well, even when using spectrograms to represent the signal.
+I know that existing research works on the isolated PQRST window for single lead ECGs.
+My research peers and supervisor suggest that I replicate existing methods using our dataset, which require reducing the input space to single peaks and leads.
+I would eventually like to get multiple peaks and multiple leads working.
