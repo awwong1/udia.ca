@@ -436,3 +436,21 @@ The autoencoders that I have created for 12-lead electrocardiogram signal compre
 I know that existing research works on the isolated PQRST window for single lead ECGs.
 My research peers and supervisor suggest that I replicate existing methods using our dataset, which require reducing the input space to single peaks and leads.
 I would eventually like to get multiple peaks and multiple leads working.
+
+### Week 37: Mon, Sep 7 - Sun, Sep 13
+
+This week I implemented a working symmetrical linear autoencoder for the analysis of 12-lead ECG beats.
+The biggest contributor to the improvement in my neural network involved the additional preprocessing of the input data.
+I no longer use the provided sampling rates and raw signal directly, but instead use the limited R-peak windows and apply an l2 normalization on each of the samples.
+I am considering reducing the scope of my thesis to only do classification of ECG records (using multiple approaches).
+I already have multiple neural network architectures and shallow learning classifiers that I can reuse.
+This will require less additional project designs and work and I believe will still make a compelling thesis.
+
+Additionally, I received my "Cracking the Coding Interview" textbook in the mail this week.
+I have re-read the initial chapters and began working on the practice problems listed in the book.
+I am very rusty at these types of challenges and will require plenty of review.
+The challenge book provides a broad and excellent overview of the core software developer's concepts required for most interviews, and I expect to complete the book by the end of the year.
+As an aside, I don't expect to get the mobile application developed- I don't have any app that I particularly wish to build at this moment.
+
+For next week, the PhysioNet/CinC challenge requires me to attend my remote video presentation in order to answer Q&A sessions after the video.
+This is unfortunate because my talk is at 12:30pm CEST time, which is equivalent to 3:30am MST time.
