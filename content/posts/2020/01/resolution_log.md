@@ -454,3 +454,14 @@ As an aside, I don't expect to get the mobile application developed- I don't hav
 
 For next week, the PhysioNet/CinC challenge requires me to attend my remote video presentation in order to answer Q&A sessions after the video.
 This is unfortunate because my talk is at 12:30pm CEST time, which is equivalent to 3:30am MST time.
+
+### Week 38: Mon, Sep 14 - Sun, Sep 20
+
+This week, I ported all of my dataloader and dataset code to use [zarr](https://zarr.readthedocs.io/en/stable/), a Python package for compressed N-dimensional Numpy arrays.
+It allowed me to greatly speed up my neural network training times and reference arbitrary length arrays using memmap, despite taking up gigabytes of space.
+I need to continue working on the dynamic sequence length autoencoder portion of my experiment, using LSTMs.
+The final challenge results have been released and our methodology attained a test set score of `-0.080`. We ranked 35/40th.
+
+As an aside, I updated my phone to Android 11 this morning.
+This had the unfortunate consequence of removing root from my device.
+I will be spending some time today to revert my phone back to Android 9/10 and restoring root permissions.
