@@ -6,22 +6,26 @@ description: Home and meta page describing udia.ca philosophy and technology.
 status: in-progress
 ---
 
-This page is about `udia.ca`; for information about the author, see [about]({{< relref "about/_index.md" >}}).
+This page is about `udia.ca`; for information about the author, **see [about]({{< relref "about/_index.md" >}})**.
 
 # Overview
 
 UDIA came into existence in February 2016, largely as a result of being one of the few domain names available in the [`.ca` TLD](https://cira.ca/) satisfying a four character length limit.
-It is also my preferred online pseudonym.
+It is also my preferred online moniker.
+
+Occasionally, I expand the four characters as **U**niverse **D**ream **I**nference **A**gent, albeit this has changed multiple times since inception.
 
 ## Content
 
-There is currently very little to no content on this site, but I intend on keeping various public notes regarding computer science research (general neural network and deep learning experiments), instant pot pressure cooking recipes, and unimportant musings about life.
+I keep various public notes regarding my personal Linux setup and systems administration here.
+Occasionally, I will also post some computing science research, cooking recipes, and unimportant musings about life.
 
 In an attempt to overcome crippling perfectionism, the quality of the published content may vary drastically.
 
 ## Audience
 
 The goal of writing is to explain ideas and processes to my future self.
+
 My target is the "I" who has forgotten, but remains engaged and intelligent.
 
 ## License

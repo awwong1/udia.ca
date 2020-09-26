@@ -18,14 +18,13 @@ My first computer was the [Tandy 1000](https://en.wikipedia.org/wiki/Tandy_1000)
 
 I am currently a graduate student at the [University of Alberta](https://www.ualberta.ca/), [Department of Computing Science](https://www.ualberta.ca/computing-science), living in [Alberta, Canada](https://www.alberta.ca/index.aspx).
 I began pursuing my Master's degree in September 2018 due to a stubborn curiosity regarding the mechanisms of deep neural networks and their impressive results in image classification and segmentation tasks.
+My research is currently in the classification and analysis of 12-lead electrocardiogram signals.
 
-My [curriculum vitae (CV) can be found here](//media.udia.ca/cv.pdf) ([latex source code](https://git.udia.ca/alex/cv/src/branch/master/main.tex)).
+----
 
-## Work
+My [**curriculum vitae (CV)** can be found here](//media.udia.ca/cv.pdf) ([latex source code](https://git.udia.ca/alex/cv/src/branch/master/main.tex)).
 
-Prior to being a full-time graduate research assistant, I've developed software for multiple companies including [Pason Systems](https://www.pason.com/), [Telus Communications](https://www.telus.com/en/), [GoAuto](https://www.goauto.ca/), and [EPCOR](https://www.epcor.com/).
-Additionally, I served as a teaching assistant for [CMPUT 404 - Web Applications and Architecture](https://www.ualberta.ca/computing-science/undergraduate-studies/course-directory/courses/web-applications-and-architecture) and as a course developer for [CMPUT 497 - Introduction to Combinatorial Game Theory](https://www.ualberta.ca/computing-science/undergraduate-studies/course-directory/courses/introduction-to-combinatorial-game-theory).
-Before my training, I worked in the service industry as a waiter/bartender/banquet server; summered as a [Green Shack Coordinator](https://www.edmonton.ca/activities_parks_recreation/green-shacks.aspx); data-entry clerked for various offices; and served as customer facing IT support for [CARNA](https://nurses.ab.ca/).
+----
 
 ## Links
 
@@ -33,10 +32,60 @@ Before my training, I worked in the service industry as a waiter/bartender/banqu
 * Self-Hosted Gitea: [git.udia.ca/alex](https://git.udia.ca/alex/)
 * LinkedIn Profile: [linkedin.com/in/awwong1](https://www.linkedin.com/in/awwong1/)
 * Keybase: [keybase.io/udia](https://keybase.io/udia)
+* Matrix: [@alex:matrix.udia.ca](https://matrix.to/#/@alex:matrix.udia.ca)
+
+## Open Source Projects
+
+*An incomplete and arbitrarily ranked list of my open source projects and contributions, categorized by primary programming language...*
+
+### Python
+
+#### torchprof
+A minimal dependency library for layer-by-layer profiling of PyTorch models.
+All metrics are derived using the PyTorch autograd profiler.\
+**Sole Maintainer**.\
+[PyPI](https://pypi.org/project/torchprof/) | [Source](https://github.com/awwong1/torchprof)
+
+#### NeuroKit2
+A biosignal processing package for analyzing physiological data.\
+**Contributor**: Refactored warnings control and submitted various bug fixes.\
+[PyPI](https://pypi.org/project/neurokit2/) | [Source](https://github.com/neuropsychology/NeuroKit)
+
+### JavaScript
+
+#### serverless-offline
+A plugin for emulating [Amazon Web Services Lambda](https://aws.amazon.com/lambda) and [API Gateway](https://aws.amazon.com/api-gateway) locally.\
+**Contributor**: Added logging support for measuring lambda function execution time (`perf_hooks`).\
+[NPM](https://www.npmjs.com/package/serverless-offline) | [Source](https://github.com/dherault/serverless-offline)
+
+#### picknic
+Locally sourced data and free range programmers providing high quality free picnic recommendations.\
+**Contributor**: ECE Week 2016 Hackathon team entry.\
+[Source](https://github.com/awwong1/picknic)
+
+#### modern-js-cheatsheet
+A cheat sheet for JavaScript that you will frequently encounter in modern projects containing contemporary sample code.\
+**Contributor**: Added section for Generators, Anamorphisms, and Catamorphisms.\
+[Source](https://github.com/mbeaudru/modern-js-cheatsheet)
+
+### TypeScript
+
+#### legacy-udia
+End to end encrypted notes application with nested folders, real-time browser updates, service worker/offline capabilities.
+React Client consumed a GraphQL API endpoint, managed storage to a postgresql database.\
+**Sole Maintainer** (Archived).\
+[Client Source](https://github.com/udia-software/udia-client) | [Server Source](https://github.com/udia-software/udia)
+
+### Elixir
+
+#### txt
+Command line pastebin.\
+**Sole Maintainer**.\
+[Demo](https://txt.udia.ca/) | [Source](https://github.com/udia-software/txt)
 
 ## Contact
 
-* Email: [alex@udia.ca](mailto:alex@udia.ca), [GPG Key](//media.udia.ca/alex.asc)
-  ```bash
-  gpg --export --armor 48797A6E15706026C51E9CF50F8D1FA50FC4B4EE > alex.asc
+Email: [alex@udia.ca](mailto:alex@udia.ca), [GPG Key](//media.udia.ca/alex.asc)
+```bash
+gpg --export --armor 48797A6E15706026C51E9CF50F8D1FA50FC4B4EE > alex.asc
 ```
