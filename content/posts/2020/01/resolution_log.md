@@ -465,3 +465,13 @@ The final challenge results have been released and our methodology attained a te
 As an aside, I updated my phone to Android 11 this morning.
 This had the unfortunate consequence of removing root from my device.
 I will be spending some time today to revert my phone back to Android 9/10 and restoring root permissions.
+
+### Week 39: Mon, Sep 21 - Sun, Sep 27
+
+This last week has been getting the LSTM autoencoder and classification neural network working for ECG recording classification.
+Last minute paper revisions to the CinC challenge were necessary due to a organizer posted discussion forum post citing how all submissions needed corrections.
+Additionally, I revisited my resume and updated it with my new machine learning skillset.
+Hopefully it is competitive and opens the door to many interviews.
+
+This week, I will rerun the autoencoder classification experiments multiple times, try to make sense of the disorder embeddings, and plot all of the classification score metrics.
+I also intend on writing the working draft of the ICASSP paper.
