@@ -51,7 +51,14 @@ A biosignal processing package for analyzing physiological data.\
 **Contributor**: Refactored warnings control and submitted various bug fixes.\
 [PyPI](https://pypi.org/project/neurokit2/) | [Source](https://github.com/neuropsychology/NeuroKit)
 
-### JavaScript
+### HTML/CSS
+
+#### candor
+A Hugo theme with light/dark mode toggling, syntax highlighting, and MathJax. Used for this current site.\
+**Sole Maintainer**.\
+[Source](https://github.com/awwong1/candor)
+
+### JavaScript/TypeScript
 
 #### serverless-offline
 A plugin for emulating [Amazon Web Services Lambda](https://aws.amazon.com/lambda) and [API Gateway](https://aws.amazon.com/api-gateway) locally.\
@@ -68,13 +75,16 @@ A cheat sheet for JavaScript that you will frequently encounter in modern projec
 **Contributor**: Added section for Generators, Anamorphisms, and Catamorphisms.\
 [Source](https://github.com/mbeaudru/modern-js-cheatsheet)
 
-### TypeScript
-
 #### legacy-udia
 End to end encrypted notes application with nested folders, real-time browser updates, service worker/offline capabilities.
 React Client consumed a GraphQL API endpoint, managed storage to a postgresql database.\
 **Sole Maintainer** (Archived).\
 [Client Source](https://github.com/udia-software/udia-client) | [Server Source](https://github.com/udia-software/udia)
+
+#### calculords-solver
+A solver web application for the mobile game [Calculords](http://calculords.com/).\
+**Sole Maintainer**.\
+[Link](https://awwong1.github.io/calculords-solver/) | [Source](https://github.com/awwong1/calculords-solver)
 
 ### Elixir
 
