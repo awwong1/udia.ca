@@ -58,6 +58,11 @@ A Hugo theme with light/dark mode toggling, syntax highlighting, and MathJax. Us
 **Sole Maintainer**.\
 [Source](https://github.com/awwong1/candor)
 
+#### uofa-cmput404.github.io
+The complete set of labs for the University of Alberta's course CMPUT 404: Web Based Information Systems.\
+**Primary Contributor**: Wrote all of the original lab material and assessments.\
+[Site](https://uofa-cmput404.github.io/) | [Source](https://github.com/uofa-cmput404/uofa-cmput404.github.io)
+
 ### JavaScript/TypeScript
 
 #### serverless-offline

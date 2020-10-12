@@ -475,3 +475,27 @@ Hopefully it is competitive and opens the door to many interviews.
 
 This week, I will rerun the autoencoder classification experiments multiple times, try to make sense of the disorder embeddings, and plot all of the classification score metrics.
 I also intend on writing the working draft of the ICASSP paper.
+
+## October
+
+### Week 40: Mon, Sep 28 - Sun, Oct 4
+
+I have the experiments running for the Conv/Linear + LSTM autoencoder classifier for electrocardiogram classification.
+It is not very quick, requiring approximately 10 hours to finish one run of the three experiment variations (beat, sequence autoencoder, sequence classifier).
+That being said, the experiment results are promising and the data that I have generated are sufficient to write a compelling paper.
+
+I've also submitted a few applications for jobs, fine-tuned the resume, and met with a few founders and recruiters to discuss potential next steps.
+This week will be converting my experiments into the IEEE paper for ICASSP.
+Afterwards, I will compile the research I've been working on in these last months into a thesis for my Master's degree graduation.
+
+### Week 41: Sun, Oct 5 - Mon, Oct 12
+
+I have completed the first draft of the ICASSP paper and have reviewed it with Amir.
+Amir has graciously helped me by designing the methodology figure showcasing how the signal processing outputs connect with the two phase heartbeat and sequence autoencoders.
+
+Over this week, I had completed a challenging Amazon online coding assessment with lukewarm results.
+I was unable to get the most optimal solution for Q2, a dynamic programming problem, within the alloted time period of 105 minutes.
+This was partly due to the fact that I had a technical issue involving copy/paste that deleted all of my source code, costing me a precious 5 minutes.
+I solved this problem after the assessment finished, and sent the solution (with corresponding runtime complexity analysis) to my recruiter an hour afterwards, and was luckly still moved ahead to the next phase of interviews.
+
+This week I will be revising the ICASSP paper, continuing the thesis manuscript draft, and sending more job applications out.
