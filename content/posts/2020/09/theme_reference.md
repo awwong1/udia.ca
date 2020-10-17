@@ -238,6 +238,12 @@ echo "Hello world!";
 
 Code tags are very neat!
 
+This is a very long code tag.\
+`v^j*oHq!jJ#pQ^#*#ATGnu6y9j8AvL5tJofLQL6XRmKDenWna&VpR5^!mC$dG9FJHuxhVcFnV!bpu&hdGF!2tS8YGwRQkiBSP2My`
+
+This is a long code tag with spaces.\
+`alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'`
+
 ```markdown
 I strongly recommend against using any `<blink>` tags.
 
@@ -257,6 +263,12 @@ you've got to put paragraph tags in your blockquotes:
     ```
 ```markdown
 Code tags are very neat!
+
+This is a very long code tag.\
+`v^j*oHq!jJ#pQ^#*#ATGnu6y9j8AvL5tJofLQL6XRmKDenWna&VpR5^!mC$dG9FJHuxhVcFnV!bpu&hdGF!2tS8YGwRQkiBSP2My`
+
+This is a long code tag with spaces.\
+`alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'`
 ```
 
 ---
@@ -357,7 +369,7 @@ $$F = \{F_{x} \in  F_{c} : (|S| > |C|) \cap
 (|S_{connected}| > |S| - \epsilon)
   \}$$
 
-```markdown
+```tex
 The following function:
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 can be used to calculate the two roots of a trinomial function:
