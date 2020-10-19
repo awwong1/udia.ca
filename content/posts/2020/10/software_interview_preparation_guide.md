@@ -623,7 +623,7 @@ assert list(iterator) == ["0", "1", "3", "2", "4", "5"]
 ## Merge Sort
 
 The [merge sort algorithm](https://en.wikipedia.org/wiki/Merge_sort).
-The runtime of this implementation is \\(O(n\log{n})\\) with \\(O(n)\\) space complexity.
+The runtime of this implementation is \\(O(n\log{n})\\) with \\(O(n)\\) space complexity. This returns a new copy of the sorted array.
 
 ### Implementation
 
@@ -652,7 +652,7 @@ def mergesort(arr):
 ## Quicksort
 
 The [quicksort algorithm](https://en.wikipedia.org/wiki/Quicksort).
-The runtime of this implementation is \\(O(n\log{n})\\) with \\(O(n)\\) space complexity.
+The runtime of this implementation is \\(O(n\log{n})\\) with \\(O(n)\\) space complexity, due to the recursion increasing the stack respective to the length of the array. All operations are performed in place.
 
 ### Implementation
 
@@ -680,4 +680,92 @@ def quicksort(m_arr):
 
     _quicksort(m_arr)
     return m_arr
+```
+
+# Dynamic Programming
+
+Dynamic programming is an approach to more effectively compute recursive problems.
+The key takeaway is that these problems are built off of solutions to smaller sub problems.
+
+## knapsack
+Given a list of weighted values and a capacity, return the maximum value that can be carried without exceeding the available capacity.
+For example, with `[(2, 3), (4, 11), (3, 12)]` and a capacity of `5`, you can carry the items of weight `2`, and `3` for a total value of `(3 + 12) = 15`.
+Each item can be taken at most one time.
+
+### Recursion Only
+```python3
+def knapsack(constraint, w_vals):
+    """
+    w_vals is list of 2-tuples (weight, value)
+    constraint is int representing maximum weight
+    you can only choose an item once
+    [.... .. (4, 4), (3, 12), (2, 100)]
+    """
+    total_value = 0
+    for idx, (weight, value) in enumerate(w_vals):
+        remaining = constraint - weight
+        if remaining >= 0:
+            total_value = max(
+                total_value,
+                knapsack(remaining, w_vals[idx + 1:]) + value
+            )
+    return total_value
+
+```
+
+### Memoized Recursion (Top-Down)
+```python3
+def knapsack_td(td_constraint, td_w_vals):
+    """Memoized version of `knapsack`, top-down Dynamic Programming.
+    """
+    cache = {}
+
+    def _knapsack(constraint, w_vals):
+        if (constraint, w_vals) in cache:
+            return cache[(constraint, w_vals)]
+        total_value = 0
+        for idx, (weight, value) in enumerate(w_vals):
+            remaining = constraint - weight
+            if remaining >= 0:
+                total_value = max(
+                    total_value,
+                    _knapsack(remaining, w_vals[idx + 1:]) + value
+                )
+        cache[(constraint, w_vals)] = total_value
+        return total_value
+
+    return _knapsack(td_constraint, tuple(td_w_vals))
+
+```
+
+### Tabular (Bottom-Up)
+```python3
+def knapsack_bu(constraint, w_vals):
+    """Tabularized version of `knapsack`, bottom-up Dynamic Programming.
+    """
+    dp = [
+        [0 for wv in range(constraint + 1)]
+        for c in range(len(w_vals))
+    ]
+
+    # Unnecessary, because everything initialized to 0
+    # for idx in range(constraint):
+    #     # Base case for top row.
+    #     # constraint == 0 is 0, as it cannot hold anything.
+    #     dp[0][idx] = 0
+
+    for c in range(1, constraint + 1):
+        for w_idx in range(len(w_vals)):
+            weight, value = w_vals[w_idx]
+            if weight <= c:
+                # The current weight can be held in the constraint
+                dp[w_idx][c] = max(
+                    dp[max(0, w_idx-1)][c],                # Previous item at current constraint
+                    dp[max(0, w_idx-1)][max(0, c-weight)] + value  # Previous item + constraint diff best
+                )
+            else:
+                # No fit, extend from last best item
+                dp[w_idx][c] = dp[w_idx-1][c]
+    return dp[len(w_vals) - 1][constraint]
+
 ```
