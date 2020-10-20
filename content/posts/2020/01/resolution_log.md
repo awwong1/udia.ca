@@ -488,7 +488,7 @@ I've also submitted a few applications for jobs, fine-tuned the resume, and met 
 This week will be converting my experiments into the IEEE paper for ICASSP.
 Afterwards, I will compile the research I've been working on in these last months into a thesis for my Master's degree graduation.
 
-### Week 41: Sun, Oct 5 - Mon, Oct 12
+### Week 41: Mon, Oct 5 - Sun, Oct 11
 
 I have completed the first draft of the ICASSP paper and have reviewed it with Amir.
 Amir has graciously helped me by designing the methodology figure showcasing how the signal processing outputs connect with the two phase heartbeat and sequence autoencoders.
@@ -499,3 +499,19 @@ This was partly due to the fact that I had a technical issue involving copy/past
 I solved this problem after the assessment finished, and sent the solution (with corresponding runtime complexity analysis) to my recruiter an hour afterwards, and was luckly still moved ahead to the next phase of interviews.
 
 This week I will be revising the ICASSP paper, continuing the thesis manuscript draft, and sending more job applications out.
+
+### Week 42: Mon, Oct 12 - Sun, Oct 18
+
+This week has been a gauntlet of job interview applications, polishing the ICASSP paper for submission, and algorithms review.
+I created a comprehensive [software interview preparation guide]({{< ref "/posts/2020/10/software_interview_preparation_guide.md" >}}) to help me manage the technical questions and competency soft-skills.
+Although I have the majority of the thesis related work finished (from these two papers), additional work of compiling everything into a cohesive singular document remains to be done.
+
+From Oct 19th to the 23rd is [Edmonton Startup Week](https://techstarsstartupweekedmonton2020.sched.com/).
+I will be going through and engaging in as many of these events as I can, as I believe that it is important for long term growth of my self and will potentially open some job opportunities for me.
+
+I had a good long chat with my accountant, as my corporate tax year end is October 31st.
+I told him how my company was essentially a zombie, bleeding out monthly recurring funds and generating no profit.
+By this time next year, if there is no further activity, the company will have no value aside from its name.
+He told me that he knows my work ethic and intelligence, and that although an employee relationship is noble, that I do have the capacity to succeed in entrepreneurship.
+This recollection of the talk does not fully capture the kindness and care that was conveyed to me.
+I feel as if I am once again back at the crossroads and there is no certainty in my next steps.
