@@ -17,10 +17,10 @@ It is a combination of multiple tutorials, with minor adaptations to address som
 
 # Original Tutorials
 
-- [How to Unlock the Bootloader and Root the Google Pixel 3 with Magisk](https://www.xda-developers.com/google-pixel-3-unlock-bootloader-root-magisk/)
-    - Rooting the Phone instructions from this site were very helpful!
-- [Magisk OTA Upgrade Guides](https://topjohnwu.github.io/Magisk/ota.html)
 - [[ROM][Pixel 3][10.0.0_r41] PixelDust CAF Android 10 for blueline [7 Aug 2020]](https://forum.xda-developers.com/pixel-3/development/rom-pixeldust-caf-android-10-blueline-t4103707)
+- (old) [How to Unlock the Bootloader and Root the Google Pixel 3 with Magisk](https://www.xda-developers.com/google-pixel-3-unlock-bootloader-root-magisk/)
+    - Rooting the Phone instructions from this site were very helpful!
+- (old) [Magisk OTA Upgrade Guides](https://topjohnwu.github.io/Magisk/ota.html)
 
 -----
 
@@ -47,8 +47,6 @@ fastboot --version
 ```
 
 # Rooting the Phone
-
-> I was only able to root my phone with the Android 9 Pie OS. Using Android 10, the rooting process was unsuccessful (with or without twrp)!
 
 ## Unlock the Bootloader
 
@@ -177,5 +175,7 @@ I had issues with root being lost while using the stock Android ROM, even with a
 The scenario was I was able to OTA upgrade to v11 successfully, but sporadically after a week of use, the phone would no longer pass SafetyNet.
 
 I do not recommend the [LineageOS blueline](https://download.lineageos.org/blueline) roms yet, because I had severe battery life issues using as well as random crashing of [OpenGApps](https://opengapps.org/), despite using the recommended settings.
+
+The primary motivation for rooting the device is to enable [Axet's Call Recorder](https://github.com/di72nn/callrecorder-axet) as a system app.
 
 Do not change the bootloader settings (lock/unlock), as this will wipe your device user data again or potentially brick your device.
