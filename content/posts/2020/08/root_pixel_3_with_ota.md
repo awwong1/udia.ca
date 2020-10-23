@@ -9,6 +9,9 @@ tags:
   - linux
 ---
 
+_EDIT 2020-01-23_: Despite having Android 11 and automatic updates disabled, my phone suddenly lost the capacity for undetected root (`ctsProfile: False`, `evalType: Hardware`).
+I have updated the guide to use [[ROM][Pixel 3][10.0.0_r41] PixelDust CAF Android 10 for blueline [7 Aug 2020]](https://forum.xda-developers.com/pixel-3/development/rom-pixeldust-caf-android-10-blueline-t4103707) and included step by step instructions below.
+
 This document will outline the steps that I took to root my Google Pixel 3 phone.
 It is a combination of multiple tutorials, with minor adaptations to address some issues during the root process.
 
@@ -17,6 +20,7 @@ It is a combination of multiple tutorials, with minor adaptations to address som
 - [How to Unlock the Bootloader and Root the Google Pixel 3 with Magisk](https://www.xda-developers.com/google-pixel-3-unlock-bootloader-root-magisk/)
     - Rooting the Phone instructions from this site were very helpful!
 - [Magisk OTA Upgrade Guides](https://topjohnwu.github.io/Magisk/ota.html)
+- [[ROM][Pixel 3][10.0.0_r41] PixelDust CAF Android 10 for blueline [7 Aug 2020]](https://forum.xda-developers.com/pixel-3/development/rom-pixeldust-caf-android-10-blueline-t4103707)
 
 -----
 
@@ -80,84 +84,98 @@ Continue unlocking the bootloader by **pressing the volume up key** until it say
 You will see a warning message that your phone is unlocked on every boot.
 This is something that cannot be removed or hidden.
 
-## Downgrade to Android 9 (Pie)
+## Downgrade to Android 10 (Oreo)
 
-You can skip this step if your phone is already running Android 9.
+You **must have a recent factory image flashed** prior to installing the rom.
 
 1. Since the device is wiped, re-enable **Developer Options** and **USB Debugging**. Ensure that the device is still recognized by the computer through `adb`.
 2. Reboot the phone back into the bootloader menu.
 3. Download an Android 9 factory image from the [Google image repository, "blueline" for Pixel 3](https://developers.google.com/android/images#blueline)
-I used [9.0.0 (PQ3A.190801.002, Aug 2019)](https://dl.google.com/dl/android/aosp/blueline-pq3a.190801.002-factory-f3d66c49.zip) as it was the latest Android 9 image, all newer images belonging to Android 10.
+I used [10.0.0 (QQ3A.200805.001, Aug 2020)](https://dl.google.com/dl/android/aosp/blueline-qq3a.200805.001-factory-1ba5d2c2.zip) as it was the latest Android 10 image, all newer images belonging to Android 11.
     ```bash
     # Download the factory image archive
-    wget https://dl.google.com/dl/android/aosp/blueline-pq3a.190801.002-factory-f3d66c49.zip
+    wget https://dl.google.com/dl/android/aosp/blueline-qq3a.200805.001-factory-1ba5d2c2.zip
 
     # Ensure the checksum matches the google provided value.
-    # f3d66c498994c7ca8c63a97f74bbd2634db7f91e1e114e7924cb721a149ddd2b
-    sha256sum blueline-pq3a.190801.002-factory-f3d66c49.zip 
+    # 1ba5d2c20f71e46f08a0ae05bc2b478c3e4b3641ec661e9fdb0b8e7ec4df6a22
+    sha256sum blueline-qq3a.200805.001-factory-1ba5d2c2.zip 
     ```
 4. Unzip the verified archive and run the `flash-all.sh` script to downgrade your device.
     ```bash
-    unzip blueline-pq3a.190801.002-factory-f3d66c49.zip
-    cd blueline-pq3a.190801.002
+    unzip blueline-qq3a.200805.001-factory-1ba5d2c2.zip
+    cd blueline-qq3a.200805.001
     # Begin the flash process
     ./flash-all.sh
     ```
-5. Your device is now downgraded to Android 9. Proceed to rooting the phone using [Magisk](https://github.com/topjohnwu/Magisk) and [TWRP](https://www.xda-developers.com/how-to-install-twrp/).
+5. Your device is now running stock Android 10. Proceed to flashing the PixelDust ROM.
 
-## Using TWRP to install Magisk
-
-[TWRP](https://www.xda-developers.com/how-to-install-twrp/) is a custom recovery that allows you to use the Magisk installer script.
-You will not need to install TWRP, as after upgrading to Android 10, TWRP will no longer function.
-[Magisk](https://github.com/topjohnwu/Magisk) is a suite of open source tools for in-depth Android customization that provides root access, functionality to modify read-only file systems on your device, and basic root hiding functionality and system integrity check spoofing.
+## Flashing the PixelDust ROM
 
 1. Re-enable **Developer Options** and **USB Debugging**, ensuring that the computer can recognize the device through `adb`.
-2. Download the TWRP image (`.img` file) for the Google Pixel 3 from the [TWRP blueline repository](https://dl.twrp.me/blueline/).
-I used the latest `twrp-3.3.0-0-blueline.img` with no issues.
-The twrp team forbids linking directly to files, and [must be accessed through their HTML pages](https://dl.twrp.me/blueline/twrp-3.3.0-0-blueline.img.html).
-Verify the checksums and PGP signatures.
-3. Download the latest Magisk release and sync it to the phone.
-I used [Magisk-v20.4.zip](https://github.com/topjohnwu/Magisk/releases/tag/v20.4).
-
+2. Download the PixelDust Boot Image and the PixelDust CAF Android 10 images from the [XDA-Forums links section](https://forum.xda-developers.com/pixel-3/development/rom-pixeldust-caf-android-10-blueline-t4103707).
+    - I used the [boot_caf_2020_5.img](https://sourceforge.net/projects/pixeldustproject/files/ota/blueline/boot_caf_2020_5.img/download) and [pixeldust_blueline-ota-retrofit-0b6310662f.zip](https://sourceforge.net/projects/pixeldustproject/files/ota/blueline/pixeldust_blueline-ota-retrofit-0b6310662f.zip/download) sourceforge links wihout issue.
     ```bash
-    # Sync the Magisk file to the phone's Download folder
-    adb push Magisk-v20.4.zip /sdcard/Download/Magisk-v20.4.zip
+    sha256sum boot_caf_2020_5.img
+    # 8b7993a0ef6137fad626ae9057c397f6eded5f855956529422c3d007f29b2c81  boot_caf_2020_5.img
+    sha256sum pixeldust_blueline-ota-retrofit-0b6310662f.zip
+    # 5e2bcb3900640f05a50651a4022a16f788810f432e6cc560e81975829ea9378e  pixeldust_blueline-ota-retrofit-0b6310662f.zip
     ```
-
-3. Reboot your phone to the bootloader menu.
-4. Once the phone is on the bootloader screen, **temporarily boot into TWRP** using the TWRP boot image:
+    - It was not necessary to download the Magisk patched boot image, as I sideloaded Magisk separately.
+3. Reboot into the bootloader and flash the boot image to enable recovery mode.
     ```bash
-    fastboot boot twrp-3.3.0-0-blueline.img
+    fastboot flash boot boot_caf_2020_5.img
     ```
-5. Your phone should exit the bootloader menu and reboot to TWRP recovery.
-If this step fails, **double check that you are running Android 9.**
-6. Tap on Install.
-7. Find the `Magisk-v20.4.zip` file saved in the Download folder. Tap on it and use the slider to install it.
-8. Reboot back to the OS and check the status of the root by opening up Magisk Manager.
+4. Wipe the userdata (necessary for first PixelDust/Android 10 install).
+    ```bash
+    fastboot erase userdata
+    ```
+5. Reboot into the bootloader.
+    ```bash
+    fastboot reboot fastboot
+    ```
+6. Use the volume keys and power button to select `Enter Recovery`
+7. Select `Apply Update > Apply Update from ADB`.
+8. Sideload the PixelDust ROM zip archive.
+    ```bash
+    adb sideload pixeldust_blueline-ota-retrofit-0b6310662f.zip
+    ```
+9. Reboot the device. Proceed to sideloading Magisk.
 
-## Installing OTA Updates
+## Sideloading Magisk
 
-These instructions are taken directly from the [Magisk OTA Upgrade Guides](https://topjohnwu.github.io/Magisk/ota.html).
+[Magisk](https://github.com/topjohnwu/Magisk) is a suite of open source tools for in-depth Android customization that provides root access, functionality to modify read-only file systems on your device, and basic root hiding functionality and system integrity check spoofing.
 
-It is reccomended to disable the switch for **Automatic system updates** within **Developer Options** so OTA updates will not install without your acknowledgement.
+1. Download the latest stable MagiskManager release and install it on the phone.
+    - I used [Magisk Manager v8.0.2](https://github.com/topjohnwu/Magisk/releases/download/manager-v8.0.2/MagiskManager-v8.0.2.apk) with success.
+    ```bash
+    sha256sum MagiskManager-v8.0.2.apk 
+    1b28f4952f994e5bff850a6586d66dbb34324f569860d91cdff03e6dfbd3a877  MagiskManager-v8.0.2.apk
 
-When an OTA is available:
+    adb install MagiskManager-v8.0.2.apk
+    ```
+2. Reboot the phone into recovery mode.
+3. Download the latest stable Magisk release and sideload it onto the phone.
+    - I used [Magisk-v20.4.zip](https://github.com/topjohnwu/Magisk/releases/download/v20.4/Magisk-v20.4.zip) with success.
+    ```bash
+    sha256sum Magisk-v20.4.zip 
+    5795228296ab3e84cda196e9d526c9b8556dcbf5119866e0d712940ceed1f422  Magisk-v20.4.zip
 
-1. Open up **Magisk Manager**.
-2. Select **Uninstall**.
-3. Select **Restore Images**.
-4. **Do not reboot or you will have Magisk uninstalled.** This will restore partitions modified by Magisk back to stock from backups made at install in order to pass the pre-OTA block verifications.
-5. Apply the OTA update as you would normally (**Settings** > **System** > **System Update**).
-6. After the installation finishes, **do not press the "Restart Now" or "Reboot" button!** Instead, go to **Magisk Manager**, select **Install**, and **Install to Inactive Slot**.
-7. Reboot when prompted by Magisk Manager. Your phone should now be updated to the latest OTA and you should still have root.
+    # See Flashing the PixelDust ROM, steps 5 through 7.
+    adb sideload Magisk-v20.4.zip
+    ```
+    - The signature mismatch warning is expected and can be bypassed.
+4. Reboot the phone and navigate to MagiskManager.
+5. If safetyNet shows errors `ctsProfile: False`, `evalType: BASIC`, install the MagiskHide Props Config from the modules page.
+    - I used [[MODULE] MagiskHide Props Config - SafetyNet, prop edits, and more - v5.3.5-v105](https://forum.xda-developers.com/apps/magisk/module-magiskhide-props-config-t3789228).
+6. Within MagiskManager settings, enable the `MagiskHide` functionality and the `Systemless hosts` support.
+7. Reboot your phone. Congratulations! You now have root on your device and you should still be able to run apps like Google Pay.
+
 
 # Asides
 
-There are a few tutorials online suggesting that Magisk can be installed directly on an Android device running Android 10 by having Magisk patch an Android 10 image prior to flashing.
-These tutorials have not worked for me.
+I had issues with root being lost while using the stock Android ROM, even with automatic updates disabled.
+The scenario was I was able to OTA upgrade to v11 successfully, but sporadically after a week of use, the phone would no longer pass SafetyNet.
 
-TWRP is not supported on Android 10 so therefore does not need to be installed on the device.
+I do not recommend the [LineageOS blueline](https://download.lineageos.org/blueline) roms yet, because I had severe battery life issues using as well as random crashing of [OpenGApps](https://opengapps.org/), despite using the recommended settings.
 
-Enable the Magisk Manager **Systemless hosts**, **Magisk Hide** functions in the settings.
-
-Do not change the bootloader settings (lock/unlock), as this will wipe your device user data again.
+Do not change the bootloader settings (lock/unlock), as this will wipe your device user data again or potentially brick your device.

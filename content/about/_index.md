@@ -20,11 +20,12 @@ I am currently a graduate student at the [University of Alberta](https://www.ual
 I began pursuing my Master's degree in September 2018 due to a stubborn curiosity regarding the mechanisms of deep neural networks and their impressive results in image classification and segmentation tasks.
 My research is currently in the classification and analysis of 12-lead electrocardiogram signals.
 
-----
+## Resume & Curriculum Vitae
 
-My [**curriculum vitae (CV)** can be found here](//media.udia.ca/cv.pdf) ([latex source code](https://git.udia.ca/alex/cv/src/branch/master/main.tex)).
+My career oriented [**public resume** can be found here](https://media.udia.ca/Alexander_Wong-Public_Resume.pdf).
 
-----
+A more academic [**curriculum vitae (CV)** can be found here](//media.udia.ca/cv.pdf) ([latex source code](https://git.udia.ca/alex/cv/src/branch/master/main.tex)).
+
 
 ## Links
 
