@@ -26,7 +26,6 @@ My career oriented [**public resume** can be found here](https://media.udia.ca/A
 
 A more academic [**curriculum vitae (CV)** can be found here](//media.udia.ca/cv.pdf) ([latex source code](https://git.udia.ca/alex/cv/src/branch/master/main.tex)).
 
-
 ## Links
 
 * Personal GitHub page: [github.com/awwong1](https://github.com/awwong1/)
@@ -34,6 +33,12 @@ A more academic [**curriculum vitae (CV)** can be found here](//media.udia.ca/cv
 * LinkedIn Profile: [linkedin.com/in/awwong1](https://www.linkedin.com/in/awwong1/)
 * Keybase: [keybase.io/udia](https://keybase.io/udia)
 * Matrix: [@alex:matrix.udia.ca](https://matrix.to/#/@alex:matrix.udia.ca)
+
+## Calendar
+
+<div class="responsive-iframe-container">
+<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FEdmonton&amp;src=YWxleGFuZGVyd3dvbmdAZ21haWwuY29t&amp;src=YWxleEB1ZGlhLmNh&amp;src=YXd3b25nMUB1YWxiZXJ0YS5jYQ&amp;color=%239E69AF&amp;color=%23C0CA33&amp;color=%23D81B60&amp;title=Alexander&#39;s%20Calendar&amp;showTabs=1&amp;mode=WEEK&amp;showDate=1&amp;showPrint=0&amp;showTitle=0&amp;showNav=1&amp;showCalendars=0" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
 
 ## Open Source Projects
 
