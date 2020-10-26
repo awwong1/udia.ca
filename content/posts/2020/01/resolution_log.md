@@ -515,3 +515,14 @@ By this time next year, if there is no further activity, the company will have n
 He told me that he knows my work ethic and intelligence, and that although an employee relationship is noble, that I do have the capacity to succeed in entrepreneurship.
 This recollection of the talk does not fully capture the kindness and care that was conveyed to me.
 I feel as if I am once again back at the crossroads and there is no certainty in my next steps.
+
+### Week 43: Mon, Oct 19 - Sun, Oct 25
+
+This week was comprised of back-to-back job interviews, phone screens, technical assessments, and Startup Week (from Startup Edmonton).
+I underestimated the challenge of finding fulfilling work- even though I am nearing the completion of my graduate studies and have attained the deep learning/machine learning skillset, it seems likely that the career I end up in will focus primarily on application/web development.
+I don't think this is necessarily a bad thing, but it's a lateral step.
+It would be better to have positions that can utilize my abilities in a more encompassing manner.
+
+As an aside, we finally received a full SQL script containing production data ECG traces from Philips ECG machines.
+I decoded the values and converted the encoded signals into a raw voltage over time reading successfully.
+This week will be porting over all my papers into the thesis and writing addendums to tie the entire work into one cohesive unit.
