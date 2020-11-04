@@ -526,3 +526,18 @@ It would be better to have positions that can utilize my abilities in a more enc
 As an aside, we finally received a full SQL script containing production data ECG traces from Philips ECG machines.
 I decoded the values and converted the encoded signals into a raw voltage over time reading successfully.
 This week will be porting over all my papers into the thesis and writing addendums to tie the entire work into one cohesive unit.
+
+## November
+
+### Week 44: Mon, Oct 26 - Sun, Nov 1
+
+This week was once again a big mash of interviews, job assessments, and tieing up loose ends on my master's thesis.
+I am grateful to have attained a handful of compelling and generous offers from multiple companies- I do have a rank ordered list of the positions weighing total compensation, long term stability of the organization, estimated culture fit, and task interest/complexity.
+Lots of time was spent writing background information relevant to the different diagnoses for the electrocardiogram classification task.
+Each label now has a corresponding figure, showcasing how the signals look for visual reference.
+
+I will continue plugging away at the thesis, with the goal to have all but the last experiment ready for supervisor review.
+One experiment requires re-running with the feature extraction step performed again, with an new idea for isolating important features per label rather than amalgamating all important features across all classifiers.
+I also need to mix in the sequence autoencoder embeddings and see how that effects my results.
+
+Additionally, my corporate taxation year end is October 31st, so I need to prepare documents for my accountant.
