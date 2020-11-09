@@ -541,3 +541,20 @@ One experiment requires re-running with the feature extraction step performed ag
 I also need to mix in the sequence autoencoder embeddings and see how that effects my results.
 
 Additionally, my corporate taxation year end is October 31st, so I need to prepare documents for my accountant.
+
+### Week 45: Mon, Nov 2 - Sun, Nov 8
+
+Three days of this week was spent completing a takehome assessment (Senior Software Engineer) position.
+I wonder if it is partly due to my skills being rusty, but it was a very time consuming ordeal.
+The large amount of time spent was in project setup.
+This includes things like configuring docker/docker-compose, initializing the starter images, setup of test framework/linters.
+I wonder if future assessments should be opinionated enough such that a base set of project files are provided, rather than starting candidates off with a pure blank slate git repository.
+
+I received another request to do a comprehensive takehome, with one week deadline.
+A rough estimate of the task is around 2-3 full days.
+It is significantly cutting into my thesis writing and research time.
+I have finished running the 18k feature training experiments, but now I need to run the top 1k (possibly top 100 as well?) feature extraction and re-training experiments.
+Then I need to generate the figures and write the final thesis chapter, get the revisions from Abram, then submit the finished product to FGSR.
+
+It snowed 15cm over the weekend, and I also have early morning commitments that require driving on Monday (Nov 9th).
+Long term is pretty short for me at this moment.
