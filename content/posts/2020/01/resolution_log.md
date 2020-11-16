@@ -558,3 +558,16 @@ Then I need to generate the figures and write the final thesis chapter, get the 
 
 It snowed 15cm over the weekend, and I also have early morning commitments that require driving on Monday (Nov 9th).
 Long term is pretty short for me at this moment.
+
+### Week 46: Mon, Nov 9 - Sun, Nov 15
+
+Because I left the house very early, driving on the Monday morning was not as bad as expected, despite the icy roads and bad conditions.
+
+I have completed an additional takehome for Intuit's Senior Software Developer and Software Engineer 2 positions.
+Additionally, I opted to make all my assessment source codes public and open sourced everything (through Apache v2.0).
+I was contacted by additional founders and recruiters for further video chats and technical assessments, which I will be completing throughout the week.
+
+The thesis has words for all sections, from introduction, background, the three experiments, and a conclusion.
+The cohesive unit has been sent to my supervisor for criticism and feedback, but I do not anticipate major changes or any re-execution of experiments to occur.
+
+The primary focus this week will be to continue the job search and to be mindful that I have committed to various companies that a decision will be made prior to the beginning of December.
