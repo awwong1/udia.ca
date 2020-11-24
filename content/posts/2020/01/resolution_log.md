@@ -571,3 +571,12 @@ The thesis has words for all sections, from introduction, background, the three 
 The cohesive unit has been sent to my supervisor for criticism and feedback, but I do not anticipate major changes or any re-execution of experiments to occur.
 
 The primary focus this week will be to continue the job search and to be mindful that I have committed to various companies that a decision will be made prior to the beginning of December.
+
+### Week 47: Mon, Nov 16 - Sun, Nov 22
+
+This week contained the last stretch of interviews and take home assessments that is necessary prior to making a final decision for post graduation employment.
+(Final decision for company for employment must be decided by November 30th, due to competing offers and existing deadlines.)
+Further finalizations have been made to the thesis and resubmitted to Abram for review.
+Full label-wise feature importance utilizations and F1-scores added to thesis appendix.
+
+Wished my father well wishes and happy date of birth this weekend.
