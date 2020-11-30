@@ -580,3 +580,13 @@ Further finalizations have been made to the thesis and resubmitted to Abram for 
 Full label-wise feature importance utilizations and F1-scores added to thesis appendix.
 
 Wished my father well wishes and happy date of birth this weekend.
+
+### Week 48: Mon, Nov 23 - Sun, Nov 29
+
+I have made the final decision for post graduation employment.
+Decided to accept an offer from Intuit as a senior software engineer.
+No further revisions were requested to the thesis, and a preliminary poll for thesis seminar and defense date has been sent off to all the committee members.
+
+I spent some time adding continuous integration into `torchprof`, as well as some time investingating `hexo` as a new static site generation tool.
+I am interested in having first-class support for server side mathematics, rather than relying on client side katex to generate the markup.
+Next week will be writing up a seminar presentation (going to spend some time playing with reveal.js instead of using a simple google slide presentation).
