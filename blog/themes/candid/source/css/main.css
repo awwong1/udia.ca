@@ -1,0 +1,270 @@
+html {
+  font-size: 2vw;
+  height: 100%;
+  /* animation: fadeInAnimation ease 0.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; */
+}
+/* @keyframes fadeInAnimation {
+  0% {
+    background-color: #000000;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+} */
+@media all and (min-width: 1000px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media all and (max-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Re-initializing list left-padding */
+ul,
+ol {
+  margin-left: 1.5rem;
+}
+
+body {
+  font-family: "Source Serif Pro", "DejaVu Serif", "Times New Roman", Times,
+    serif;
+  line-height: 1.45;
+  font-size: 0.91rem;
+  font-variant-numeric: oldstyle-nums;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 100%;
+  position: relative;
+  z-index: -10000;
+  -webkit-font-smoothing: subpixel-antialiased; /* corrects safari rendering */
+  -webkit-text-size-adjust: 100%; /* Prevent font size change after iOS orientation update. */
+}
+
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+footer {
+  font-family: "Raleway", "DejaVu Sans", "Open Sans", Arial, Helvetica,
+    sans-serif;
+  font-weight: 100;
+  margin-top: 0.5rem;
+}
+
+h1#page-title {
+  font-size: 2.2rem;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.6rem;
+}
+
+img#logo {
+  height: 7rem;
+  width: 7rem;
+}
+
+/* Header and primary navigation layout */
+div#content {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+div#content > section#main {
+  flex: 1 0 auto;
+}
+@media screen and (min-width: 768px) {
+  div#content {
+    margin-left: 8.5rem;
+    margin-right: 1rem;
+  }
+  header#header {
+    position: absolute;
+    top: 0rem;
+    left: 1rem;
+    line-height: 120%;
+    mix-blend-mode: darken;
+  }
+  div#header-content {
+    position: fixed;
+    max-width: 7rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  div#header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  img#logo {
+    border: 1px dotted #000000;
+  }
+  div#content {
+    margin: 0 0.5rem;
+  }
+}
+
+/* The footer at the bottom of the page. */
+footer {
+  margin: 0.5rem 0;
+  align-self: flex-end;
+}
+footer > span:not(:last-child)::after {
+  content: "\2002|\2002";
+}
+
+/* Page specific metadata spacing */
+#page-metadata > span:not(:last-child)::after {
+  content: "\2006;\2004";
+}
+#page-metadata time {
+  font-style: italic;
+}
+#page-metadata {
+  margin-bottom: 1rem;
+}
+
+/* Hexo Table of Contents display functionality. */
+@media screen and (min-width: 768px) {
+  ol.toc {
+    float: left;
+    max-width: 30ch;
+  }
+}
+@media screen and (max-width: 768px) {
+  ol.toc {
+    float: none;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+  }
+}
+ol.toc {
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  font-family: "Raleway", "DejaVu Sans", "Open Sans", Arial, Helvetica,
+    sans-serif;
+  line-height: 1.2;
+  margin: 0 1rem 0 0;
+  padding: 6px;
+  position: relative;
+  z-index: 1;
+}
+ol.toc:empty {
+  display: none;
+}
+ol.toc,
+ol.toc ol {
+  list-style-type: none;
+  margin-top: 0.2rem;
+}
+/* H1 */
+ol.toc {
+  counter-reset: htoc_1;
+}
+ol.toc > li::before {
+  counter-increment: htoc_1;
+  content: counter(htoc_1) "\2006 ";
+}
+/* H2 */
+ol.toc > li > ol {
+  counter-reset: htoc_2;
+}
+ol.toc > li > ol > li::before {
+  counter-increment: htoc_2;
+  content: counter(htoc_1) "." counter(htoc_2) "\2006 ";
+}
+/* H3 */
+ol.toc > li > ol > li > ol {
+  counter-reset: htoc_3;
+}
+ol.toc > li > ol > li > ol > li::before {
+  counter-increment: htoc_3;
+  content: counter(htoc_1) "." counter(htoc_2) "." counter(htoc_3) "\2006 ";
+}
+/* H4 */
+ol.toc > li > ol > li > ol > li > ol {
+  counter-reset: htoc_4;
+}
+ol.toc > li > ol > li > ol > li > ol > li::before {
+  counter-increment: htoc_4;
+  content: counter(htoc_1) "." counter(htoc_2) "." counter(htoc_3) "."
+    counter(htoc_4) "\2006 ";
+}
+/* H5 */
+ol.toc > li > ol > li > ol > li > ol > li > ol {
+  counter-reset: htoc_5;
+}
+ol.toc > li > ol > li > ol > li > ol > li > ol > li::before {
+  counter-increment: htoc_5;
+  content: counter(htoc_1) "." counter(htoc_2) "." counter(htoc_3) "."
+    counter(htoc_4) "." counter(htoc_5) "\2006 ";
+}
+/* H6 */
+ol.toc > li > ol > li > ol > li > ol > li > ol > li > ol {
+  counter-reset: htoc_6;
+}
+ol.toc > li > ol > li > ol > li > ol > li > ol > li > ol > li::before {
+  counter-increment: htoc_6;
+  content: counter(htoc_1) "." counter(htoc_2) "." counter(htoc_3) "."
+    counter(htoc_4) "." counter(htoc_5) "." counter(htoc_6) "\2006 ";
+}
+
+/* Style for rendering code blocks */
+pre,
+code {
+  font-family: "Fira Mono", "Courier New", Courier, monospace;
+}
+pre {
+  margin: 0;
+  overflow-x: auto;
+  padding: 0 2px;
+  border: 1px dashed #c8c8c8;
+}
+:not(pre) > code {
+  padding: 0 2px;
+  font-size: 0.9em;
+  border: 1px solid #c8c8c8;
+  background-color: #fafafa;
+  white-space: pre-wrap;
+}
+
+/* Overflow indicators for code blocks (highlight) */
+figure.highlight {
+  overflow-x: auto;
+  background: linear-gradient(90deg, white 30%, rgba(255, 255, 255, 0)) left/3em
+      no-repeat local,
+    linear-gradient(90deg, rgba(255, 255, 255, 0), white 70%) right/3em
+      no-repeat local,
+    radial-gradient(
+        farthest-side at 0 50%,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0)
+      )
+      left/0.7em no-repeat scroll,
+    radial-gradient(
+        farthest-side at 100% 50%,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0)
+      )
+      right/0.7em no-repeat scroll;
+}
