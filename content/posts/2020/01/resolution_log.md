@@ -587,6 +587,18 @@ I have made the final decision for post graduation employment.
 Decided to accept an offer from Intuit as a senior software engineer.
 No further revisions were requested to the thesis, and a preliminary poll for thesis seminar and defense date has been sent off to all the committee members.
 
-I spent some time adding continuous integration into `torchprof`, as well as some time investingating `hexo` as a new static site generation tool.
+I spent some time adding continuous integration into `torchprof`, as well as some time investigating `hexo` as a new static site generation tool.
 I am interested in having first-class support for server side mathematics, rather than relying on client side katex to generate the markup.
 Next week will be writing up a seminar presentation (going to spend some time playing with reveal.js instead of using a simple google slide presentation).
+
+## December
+
+### Week 49: Mon, Nov 30 - Sun, Dec 6
+
+This week I worked on the seminar and thesis defense presentation slides.
+I have officially sent off the notification of the thesis defense to the Computer Science Graduate administrative staff, informing them that my public seminar will be performed on January 5th, 2021 at 1pm MST.
+
+I spent a lot of time playing with `teddit`, an open source project designed as a 'proxy' for reddit that does not require JavaScript for functionality and respects user privacy.
+There is really impressive functionality that enabled the expanding and contracting of comment chains, done entirely using HTML and CSS.
+Otherwise I am delaying the transition of the theme to the new Hexo site, due to unspecified head injection of some script tags and a meta tag (indicating the generator used) that I cannot remove easily.
+I anticipate that it will require forking the program, or modifying the default set of plugins used by the static site generator.
