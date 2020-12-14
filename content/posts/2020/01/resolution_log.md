@@ -602,3 +602,14 @@ I spent a lot of time playing with `teddit`, an open source project designed as 
 There is really impressive functionality that enabled the expanding and contracting of comment chains, done entirely using HTML and CSS.
 Otherwise I am delaying the transition of the theme to the new Hexo site, due to unspecified head injection of some script tags and a meta tag (indicating the generator used) that I cannot remove easily.
 I anticipate that it will require forking the program, or modifying the default set of plugins used by the static site generator.
+
+### Week 50: Mon, Dec 7 - Sun, Dec 13
+
+A lot of time was spent revising the seminar and thesis presentation slides.
+Although the public presentation is only 1 hour long (including questions), I have a lot of material that I need to address.
+
+I spent some time over the weekend making contributions to my `torchprof` library, updating the package to support the new `self cuda total` and `memory` fields offered in the `PyTorch 1.5+` versions.
+It is not trivial making the library backwards compatible- I have a lot more respect for the engineers that need to manage all of this backwards compatibility with non-trivial codebases.
+
+One of the things I want to play around with this coming week is the [NVLabs/stylegan2-ada](https://github.com/NVlabs/stylegan2-ada) repository (see paper [Training Generative Adversarial Networks with Limited Data](https://arxiv.org/abs/2006.06676)).
+Additionally, I have de-prioritized migrating over my static site to Hexo due to the static site generation quirks (unknown source of inline javascript, kludged in meta tags).
