@@ -1,0 +1,6 @@
+<div class="post-metadata">
+    <% if (post.description){ %><div class="post-description"><%= post.description %></div><% } %>
+    <span class="post-created" title="<%= date(post.date, 'ddd, MMM D YYYY, h:mm:ss a Z') %>">created: <time datetime="<%= date_xml(post.date) %>" itemprop="dateCreated"><%= date(post.date, config.date_format) %></time></span>
+    <span class="post-updated" title="<%= date(post.updated, 'ddd, MMM D YYYY, h:mm:ss a Z') %>">updated: <time datetime="<%= date_xml(post.date) %>" itemprop="dateUpdated"><%= date(post.updated, config.date_format) %></time></span>
+    <% if (post.status){ %><span class="post-status">status: <em><%= post.status %></em></span><% } %>
+</div>

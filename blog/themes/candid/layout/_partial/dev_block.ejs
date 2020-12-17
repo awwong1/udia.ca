@@ -1,15 +1,15 @@
 <hr/>
 <h3>Site</h3>
-<pre><code><%- strip_html(JSON.stringify(site, null, '  ')) %></code></pre>
+<pre><code><%- escape_html(JSON.stringify(site, null, '  ')) %></code></pre>
 <h3>Page</h3>
-<pre><code><%- strip_html(JSON.stringify(page, null, '  ')) %></code></pre>
+<pre><code><%- escape_html(JSON.stringify(page, null, '  ')) %></code></pre>
 <h3>Config</h3>
-<pre><code><%- strip_html(JSON.stringify(config, null, '  ')) %></code></pre>
+<pre><code><%- escape_html(JSON.stringify(config, null, '  ')) %></code></pre>
 <h3>Theme</h3>
-<pre><code><%- strip_html(JSON.stringify(theme, null, '  ')) %></code></pre>
+<pre><code><%- escape_html(JSON.stringify(theme, null, '  ')) %></code></pre>
 <h3>Path</h3>
-<pre><code><%- strip_html(JSON.stringify(path, null, '  ')) %></code></pre>
+<pre><code><%- escape_html(JSON.stringify(path, null, '  ')) %></code></pre>
 <h3>URL</h3>
-<pre><code><%- strip_html(JSON.stringify(url, null, '  ')) %></code></pre>
+<pre><code><%- escape_html(JSON.stringify(url, null, '  ')) %></code></pre>
 <h3>Environment</h3>
-<pre><code><%- strip_html(JSON.stringify(env, null, '  ')) %></code></pre>
+<pre><code><%- escape_html(JSON.stringify(env, null, '  ')) %></code></pre>

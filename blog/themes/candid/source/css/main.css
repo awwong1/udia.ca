@@ -1,75 +1,95 @@
 /** Fonts */
 /* latin-ext */
 @font-face {
-  font-family: 'Source Serif Pro';
+  font-family: "Source Serif Pro";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Source Serif Pro'), local('SourceSerifPro-Regular'), url(/fonts/SourceSerifPro-Regular_latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: local("Source Serif Pro"), local("SourceSerifPro-Regular"),
+    url(/fonts/SourceSerifPro-Regular_latin-ext.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Source Serif Pro';
+  font-family: "Source Serif Pro";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Source Serif Pro'), local('SourceSerifPro-Regular'), url(/fonts/SourceSerifPro-Regular_latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: local("Source Serif Pro"), local("SourceSerifPro-Regular"),
+    url(/fonts/SourceSerifPro-Regular_latin.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Source Serif Pro';
+  font-family: "Source Serif Pro";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: local('Source Serif Pro Semibold'), local('SourceSerifPro-Semibold'), url(/fonts/SourceSerifPro-Semibold_latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: local("Source Serif Pro Semibold"), local("SourceSerifPro-Semibold"),
+    url(/fonts/SourceSerifPro-Semibold_latin-ext.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Source Serif Pro';
+  font-family: "Source Serif Pro";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: local('Source Serif Pro Semibold'), local('SourceSerifPro-Semibold'), url(/fonts/SourceSerifPro-Semibold_latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: local("Source Serif Pro Semibold"), local("SourceSerifPro-Semibold"),
+    url(/fonts/SourceSerifPro-Semibold_latin.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Source Serif Pro';
+  font-family: "Source Serif Pro";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Source Serif Pro Bold'), local('SourceSerifPro-Bold'), url(/fonts/SourceSerifPro-Bold_latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: local("Source Serif Pro Bold"), local("SourceSerifPro-Bold"),
+    url(/fonts/SourceSerifPro-Bold_latin-ext.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Source Serif Pro';
+  font-family: "Source Serif Pro";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Source Serif Pro Bold'), local('SourceSerifPro-Bold'), url(/fonts/SourceSerifPro-Bold_latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: local("Source Serif Pro Bold"), local("SourceSerifPro-Bold"),
+    url(/fonts/SourceSerifPro-Bold_latin.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(/fonts/Raleway-SemiBold_latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: local("Raleway SemiBold"), local("Raleway-SemiBold"),
+    url(/fonts/Raleway-SemiBold_latin-ext.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(/fonts/Raleway-SemiBold_latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: local("Raleway SemiBold"), local("Raleway-SemiBold"),
+    url(/fonts/Raleway-SemiBold_latin.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 
 html {
@@ -102,8 +122,6 @@ html {
   margin: 0;
   padding: 0;
 }
-
-/* Re-initializing list left-padding */
 ul,
 ol {
   margin-left: 1.5rem;
@@ -156,7 +174,7 @@ svg#logo {
   /* width: 7rem; */
 }
 
-/* Header and primary navigation layout */
+/** Header and primary navigation layout */
 div#content {
   display: flex;
   min-height: 100vh;
@@ -164,6 +182,9 @@ div#content {
 }
 div#content > section#main {
   flex: 1 0 auto;
+}
+nav#main-nav > ul {
+  list-style: none;
 }
 @media screen and (min-width: 650px) {
   div#content {
@@ -197,7 +218,7 @@ div#content > section#main {
   }
 }
 
-/* The footer at the bottom of the page. */
+/** The footer at the bottom of the page. */
 footer {
   margin: 0.5rem 0;
   align-self: flex-end;
@@ -206,18 +227,29 @@ footer > span:not(:last-child)::after {
   content: "\2002|\2002";
 }
 
-/* Page specific metadata spacing */
-#page-metadata > span:not(:last-child)::after {
+/** Page specific metadata spacing */
+#page-metadata > span:not(:last-child)::after,
+.post-metadata > span:not(:last-child)::after {
   content: "\2006;\2004";
 }
-#page-metadata time {
+#page-metadata time,
+.post-metadata time {
   font-style: italic;
 }
-#page-metadata {
+#page-metadata,
+.post-metadata {
   margin-bottom: 1rem;
 }
 
-/* Hexo Table of Contents display functionality. */
+/** Archive, index of all available posts. */
+h2.archive-year-wrap > a.archive-year {
+  text-decoration: none;
+}
+div.archive-article-inner {
+  margin-left: 0.5rem;
+}
+
+/** Hexo Table of Contents display functionality. */
 @media screen and (min-width: 650px) {
   ol.toc {
     float: left;
@@ -302,27 +334,9 @@ ol.toc > li > ol > li > ol > li > ol > li > ol > li > ol > li::before {
     counter(htoc_4) "." counter(htoc_5) "." counter(htoc_6) "\2006 ";
 }
 
-/* Style for rendering code blocks */
-pre,
-code {
-  font-family: "Fira Mono", "Courier New", Courier, monospace;
-}
+/** Overflow indicators for long x-axis content (highlight) */
+figure.highlight,
 pre {
-  margin: 0;
-  overflow-x: auto;
-  padding: 0 2px;
-  border: 1px dashed #c8c8c8;
-}
-:not(pre) > code {
-  padding: 0 2px;
-  font-size: 0.9em;
-  border: 1px solid #c8c8c8;
-  background-color: #fafafa;
-  white-space: pre-wrap;
-}
-
-/* Overflow indicators for code blocks (highlight) */
-figure.highlight {
   overflow-x: auto;
   background: linear-gradient(90deg, white 30%, rgba(255, 255, 255, 0)) left/3em
       no-repeat local,
@@ -340,6 +354,25 @@ figure.highlight {
         rgba(0, 0, 0, 0)
       )
       right/0.7em no-repeat scroll;
+}
+
+/** Style for rendering code blocks */
+pre,
+code {
+  font-family: "Fira Mono", "Courier New", Courier, monospace;
+}
+pre {
+  margin: 0;
+  overflow-x: auto;
+  padding: 0 2px;
+  border: 1px dashed #c8c8c8;
+}
+:not(pre) > code {
+  padding: 0 2px;
+  font-size: 0.9em;
+  border: 1px solid #c8c8c8;
+  background-color: #fafafa;
+  white-space: pre-wrap;
 }
 
 /** Highlight.js hljs theme (Modified from GitHub) */
