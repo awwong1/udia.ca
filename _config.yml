@@ -5,11 +5,11 @@
 # Site
 title: UDIA
 subtitle: ''
-description: ''
+description: Experimenter, scientist, software developer. Collection of content pertaining to UDIA.
 keywords:
 author: Alexander Wong
 language: en
-timezone: ''
+timezone: America/Edmonton
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
@@ -136,9 +136,9 @@ filter_optimize:
     # minify all css files
     minify: true
     # bundle loaded css files into one
-    bundle: false
+    bundle: true
     # use a script block to load css elements dynamically
-    delivery: false
+    delivery: true
     # make specific css content inline into the html page
     #   - only support the full path
     #   - default is ['css/main.css']

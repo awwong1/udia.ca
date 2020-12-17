@@ -369,7 +369,7 @@ $$F = \{F_{x} \in  F_{c} : (|S| > |C|) \cap
 (|S_{connected}| > |S| - \epsilon)
   \}$$
 
-```tex
+```text
 The following function:
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 can be used to calculate the two roots of a trinomial function:

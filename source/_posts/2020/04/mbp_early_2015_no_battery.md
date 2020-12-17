@@ -13,7 +13,7 @@ tags:
 
 While working on my MacBook Pro, I noticed that the four laptop foot pads no longer made contact with the desk evenly, but rather the front two pads were lifted off the surface. The center of the laptop bulged slightly, deforming the track pad and spacebar key slightly.
 
-{{< figure src="https://swift-yeg.cloud.cybera.ca:8080/v1/AUTH_e3b719b87453492086f32f5a66c427cf/media/2020/04/21/inflated-mbp13-battery.jpg" alt="An inflated MacBook Pro battery (13 inch, Early 2015)" link="//media.udia.ca/2020/04/21/inflated-mbp13-battery.jpg" title="An inflated MacBook Pro battery (13 inch, Early 2015)" caption="Batteries were safely disposed of at an eco center." >}}
+<!-- figure src="https://swift-yeg.cloud.cybera.ca:8080/v1/AUTH_e3b719b87453492086f32f5a66c427cf/media/2020/04/21/inflated-mbp13-battery.jpg" alt="An inflated MacBook Pro battery (13 inch, Early 2015)" link="//media.udia.ca/2020/04/21/inflated-mbp13-battery.jpg" title="An inflated MacBook Pro battery (13 inch, Early 2015)" caption="Batteries were safely disposed of at an eco center." -->
 
 After opening up the laptop, I saw that all my lithium ion cells had swollen.
 Calling a local Apple repair shop, I was quoted a repair price of approximately $330 for a top case replacement, and $100 for labor.

@@ -1,8 +1,9 @@
 default: dev
 
 dev:
-	hugo server -D
+	yarn start
 deploy:
-	hugo
+	yarn clean
+	yarn build
 	rsync --whole-file --archive --verbose --compress --progress --groupmap=*:www-data public/ rac:/var/www/udia.ca
 

@@ -43,7 +43,7 @@ exiftool -all= -ext jpg -ext jpeg -ext png my_directory
 
 Let's look at a concrete example.
 
-{{< figure src="https://swift-yeg.cloud.cybera.ca:8080/v1/AUTH_e3b719b87453492086f32f5a66c427cf/media/2020/05/07/IMG_20190508_200933_1.jpg" alt="A scenic photograph under the Porto bridge." link="//media.udia.ca/2020/05/07/IMG_20190508_200933_1.jpg" title="A scenic photograph under the Porto bridge." caption="A photograph from under the [Dom Luís I Bridge](https://en.wikipedia.org/wiki/Dom_Lu%C3%ADs_I_Bridge), experienced through the [Porto bridge climb](https://www.portobridgeclimb.com/) during my 2019 Spring vacation." >}}
+<!--  figure src="https://swift-yeg.cloud.cybera.ca:8080/v1/AUTH_e3b719b87453492086f32f5a66c427cf/media/2020/05/07/IMG_20190508_200933_1.jpg" alt="A scenic photograph under the Porto bridge." link="//media.udia.ca/2020/05/07/IMG_20190508_200933_1.jpg" title="A scenic photograph under the Porto bridge." caption="A photograph from under the [Dom Luís I Bridge](https://en.wikipedia.org/wiki/Dom_Lu%C3%ADs_I_Bridge), experienced through the [Porto bridge climb](https://www.portobridgeclimb.com/) during my 2019 Spring vacation."  -->
 
 Given a typical image captured by a modern cellphone, the following metadata tags can be found:
 

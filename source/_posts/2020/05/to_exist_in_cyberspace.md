@@ -10,9 +10,9 @@ tags:
 
 In an essay published in 1994 by [Carmen Hermosillo](https://en.wikipedia.org/wiki/Carmen_Hermosillo), she argues that online communities have led to a commodification of the soul, resulting in a complex transfer of power and autonomy away from the individual to the organizations controlling the medium of discourse.[^1]
 
-{{< blockquote "humdog" "pandora's vox: on community in cyberspace" "http://alphavilleherald.com/2004/05/introducing_hum.html" >}}
+<!-- blockquote "humdog" "pandora's vox: on community in cyberspace" "http://alphavilleherald.com/2004/05/introducing_hum.html"
 when i went into cyberspace i went into it thinking that it was a place like any other place and that it would be a human interaction like any other human interaction. i was wrong when i thought that. it was a terrible mistake.
-{{< /blockquote >}}
+ /blockquote -->
 
 # Scenario
 
