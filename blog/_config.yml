@@ -18,8 +18,8 @@ root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
@@ -50,7 +50,7 @@ highlight:
   auto_detect: false
   tab_replace: ''
   wrap: true
-  hljs: false
+  hljs: true
 prismjs:
   enable: false
   preprocess: true
@@ -73,13 +73,13 @@ tag_map:
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
-meta_generator: true
+meta_generator: false
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
+date_format: ddd, MMMM D YYYY
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
 updated_option: 'mtime'
@@ -94,6 +94,22 @@ pagination_dir: page
 include:
 exclude:
 ignore:
+
+# hexo-math
+math:
+  katex:
+    false # prefer mathjax over katex (katex far heavier on client)
+    # css: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css'
+    # options:
+    #   throwOnError: true
+  mathjax:
+    css: false  # Included in the theme Candid
+    # css: 'https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css'
+    options:
+      conversion:
+        display: false
+      tex:
+      svg:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
@@ -115,14 +131,13 @@ filter_optimize:
     # minify all css files
     minify: true
     # bundle loaded css files into one
-    bundle: true
+    bundle: false
     # use a script block to load css elements dynamically
     delivery: false
     # make specific css content inline into the html page
     #   - only support the full path
     #   - default is ['css/main.css']
     inlines:
-      - 'css/fonts.css'
       - 'css/main.css'
     excludes:
   js:

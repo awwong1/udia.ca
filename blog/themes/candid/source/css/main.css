@@ -1,3 +1,77 @@
+/** Fonts */
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Serif Pro'), local('SourceSerifPro-Regular'), url(/fonts/SourceSerifPro-Regular_latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Serif Pro'), local('SourceSerifPro-Regular'), url(/fonts/SourceSerifPro-Regular_latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Source Serif Pro Semibold'), local('SourceSerifPro-Semibold'), url(/fonts/SourceSerifPro-Semibold_latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Source Serif Pro Semibold'), local('SourceSerifPro-Semibold'), url(/fonts/SourceSerifPro-Semibold_latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Source Serif Pro Bold'), local('SourceSerifPro-Bold'), url(/fonts/SourceSerifPro-Bold_latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Source Serif Pro Bold'), local('SourceSerifPro-Bold'), url(/fonts/SourceSerifPro-Bold_latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(/fonts/Raleway-SemiBold_latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(/fonts/Raleway-SemiBold_latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 html {
   font-size: 2vw;
   height: 100%;
@@ -13,12 +87,12 @@ html {
     background-color: #ffffff;
   }
 } */
-@media all and (min-width: 1000px) {
+@media all and (min-width: 650px) {
   html {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 650px) {
   html {
     font-size: 18px;
   }
@@ -38,8 +112,8 @@ ol {
 body {
   font-family: "Source Serif Pro", "DejaVu Serif", "Times New Roman", Times,
     serif;
+  font-weight: 400;
   line-height: 1.45;
-  font-size: 0.91rem;
   font-variant-numeric: oldstyle-nums;
   margin-left: auto;
   margin-right: auto;
@@ -48,7 +122,7 @@ body {
   min-height: 100%;
   position: relative;
   z-index: -10000;
-  -webkit-font-smoothing: subpixel-antialiased; /* corrects safari rendering */
+  -webkit-font-smoothing: none;
   -webkit-text-size-adjust: 100%; /* Prevent font size change after iOS orientation update. */
 }
 
@@ -60,9 +134,8 @@ h4,
 h5,
 h6,
 footer {
-  font-family: "Raleway", "DejaVu Sans", "Open Sans", Arial, Helvetica,
-    sans-serif;
-  font-weight: 100;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
   margin-top: 0.5rem;
 }
 
@@ -78,9 +151,9 @@ h2 {
   font-size: 1.6rem;
 }
 
-img#logo {
-  height: 7rem;
-  width: 7rem;
+svg#logo {
+  max-height: 7rem;
+  /* width: 7rem; */
 }
 
 /* Header and primary navigation layout */
@@ -92,15 +165,15 @@ div#content {
 div#content > section#main {
   flex: 1 0 auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 650px) {
   div#content {
-    margin-left: 8.5rem;
-    margin-right: 1rem;
+    margin-left: 7.5rem;
+    margin-right: 0.5rem;
   }
   header#header {
     position: absolute;
     top: 0rem;
-    left: 1rem;
+    left: 0.5rem;
     line-height: 120%;
     mix-blend-mode: darken;
   }
@@ -109,7 +182,7 @@ div#content > section#main {
     max-width: 7rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 650px) {
   div#header-content {
     display: flex;
     justify-content: center;
@@ -145,13 +218,14 @@ footer > span:not(:last-child)::after {
 }
 
 /* Hexo Table of Contents display functionality. */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 650px) {
   ol.toc {
     float: left;
     max-width: 30ch;
+    margin: 0 1rem 0 0;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 650px) {
   ol.toc {
     float: none;
     margin: 1rem auto;
@@ -164,7 +238,6 @@ ol.toc {
   font-family: "Raleway", "DejaVu Sans", "Open Sans", Arial, Helvetica,
     sans-serif;
   line-height: 1.2;
-  margin: 0 1rem 0 0;
   padding: 6px;
   position: relative;
   z-index: 1;
@@ -267,4 +340,97 @@ figure.highlight {
         rgba(0, 0, 0, 0)
       )
       right/0.7em no-repeat scroll;
+}
+
+/** Highlight.js hljs theme (Modified from GitHub) */
+.hljs {
+  display: block;
+  overflow-x: auto;
+  color: #333;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #009926;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0086b3;
+}
+
+.hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
 }

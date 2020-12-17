@@ -1,3 +1,15 @@
+<h1 id="page-title"><%= page.title %></h1>
+<div id="page-metadata">
+    <% if (page.description){ %><div id="page-description"><%= page.description %></div><% } %>
+    <span id="page-created" title="<%= date(page.date, 'ddd, MMM D YYYY, h:mm:ss a Z') %>">created: <time datetime="<%= date_xml(page.date) %>" itemprop="dateCreated"><%= date(page.date, config.date_format) %></time></span>
+    <span id="page-updated" title="<%= date(page.updated, 'ddd, MMM D YYYY, h:mm:ss a Z') %>">updated: <time datetime="<%= date_xml(page.date) %>" itemprop="dateUpdated"><%= date(page.updated, config.date_format) %></time></span>
+    <% if (page.status){ %><span id="page-status">status: <em><%= page.status %></em></span><% } %>
+
+</div>
+<%- toc(page.content, { list_number: false }) %>
+
+<%- page.content %>
+
 <h1>Post</h1>
 <h2>Posts</h2>
 <%- partial('_partial/dev_block') %>
