@@ -1,0 +1,4 @@
+<h1 id="page-title"><%= page.title %></h1>
+<%- partial('_partial/post/metadata', { post: page }) %>
+<%- toc(page.content, { list_number: false }) %>
+<%- page.content %>

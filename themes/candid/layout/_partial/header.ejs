@@ -1,0 +1,28 @@
+<header id="header">
+  <div id="header-content">
+    <a href="<%- url_for() %>" id="logo-link">
+      <!-- <img id="logo" alt="<%- config.title %>" src="/img/logo.svg"/> -->
+      <svg id="logo" viewBox="0 0 100 100" alt="<%- config.title %>">
+        <use href="/img/logo.svg#logo"></use>
+      </svg>
+    </a>
+    <% if (config.subtitle){ %>
+      <h2 id="subtitle-wrap">
+        <a href="<%- url_for() %>" id="subtitle"><%= config.subtitle %></a>
+      </h2>
+    <% } %>
+    <nav id="main-nav">
+      <ul>
+        <% for (var i in config.menu){ %>
+          <li><a class="main-nav-link" href="<%- url_for(config.menu[i]) %>"><%= i %></a></li>
+        <% } %>
+      </ul>
+    </nav>
+    <nav id="sub-nav">
+      <% if (theme.rss){ %>
+        <a id="nav-rss-link" class="nav-icon" href="<%- url_for(theme.rss) %>" title="<%= __('rss_feed') %>"></a>
+      <% } %>
+      <a id="nav-search-btn" class="nav-icon" title="<%= __('search') %>"></a>
+    </nav>
+  </div>
+</header>
