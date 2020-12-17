@@ -1,3 +1,2 @@
-<h1>Tag</h1>
-<h2>Tag archives</h2>
-<%- partial('_partial/dev_block') %>
+<h2>tag: <%- page.tag %></h2>
+<%- partial('_partial/archive', {pagination: config.tag, index: true}) %>

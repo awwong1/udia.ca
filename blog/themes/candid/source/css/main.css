@@ -93,7 +93,7 @@
 }
 
 html {
-  font-size: 2vw;
+  font-size: 1.6vw;
   height: 100%;
   /* animation: fadeInAnimation ease 0.6s;
   animation-iteration-count: 1;
@@ -109,12 +109,12 @@ html {
 } */
 @media all and (min-width: 650px) {
   html {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 @media all and (max-width: 650px) {
   html {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -126,7 +126,12 @@ ul,
 ol {
   margin-left: 1.5rem;
 }
-
+table {
+  width: 100%
+}
+section#main p {
+  margin-bottom: 1rem;
+}
 body {
   font-family: "Source Serif Pro", "DejaVu Serif", "Times New Roman", Times,
     serif;
@@ -136,7 +141,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1280px;
   min-height: 100%;
   position: relative;
   z-index: -10000;
@@ -151,9 +156,9 @@ h3,
 h4,
 h5,
 h6,
+nav#page-nav,
 footer {
   font-family: "Raleway", sans-serif;
-  font-weight: 600;
   margin-top: 0.5rem;
 }
 
@@ -227,7 +232,7 @@ footer > span:not(:last-child)::after {
   content: "\2002|\2002";
 }
 
-/** Page specific metadata spacing */
+/** Page metadata spacing */
 #page-metadata > span:not(:last-child)::after,
 .post-metadata > span:not(:last-child)::after {
   content: "\2006;\2004";
@@ -241,12 +246,40 @@ footer > span:not(:last-child)::after {
   margin-bottom: 1rem;
 }
 
+/** Page metadata tags */
+ul.article-tag-list {
+  margin: 0;
+  display: inline;
+  list-style: none;
+}
+ul.article-tag-list li {
+  display: inline;
+}
+ul.article-tag-list > li:not(:last-child) {
+  margin-right: 0.2rem;
+}
+
 /** Archive, index of all available posts. */
-h2.archive-year-wrap > a.archive-year {
+h2.archive-month-year-wrap > a.archive-month-year {
   text-decoration: none;
 }
 div.archive-article-inner {
-  margin-left: 0.5rem;
+  margin-left: 0.8rem;
+}
+
+/** Paginator navigation */
+nav#page-nav {
+  display: flex;
+  justify-content: center;
+}
+nav#page-nav > * {
+  margin: 0 0.2rem;
+}
+nav#page-nav > span.current::before {
+  content: "\1F892";
+}
+nav#page-nav > span.current::after {
+  content: "\1F890";
 }
 
 /** Hexo Table of Contents display functionality. */
@@ -293,6 +326,7 @@ ol.toc > li::before {
 /* H2 */
 ol.toc > li > ol {
   counter-reset: htoc_2;
+  font-size: 0.9rem;
 }
 ol.toc > li > ol > li::before {
   counter-increment: htoc_2;
@@ -301,6 +335,7 @@ ol.toc > li > ol > li::before {
 /* H3 */
 ol.toc > li > ol > li > ol {
   counter-reset: htoc_3;
+  font-size: 0.8rem;
 }
 ol.toc > li > ol > li > ol > li::before {
   counter-increment: htoc_3;
@@ -309,6 +344,7 @@ ol.toc > li > ol > li > ol > li::before {
 /* H4 */
 ol.toc > li > ol > li > ol > li > ol {
   counter-reset: htoc_4;
+  font-size: 0.7rem;
 }
 ol.toc > li > ol > li > ol > li > ol > li::before {
   counter-increment: htoc_4;

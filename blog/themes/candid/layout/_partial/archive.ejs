@@ -5,15 +5,16 @@
 <% } else { %>
   <% var last; %>
   <% page.posts.each(function(post, i){ %>
-    <% var year = post.date.year(); %>
-    <% if (last != year){ %>
+    <% var year = post.date.year(); var month = date(post.date, "MM"); %>
+    <% var monthYear = date(post.date, "MMMM yyyy"); %>
+    <% if (last != monthYear){ %>
       <% if (last != null){ %>
         </div></section>
       <% } %>
-      <% last = year; %>
+      <% last = monthYear; %>
       <section class="archives-wrap">
-        <h2 class="archive-year-wrap">
-          <a href="<%- url_for(config.archive_dir + '/' + year) %>" class="archive-year"><%= year %></a>
+        <h2 class="archive-month-year-wrap">
+          <a href="<%- url_for(config.archive_dir + '/' + year + '/' + month) %>" class="archive-month-year"><%= monthYear %></a>
         </h2>
         <div class="archives">
     <% } %>
@@ -25,10 +26,7 @@
 <% } %>
 <% if (page.total > 1){ %>
   <nav id="page-nav">
-    <% var prev_text = "&laquo; " + __('prev');var next_text = __('next') + " &raquo;"%>
-    <%- paginator({
-      prev_text: prev_text,
-      next_text: next_text
-    }) %>
+    <% var prev_text = __('Previous Page'); var next_text = __('Next Page') %>
+    <%- paginator({ prev_text: prev_text, next_text: next_text }) %>
   </nav>
 <% } %>
