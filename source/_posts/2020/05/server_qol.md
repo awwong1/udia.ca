@@ -9,7 +9,7 @@ tags:
   - linux
 ---
 
-Similar to the [Workspace Quality of Life]({{< ref "/posts/2020/03/workspace_qol.md" >}}) document that I created, I decided to write a similar document for manual configurations of new linux servers.
+Similar to the [Workspace Quality of Life](/posts/2020/03/workspace_qol) document that I created, I decided to write a similar document for manual configurations of new linux servers.
 The following contains some utility scripts and hardening practices.
 
 Although multiple tools exist for programmatic provisioning of virtual machines and infrastructure, this document will rely primarily on manual configuration using `ssh`.
@@ -125,7 +125,7 @@ gpasswd -a alexander sudo
 ```
 
 We want to use this user for secure shell and linux server maitainance operations with the server. Generate a local SSH key and add install it in the `/home/alexander/.ssh/authorized_keys` file.
-Refer to the [Useful SSH]({{< ref "/posts/2020/01/useful_ssh.md#secure-ssh-keygen" >}}) section for further instructions.
+Refer to the [Useful SSH](/posts/2020/01/useful_ssh.md#secure-ssh-keygen) section for further instructions.
 
 ### Configure SSH Daemon
 

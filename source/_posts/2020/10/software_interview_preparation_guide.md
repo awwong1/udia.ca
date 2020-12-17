@@ -96,9 +96,9 @@ It measures the upper bound of an algorithm's run time or space utilization rela
 
 Adhere to the following rules of thumb:
 
-1. Drop the constants. (e.g. \\(O(2n) \rightarrow O(n)\\))
-2. Drop the non-dominant terms. (e.g. \\(O(n^2 + n\log{n}) \rightarrow O(n^2)\\))
-3. Runtime of typical recursive algorithms with multiple branches: \\(O(\text{branches}^\text{depth})\\)
+1. Drop the constants. (e.g. {% mathjax %}O(2n) \rightarrow O(n){% endmathjax %})
+2. Drop the non-dominant terms. (e.g. {% mathjax %}O(n^2 + n\log{n}) \rightarrow O(n^2){% endmathjax %})
+3. Runtime of typical recursive algorithms with multiple branches: {% mathjax %}O(\text{branches}^\text{depth}){% endmathjax %}
 
 ## Reference Table
 
@@ -106,14 +106,14 @@ The notations are ranked from most efficient to least efficient.
 
 | Notation          | Name          | Notes                                             |
 |-------------------|---------------|---------------------------------------------------|
-| \\(O(1)\\)        | constant      | Reference on a look-up table                      |
-| \\(O(\log{n})\\)  | logarithmic   | Binary search on sorted array                     |
-| \\(O(n)\\)        | linear        | Search on an unsorted array                       |
-| \\(O(n\log{n})\\) | loglinear     | Merge sort runtime complexity                     |
-| \\(O(n^2)\\)      | quadratic     | Bubble/Selection/Insertion sort                   |
-| \\(O(n^c)\\)      | polynomial    | Tree-adjoining grammar parsing                    |
-| \\(O(c^n)\\)      | exponential   | Exact Travelling Salesman (Dynamic Programming)   |
-| \\(O(n!)\\)       | factorial     | Brute Force Search Travelling Salesman            |
+| `O(1)`        | constant      | Reference on a look-up table                      |
+| `O(\log{n})`  | logarithmic   | Binary search on sorted array                     |
+| `O(n)`        | linear        | Search on an unsorted array                       |
+| `O(n\log{n})` | loglinear     | Merge sort runtime complexity                     |
+| `O(n^2)`      | quadratic     | Bubble/Selection/Insertion sort                   |
+| `O(n^c)`      | polynomial    | Tree-adjoining grammar parsing                    |
+| `O(c^n)`      | exponential   | Exact Travelling Salesman (Dynamic Programming)   |
+| `O(n!)`       | factorial     | Brute Force Search Travelling Salesman            |
 
 ## Examples
 
@@ -132,7 +132,7 @@ def ins_sort(arr):
 We iterate through the array to `1.` find the elements to insert, then another time to `2.` find the position to insert.
 Once the position is found, we `3.` perform an array slice assignment.
 All inserts occur in place.\
-This `ins_sort` has \\(O(n^3)\\) runtime complexity and \\(O(1)\\) space complexity.
+This `ins_sort` has {% mathjax %}O(n^3){% endmathjax %} runtime complexity and {% mathjax %}O(1){% endmathjax %} space complexity.
 ```bash
 $ python3 -m timeit -n 100 '([0] * 2000000)[1:2] = range(1)'
 # 100 loops, best of 5: 9.13 msec per loop
@@ -156,7 +156,7 @@ def range_sum(n):
 
 ```
 Each recursion adds an additional level to the stack.\
-This `range_sum` implementation has \\(O(n)\\) runtime and space complexity.
+This `range_sum` implementation has {% mathjax %}O(n){% endmathjax %} runtime and space complexity.
 
 ```text
 range_sum(5)
@@ -177,7 +177,7 @@ def two_exp(n):
 
 ```
 Each recursion splits into two separate branches.\
-This `two_exp` implementation has \\(O(2^n)\\) runtime and space complexity.
+This `two_exp` implementation has {% mathjax %}O(2^n){% endmathjax %} runtime and space complexity.
 ```text
                   two_exp(3)
                     /    \
@@ -202,7 +202,7 @@ def memo_two_exp(o_n):
 
 ```
 Each recursion splits into two separate branches, but one of the branches is guaranteed to hit the cache.\
-This `memo_two_exp` implementation has \\(O(n)\\) runtime and space complexity.
+This `memo_two_exp` implementation has {% mathjax %}O(n){% endmathjax %} runtime and space complexity.
 ```text
                   two_exp(3)
                     /    \
@@ -554,7 +554,7 @@ Breadth First Search (BFS) and Depth First Search (DFS) are two different ways t
 
 ### Implementation
 
-Our BFS/DFS algorithm relies on the [Graph]({{< relref "#implementation-2" >}}) implementation above.
+Our BFS/DFS algorithm relies on the [Graph](#Implementation-2) implementation above.
 
 ```python3
 from collections import deque
@@ -623,7 +623,7 @@ assert list(iterator) == ["0", "1", "3", "2", "4", "5"]
 ## Merge Sort
 
 The [merge sort algorithm](https://en.wikipedia.org/wiki/Merge_sort).
-The runtime of this implementation is \\(O(n\log{n})\\) with \\(O(n)\\) space complexity. This returns a new copy of the sorted array.
+The runtime of this implementation is {% mathjax %}O(n\log{n}){% endmathjax %} with {% mathjax %}O(n){% endmathjax %} space complexity. This returns a new copy of the sorted array.
 
 ### Implementation
 
@@ -652,7 +652,7 @@ def mergesort(arr):
 ## Quicksort
 
 The [quicksort algorithm](https://en.wikipedia.org/wiki/Quicksort).
-The runtime of this implementation is \\(O(n\log{n})\\) with \\(O(n)\\) space complexity, due to the recursion increasing the stack respective to the length of the array. All operations are performed in place.
+The runtime of this implementation is {% mathjax %}O(n\log{n}){% endmathjax %} with {% mathjax %}O(n){% endmathjax %} space complexity, due to the recursion increasing the stack respective to the length of the array. All operations are performed in place.
 
 ### Implementation
 

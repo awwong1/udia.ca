@@ -346,38 +346,38 @@ Quote break.
 
 ## Inline
 
-The pythagorean theorm, \\(a^2 + b^2 = c^2\\), is an
+The pythagorean theorm, {% mathjax %}a^2 + b^2 = c^2{% endmathjax %}, is an
 equation about the three sides of a right triangle.
 
-A long inline function \\(1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10 * 11 * 12 * 13 * 14 * 15 = 15! = 1307674368000\\)
+A long inline function {% mathjax %}1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10 * 11 * 12 * 13 * 14 * 15 = 15! = 1307674368000{% endmathjax %}
 
 ```markdown
-The pythagorean theorm, \\(a^2 + b^2 = c^2\\), is an
+The pythagorean theorm, {% mathjax %}a^2 + b^2 = c^2{% endmathjax %}, is an
 equation about the three sides of a right triangle.
 ```
 
 ## Block
 
 The following function:
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
+{% mathjax %}x = {-b \pm \sqrt{b^2-4ac} \over 2a}{% endmathjax %}
 can be used to calculate the two roots of a trinomial function:
-$$ax^2 + bx + c = 0$$ So neat!
+{% mathjax %}ax^2 + bx + c = 0{% endmathjax %} So neat!
 
 Some long block function:
-$$F = \{F_{x} \in  F_{c} : (|S| > |C|) \cap 
+{% mathjax %}F = \{F_{x} \in  F_{c} : (|S| > |C|) \cap 
 (minPixels  < |S| < maxPixels) \cap 
 (|S_{connected}| > |S| - \epsilon)
-  \}$$
+  \}{% endmathjax %}
 
 ```text
 The following function:
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
+{% mathjax %}x = {-b \pm \sqrt{b^2-4ac} \over 2a}{% endmathjax %}
 can be used to calculate the two roots of a trinomial function:
-$$ax^2 + bx + c = 0$$
+{% mathjax %}ax^2 + bx + c = 0{% endmathjax %} So neat!
 
 Some long block function:
-$$F = \{F_{x} \in  F_{c} : (|S| > |C|) \cap 
+{% mathjax %}F = \{F_{x} \in  F_{c} : (|S| > |C|) \cap 
 (minPixels  < |S| < maxPixels) \cap 
 (|S_{connected}| > |S| - \epsilon)
-  \}$$
+  \}{% endmathjax %}
 ```

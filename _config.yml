@@ -136,9 +136,9 @@ filter_optimize:
     # minify all css files
     minify: true
     # bundle loaded css files into one
-    bundle: true
+    bundle: false
     # use a script block to load css elements dynamically
-    delivery: true
+    delivery: false
     # make specific css content inline into the html page
     #   - only support the full path
     #   - default is ['css/main.css']

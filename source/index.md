@@ -6,7 +6,7 @@ description: Home and meta page describing udia.ca philosophy and technology.
 status: in-progress
 ---
 
-This page is about `udia.ca`; for information about the author, **see [about]({{< relref "about/_index.md" >}})**.
+This page is about `udia.ca`; for information about the author, **see [about](/about)**.
 
 # Overview
 
@@ -35,10 +35,7 @@ You are **free** to copy and reuse any of my content (non-commercially) as long 
 
 ## Technology & Hosting
 
-- The site is built with the [Hugo](https://gohugo.io/) static site generator using a custom theme ([Candor](https://git.udia.ca/alex/candor), built from scratch)
-  - Math is rendered server side using the [github.com/graemephi/goldmark-qjs-katex](https://github.com/graemephi/goldmark-qjs-katex) and [KaTeX](https://katex.org/) libraries
-  - Custom hugo runtime is built using `--tags extended`, [commit diff available here](https://github.com/gohugoio/hugo/compare/master...awwong1:master)
-- Source files are written in [CommonMark 0.29](https://spec.commonmark.org/0.29/) compliant markdown, parsed by [goldmark](https://github.com/yuin/goldmark/)
+- The site is built with the [Hexo](https://hexo.io/) static site generator using a custom theme built from scratch.
 - We are hosted on an Ubuntu 18.04, 4GB RAM, 2 VCPU instance provided by [Cybera Rapid Access Cloud](https://www.cybera.ca/services/rapid-access-cloud/)
 - Domain Name Servers are managed and proxied using [Cloudflare](https://www.cloudflare.com/)
 - Content is served using the [nginx web server](https://nginx.org/en/)

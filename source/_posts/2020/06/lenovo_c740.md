@@ -293,4 +293,4 @@ These issues are relatively minor with acceptable workarounds.
 
 That being said, I would not recommend using linux on this hardware until these issues are patched.
 
-Refer to the [workspace quality of life specification]({{< ref "/posts/2020/03/workspace_qol.md" >}}) for user and system preferences.
+Refer to the [workspace quality of life specification](/posts/2020/03/workspace_qol) for user and system preferences.

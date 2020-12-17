@@ -54,9 +54,9 @@ While completing my MSc. thesis, **I will attend the climbing wall two times per
 
 Scores are calculated every Sunday. Skipping one full week of fasting, fitness blender, and climbing would incur a penalty of:
 
-$$
+{% mathjax %}
 7_\text{Fast} + 5_\text{Fitness} + 2_\text{Climb} = 14_\text{Penalty Points}
-$$
+{% endmathjax %}
 
 Although inexcusable absences itself is subjective, the intention is to distinguish days where I did not perform a health and wellness activity due to laziness.
 
@@ -67,7 +67,7 @@ I will update this post every week until the end of 2020.
 ## January
 
 January 2020 penalty summary:
-: \\(\text{Fast} = 1 + 1 \text{; Fitness} = 0 \text{; Climb} = 2\\)
+: {% mathjax %}\text{Fast} = 1 + 1 \text{; Fitness} = 0 \text{; Climb} = 2{% endmathjax %}
 
 It is eye opening how long recovery from a cold takes.
 
@@ -149,7 +149,7 @@ Ate past 7pm on Sunday, March 8th. Otherwise nominal.
 
 ### Week 11: Mon, Mar 9 - Sun, Mar 15
 
-[Deferred to Week 12]({{< relref "#week-12-mon-mar-16---sun-mar-22" >}})
+[Deferred to Week 12](#Week-12-Mon-Mar-16-Sun-Mar-22)
 
 ### Week 12: Mon, Mar 16 - Sun, Mar 22
 
@@ -331,7 +331,7 @@ I purchased for myself a new Lenovo Yoga C740, which will arrive in the mail by 
 ### Week 26: Mon, Jun 22 - Sun, Jun 28
 
 In terms of number of weeks, we are half way through the year.
-I've spent a lot of time [setting up a new Lenovo C740 laptop]({{< ref "/posts/2020/06/lenovo_c740.md" >}}), and running to various issues.
+I've spent a lot of time [setting up a new Lenovo C740 laptop](/posts/2020/06/lenovo_c740), and running to various issues.
 As an aside, in the blog post I mentioned that the display brightness hotkeys do not work, but they have started working (unsure what update fixed this).
 I have updated my ECG outlier detection approach to be more robust to bad data, utilizing median filtering prior to bandpass filtering to reduce harmonic noise from large peaks.
 
@@ -503,7 +503,7 @@ This week I will be revising the ICASSP paper, continuing the thesis manuscript 
 ### Week 42: Mon, Oct 12 - Sun, Oct 18
 
 This week has been a gauntlet of job interview applications, polishing the ICASSP paper for submission, and algorithms review.
-I created a comprehensive [software interview preparation guide]({{< ref "/posts/2020/10/software_interview_preparation_guide.md" >}}) to help me manage the technical questions and competency soft-skills.
+I created a comprehensive [software interview preparation guide](/posts/2020/10/software_interview_preparation_guide) to help me manage the technical questions and competency soft-skills.
 Although I have the majority of the thesis related work finished (from these two papers), additional work of compiling everything into a cohesive singular document remains to be done.
 
 From Oct 19th to the 23rd is [Edmonton Startup Week](https://techstarsstartupweekedmonton2020.sched.com/).

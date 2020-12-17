@@ -41,7 +41,7 @@ All listed tokens are no longer active as of the publishing of this blog post.
 I have three virtual machines that I will be using. I have named them `helium`, `lithium`, and `beryllium`.
 The control-plane node will be `helium`, while `lithium` and `beryllium` are worker nodes, making this a single control-plane cluster of two worker nodes.
 
-All three of these VMs are running Ubuntu 18.04 and have been configured according to my [server quality of life specification]({{< ref "/posts/2020/05/server_qol.md" >}}).
+All three of these VMs are running Ubuntu 18.04 and have been configured according to my [server quality of life specification](/posts/2020/05/server_qol).
 All swap partitions have been disabled in the `/etc/fstab` file, verified by checking `swapon --show` and seeing no results.
 The product uuid is found running `sudo cat /sys/class/dmi/id/product_uuid`.
 The IPV4 addresses are private to the local network, while IPV6 addresses are public.
