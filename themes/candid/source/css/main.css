@@ -179,6 +179,10 @@ svg#logo {
   /* width: 7rem; */
 }
 
+img {
+  width: 100%;
+}
+
 /** Header and primary navigation layout */
 div#content {
   display: flex;

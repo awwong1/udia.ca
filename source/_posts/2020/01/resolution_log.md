@@ -613,3 +613,10 @@ It is not trivial making the library backwards compatible- I have a lot more res
 
 One of the things I want to play around with this coming week is the [NVLabs/stylegan2-ada](https://github.com/NVlabs/stylegan2-ada) repository (see paper [Training Generative Adversarial Networks with Limited Data](https://arxiv.org/abs/2006.06676)).
 Additionally, I have de-prioritized migrating over my static site to Hexo due to the static site generation quirks (unknown source of inline javascript, kludged in meta tags).
+
+### Week 51, Mon Dec 14 - Sun, Dec 20
+
+Abram has provided me feedback on the slides with some revisions that I need to incorporate- essentially the presentation is too text-heavy and will require a lot of hand holding to accurately convey the ideas and results.
+
+I played around with StyleGAN2 and trained a model on a 20 second selfie video of my face.
+More information is listed in my post `[Selfie StyleGAN2](/2020/12/selfie-stylegan2)`.
