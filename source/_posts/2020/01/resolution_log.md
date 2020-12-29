@@ -620,3 +620,34 @@ Abram has provided me feedback on the slides with some revisions that I need to 
 
 I played around with StyleGAN2 and trained a model on a 20 second selfie video of my face.
 More information is listed in my post `[Selfie StyleGAN2](/2020/12/selfie-stylegan2)`.
+
+### Week 52, Mon Dec 21 - Sun Dec 27
+
+After 52 weeks of keeping a resolution log post, I have come to terms with my successes and failures.
+In terms of successes, I have the thesis defense scheduled for January 5th. Pending any defense provided revisions, my portion of the MSc is largely complete.
+For half-successes, I have committed to maintaining intermittent fasting.
+Although not a 'Fast-5' schedule, I have restricted my eating window between 11am and 7pm.
+I am also not as committed to the daily five days a week fitness blender exercising as I would have liked, although I still get in at least 2 days of exercises per week.
+Due to COVID-19, the public climbing spaces have been shut down so this resolution has largely been unfulfilled but out of my control.
+
+I don't think that resolutions with strict criteria and rubrics are an effective approach for long term change.
+The biggest limitation is the rigidity and inflexibility of the set rubric.
+The span of time that one year encompasses is paradoxically long and short.
+In one year, I have accomplished an entire research thesis but I have also stalled in many other aspects of my life.
+Moving forwards, I feel that I would like to loosen the restriction of the rubric and instead set more dynamic/fluid aspirations and goals.
+
+This week I primarily played video games and enjoyed my holiday time off.
+I ran [memtest86](https://www.memtest86.com/) on my home desktop server and discovered multiple RAM errors.
+Painstakingly testing each 2X16GB pair, I narrowed two pairs of RAM that consistently showed errors.
+I am grateful that I had the foresight to purchase the four year in-store replacement and will get no additional cost replacements.
+
+Starting next Monday, I will be employed as a software developer.
+All in all, despite the world chaos that was 2020, I recognize that I have had an extremely privileged and fortunate position.
+My situation and research meant that I could remain effective, despite working remotely.
+All of my basic needs remained easily met despite the lockdowns.
+I never feared any financial instability or problems due to loss of income.
+Having a life partner who shares the living space with me proved to be wonderful and joyous.
+No resentment or regrets manifested through long-term exposure and confinement.
+
+Here's to the end of 2020.
+May the coming year be an improvement on the last!
