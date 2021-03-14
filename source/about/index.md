@@ -12,9 +12,11 @@ My name is **Alexander Wong**.
 I was born into the [millennial demographic cohort](https://en.wikipedia.org/wiki/Millennials).
 My first computer was the [Tandy 1000](https://en.wikipedia.org/wiki/Tandy_1000), where I spent many summers playing old Sierra text adventure games like [Kings Quest](https://www.gog.com/game/kings_quest_1_2_3) and [Manhunter](https://www.mobygames.com/game/manhunter-new-york).
 
-I am currently a graduate student at the [University of Alberta](https://www.ualberta.ca/), [Department of Computing Science](https://www.ualberta.ca/computing-science), living in [Alberta, Canada](https://www.alberta.ca/index.aspx).
-I began pursuing my Master's degree in September 2018 due to a stubborn curiosity regarding the mechanisms of deep neural networks and their impressive results in image classification and segmentation tasks.
-My research is currently in the classification and analysis of 12-lead electrocardiogram signals.
+I obtained my master's degree (convocation June 2021) at the [University of Alberta](https://www.ualberta.ca/), [Department of Computing Science](https://www.ualberta.ca/computing-science).
+My research involved the classification and analysis of 12-lead electrocardiograms using a variety of signal processing and feature extraction methods, as well as shallow and deep machine learning techniques.
+
+I currently reside in [Alberta, Canada](https://www.alberta.ca/index.aspx).
+I am employed by a large financial software company that focuses on personal finance, small-business/self-employed book keeping, and tax return software.
 
 ## Resume & Curriculum Vitae
 
@@ -25,7 +27,7 @@ A more academic [**curriculum vitae (CV)** can be found here](//media.udia.ca/cv
 ## Links
 
 * Personal GitHub page: [github.com/awwong1](https://github.com/awwong1/)
-* Self-Hosted Gitea: [git.udia.ca/alex](https://git.udia.ca/alex/)
+<!-- * Self-Hosted Gitea: [git.udia.ca/alex](https://git.udia.ca/alex/) -->
 * LinkedIn Profile: [linkedin.com/in/awwong1](https://www.linkedin.com/in/awwong1/)
 * Keybase: [keybase.io/udia](https://keybase.io/udia)
 * Matrix: [@alex:matrix.udia.ca](https://matrix.to/#/@alex:matrix.udia.ca)
