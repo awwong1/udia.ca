@@ -111,10 +111,6 @@ math:
   mathjax:
     css: false  # Included in the theme Candid
     # css: 'https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css'
-    options:
-      conversion:
-      tex:
-      svg:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
