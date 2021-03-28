@@ -395,6 +395,9 @@ This is a quick and dirty script for setting up the NGINX web server. I am curre
 
 The commented out lines are [defaults provided by the nginx playbook example](https://github.com/nginxinc/ansible-role-nginx-config/blob/main/molecule/default/converge.yml).
 
+**NOTE**: This current configuration is modified by Lets Encrypt, any ansible changes to the NGINX configuration will remove the Lets Encrypt SSL certs.
+This needs to be made more robust.
+
 ```yml
 - name: nginx-setup
   hosts: all

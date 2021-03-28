@@ -35,7 +35,7 @@
 @font-face {
   font-family : 'Raleway';
   font-style  : normal;
-  font-weight: 450;
+  font-weight : 450;
   font-display: swap;
   src         : local('Raleway'),
     url(/fonts/Raleway/Raleway-VariableFont_wght.woff2) format('woff2'),
@@ -135,11 +135,7 @@ h2 {
 
 #logo {
   max-height: 7rem;
-  max-width: 7rem;
-}
-
-img {
-  width: 100%;
+  max-width : 7rem;
 }
 
 /** Header and primary navigation layout */
@@ -368,6 +364,7 @@ ol.toc>li>ol>li>ol>li>ol>li>ol>li>ol>li::before {
 
 /** Overflow indicators for long x-axis content (highlight) */
 figure.highlight,
+mjx-container[jax="SVG"],
 pre {
   overflow-x: auto;
   background: linear-gradient(90deg, white 30%, rgba(255, 255, 255, 0)) left/3em no-repeat local,
@@ -378,6 +375,11 @@ pre {
     radial-gradient(farthest-side at 100% 50%,
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0)) right/0.7em no-repeat scroll;
+}
+
+mjx-container[jax="SVG"] {
+  display: inline-block;
+  max-width: 100%;
 }
 
 /** Style for rendering code blocks */
@@ -399,6 +401,7 @@ pre {
   border          : 1px solid #c8c8c8;
   background-color: #fafafa;
   white-space     : pre-wrap;
+  word-break      : break-all;
 }
 
 /** Highlight.js hljs theme (Modified from GitHub) */

@@ -195,17 +195,14 @@ I get 10 times more traffic from [Google][1] than from
 # Images
 
 ## Inline
-![UDIA 64x64](https://media.udia.ca/logo/logo-64x64.png "UDIA")
-![UDIA Inverse 64x64](https://media.udia.ca/logo/logo-inverse-64x64.png "UDIA")
+![UDIA 64x64](https://media.udia.ca/logo/logo-64x64.png "UDIA") ![UDIA Inverse 64x64](https://media.udia.ca/logo/logo-inverse-64x64.png "UDIA")
 
 ```markdown
-![UDIA 64x64](https://media.udia.ca/logo/logo-64x64.png "UDIA")
-![UDIA Inverse 64x64](https://media.udia.ca/logo/logo-inverse-64x64.png "UDIA")
+![UDIA 64x64](https://media.udia.ca/logo/logo-64x64.png "UDIA") ![UDIA Inverse 64x64](https://media.udia.ca/logo/logo-inverse-64x64.png "UDIA")
 ```
 
 ## Reference
-![UDIA Inverse 64x64][udia-inverse-64]
-![UDIA 64x64][udia-64]
+![UDIA Inverse 64x64][udia-inverse-64] ![UDIA 64x64][udia-64]
 
 [udia-inverse-64]: https://media.udia.ca/logo/logo-inverse-64x64.png "UDIA"
 [udia-64]: https://media.udia.ca/logo/logo-64x64.png "UDIA"
@@ -359,24 +356,24 @@ equation about the three sides of a right triangle.
 ## Block
 
 The following function:
-{% mathjax %}x = {-b \pm \sqrt{b^2-4ac} \over 2a}{% endmathjax %}
+{% mathjax '{ "conversion": { "display": true } }' %}x = {-b \pm \sqrt{b^2-4ac} \over 2a}{% endmathjax %}
 can be used to calculate the two roots of a trinomial function:
-{% mathjax %}ax^2 + bx + c = 0{% endmathjax %} So neat!
+{% mathjax '{ "conversion": { "display": true } }' %}ax^2 + bx + c = 0{% endmathjax %} So neat!
 
 Some long block function:
-{% mathjax %}F = \{F_{x} \in  F_{c} : (|S| > |C|) \cap 
+{% mathjax '{ "conversion": { "display": true } }' %}F = \{F_{x} \in  F_{c} : (|S| > |C|) \cap 
 (minPixels  < |S| < maxPixels) \cap 
 (|S_{connected}| > |S| - \epsilon)
   \}{% endmathjax %}
 
 ```text
 The following function:
-{% mathjax %}x = {-b \pm \sqrt{b^2-4ac} \over 2a}{% endmathjax %}
+{% mathjax '{ "conversion": { "display": true } }' %}x = {-b \pm \sqrt{b^2-4ac} \over 2a}{% endmathjax %}
 can be used to calculate the two roots of a trinomial function:
-{% mathjax %}ax^2 + bx + c = 0{% endmathjax %} So neat!
+{% mathjax '{ "conversion": { "display": true } }' %}ax^2 + bx + c = 0{% endmathjax %} So neat!
 
 Some long block function:
-{% mathjax %}F = \{F_{x} \in  F_{c} : (|S| > |C|) \cap 
+{% mathjax '{ "conversion": { "display": true } }' %}F = \{F_{x} \in  F_{c} : (|S| > |C|) \cap 
 (minPixels  < |S| < maxPixels) \cap 
 (|S_{connected}| > |S| - \epsilon)
   \}{% endmathjax %}
