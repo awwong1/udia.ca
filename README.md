@@ -9,6 +9,5 @@ Static, personal site.
 yarn && yarn start
 
 # Deployment
-hugo && time rsync --whole-file --archive --verbose --groupmap=*:www-data public/* rac:/var/www/udia.ca
-# or make deploy
+make deploy
 ```

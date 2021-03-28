@@ -2,9 +2,12 @@
   <div id="header-content">
     <a href="<%- url_for() %>" id="logo-link">
       <!-- <img id="logo" alt="<%- config.title %>" src="/img/logo.svg"/> -->
-      <svg id="logo" viewBox="0 0 100 100" alt="<%- config.title %>">
+      <!-- <svg id="logo" viewBox="0 0 100 100" alt="<%- config.title %>">
         <use href="/img/logo.svg#logo"></use>
-      </svg>
+      </svg> -->
+      <object id="logo" type="image/svg+xml" data="/img/logo.svg">
+        <%- config.title %>
+      </object>
     </a>
     <% if (config.subtitle){ %>
       <h2 id="subtitle-wrap">
