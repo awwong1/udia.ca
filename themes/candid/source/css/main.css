@@ -102,7 +102,6 @@ body {
   min-height              : 100%;
   position                : relative;
   z-index                 : -10000;
-  -webkit-font-smoothing  : none;
   -webkit-text-size-adjust: 100%;
   /* Prevent font size change after iOS orientation update. */
 }
