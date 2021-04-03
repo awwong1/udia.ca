@@ -30,7 +30,7 @@ A more academic [**curriculum vitae (CV)** can be found here](//media.udia.ca/cv
 <!-- * Self-Hosted Gitea: [git.udia.ca/alex](https://git.udia.ca/alex/) -->
 * LinkedIn Profile: [linkedin.com/in/awwong1](https://www.linkedin.com/in/awwong1/)
 * Keybase: [keybase.io/udia](https://keybase.io/udia)
-* Matrix: [@alex:matrix.udia.ca](https://matrix.to/#/@alex:matrix.udia.ca)
+* Matrix: [@alex:udia.ca](https://matrix.to/#/@alex:udia.ca)
 
 ## Calendar
 
