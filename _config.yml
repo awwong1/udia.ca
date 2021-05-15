@@ -37,6 +37,7 @@ menu:
   home: /
   about: /about
   posts: /posts
+  notion: https://www.notion.so/I-have-started-using-Notion-today-cabe84c8454b40cf9e943fc43cfa40dc
 
 # Writing
 new_post_name: :title.md # File name of new posts
