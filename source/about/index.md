@@ -22,7 +22,7 @@ I am employed by a large financial software company that focuses on personal fin
 
 My career oriented [**public resume** can be found here](https://media.udia.ca/Alexander_Wong-Public_Resume.pdf).
 
-A more academic [**curriculum vitae (CV)** can be found here](//media.udia.ca/cv.pdf) ([latex source code](https://git.udia.ca/alex/cv/src/branch/master/main.tex)).
+A more academic [**curriculum vitae (CV)** can be found here](//media.udia.ca/cv.pdf).
 
 ## Links
 
