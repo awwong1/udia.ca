@@ -495,3 +495,8 @@ pre {
 .hljs-strong {
   font-weight: bold;
 }
+
+#footer>.wname {
+  text-align: center;
+  opacity: 75%;
+}
