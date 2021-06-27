@@ -51,14 +51,6 @@ html {
   animation-fill-mode      : forwards; */
 }
 
-/* @keyframes fadeInAnimation {
-  0% {
-    background-color: #000000;
-  }
-  100% {
-    background-color: #ffffff;
-  }
-} */
 @media all and (min-width: 650px) {
   html {
     font-size: 20px;
