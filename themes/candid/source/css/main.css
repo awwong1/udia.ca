@@ -450,6 +450,58 @@ pre {
   opacity: 75%;
 }
 
+
+#ui-elements-container {
+  display: block;
+  height: 3em;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 10000;
+}
+#theme-selector {
+  position: fixed;
+  right: 1px;
+  top: 1px;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  transition: opacity 1s ease, border-color 0.5s ease;
+  border: 1px dashed #ffffff;
+}
+@media only screen and (max-width: 65ch) {
+  #theme-selector {
+    flex-direction: column;
+  }
+}
+#theme-selector:hover {
+  opacity: 1;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+#theme-selector button {
+  font-family: "Raleway", "Source Sans Pro", sans-serif;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  padding: 0.5em;
+  margin: 0;
+  line-height: 1;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #777777;
+  position: relative;
+  cursor: pointer;
+}
+#theme-selector button.active {
+  color: #663399;
+}
+#theme-selector button.selected {
+  text-decoration: underline;
+  cursor: default;
+}
+
 /**
  * Dark mode color changes. Do not just manually call invert, because slow.
  */
