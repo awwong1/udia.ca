@@ -67,7 +67,7 @@ function injectModeSelector() {
       let selectedMode = event.target.dataset.name;
 
       // Save the new setting.
-      if (selectedMode == "auto") {
+      if (selectedMode === "auto") {
         localStorage.removeItem("selected-mode");
       } else {
         localStorage.setItem("selected-mode", selectedMode);
@@ -162,9 +162,13 @@ function setMode(modeOption) {
   var body = document.body;
   // Inject the appropriate styles.
   if (modeOption === "auto") {
-    body.classList.remove("dark-mode");
+    if (matchMedia("(prefers-color-scheme: dark)").matches) {
+      body.classList.add("dark-mode");
+    } else {
+      body.classList.remove("dark-mode");
+    }
   }
-  if (modeOption === 'dark' || matchMedia("(prefers-color-scheme: dark)").matches) {
+  else if (modeOption === 'dark') {
     body.classList.add("dark-mode");
   } else {
     body.classList.remove("dark-mode");

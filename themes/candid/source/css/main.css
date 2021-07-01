@@ -92,9 +92,8 @@ body {
   max-width               : 1280px;
   min-height              : 100%;
   position                : relative;
-  z-index                 : -10000;
   -webkit-text-size-adjust: 100%;
-  /* Prevent font size change after iOS orientation update. */
+  z-index: 0;
 }
 
 header,h1,h2,h3,h4,h5,h6,nav#page-nav,footer {
@@ -258,7 +257,6 @@ nav#page-nav>span.current::after {
 
 @media screen and (max-width: 650px) {
   ol.toc {
-    float    : none;
     margin   : 1rem auto;
     font-size: 1.1rem;
   }
@@ -271,8 +269,6 @@ ol.toc {
     sans-serif;
   line-height: 1.2;
   padding    : 6px;
-  position   : relative;
-  z-index    : 1;
 }
 
 ol.toc:empty {
@@ -450,7 +446,9 @@ pre {
   opacity: 75%;
 }
 
-
+/**
+ * Dark/Light mode switcher
+ */
 #ui-elements-container {
   display: block;
   height: 3em;
