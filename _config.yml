@@ -35,8 +35,9 @@ skip_render:
 
 menu:
   home: /
-  about: /about
   posts: /posts
+  about: /about
+  app: https://app.udia.ca
   # notion: https://www.notion.so/I-have-started-using-Notion-today-cabe84c8454b40cf9e943fc43cfa40dc
 
 # Writing
